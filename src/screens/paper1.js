@@ -1,0 +1,882 @@
+// // import {View, Text} from 'react-native';
+// // import React from 'react';
+
+// // const paper1 = () => {
+// //   return (
+// //     <View>
+// //       <Text>paper1</Text>
+// //     </View>
+// //   );
+// // };
+
+// // export default paper1;
+
+// import React, {useState, useEffect} from 'react';
+// import {
+//   View,
+//   Text,
+//   FlatList,
+//   StyleSheet,
+//   TouchableOpacity,
+//   ActivityIndicator,
+//   Alert,
+//   Modal,
+// } from 'react-native';
+// import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+// import {
+//   widthPercentageToDP as wp,
+//   heightPercentageToDP as hp,
+// } from 'react-native-responsive-screen';
+// import LottieView from 'lottie-react-native';
+// import axios from 'axios';
+
+// const paper1 = ({navigation}) => {
+//   // State management
+//   const [page, setPage] = useState(1);
+//   const [allQuestions, setAllQuestions] = useState([]);
+//   const [modalVisible, setModalVisible] = useState(false);
+//   const [currentHint, setCurrentHint] = useState('');
+//   const [isLoading, setIsLoading] = useState(true);
+//   const [isFetching, setIsFetching] = useState(false);
+//   const [hasMoreQuestions, setHasMoreQuestions] = useState(true);
+
+//   // Fetch questions
+//   const fetchQuestions = async pageNum => {
+//     try {
+//       setIsFetching(true);
+//       const response = await axios.get(
+//         `https://gkk.pythonanywhere.com/api/paper1/questions`,
+//       );
+//       console.log(response.data);
+//       const newQuestions = response.data.results;
+
+//       if (newQuestions.length === 0) {
+//         setHasMoreQuestions(false);
+//       }
+
+//       setAllQuestions(prev => {
+//         const uniqueQuestions = newQuestions.filter(
+//           newQ => !prev.find(existingQ => existingQ.id === newQ.id),
+//         );
+//         return [...prev, ...uniqueQuestions];
+//       });
+
+//       setIsLoading(false);
+//       setIsFetching(false);
+//     } catch (error) {
+//       console.error('Error fetching questions:', error);
+//       Alert.alert(
+//         'Error',
+//         'Unable to load questions. Please check your internet connection.',
+//         [{text: 'Retry', onPress: () => fetchQuestions(pageNum)}],
+//       );
+//       setIsLoading(false);
+//       setIsFetching(false);
+//     }
+//   };
+
+//   // Initial and pagination fetching
+//   useEffect(() => {
+//     fetchQuestions(page);
+//   }, [page]);
+
+//   const showHint = hint => {
+//     if (!hint) {
+//       Alert.alert('No Hint', 'No hint available for this question.');
+//       return;
+//     }
+
+//     setCurrentHint(hint);
+//     setModalVisible(true);
+//   };
+
+//   const handleOptionPress = (selectedQuestion, selectedOption) => {
+//     const optionKey = `option${selectedOption}`;
+//     setAllQuestions(prevQuestions =>
+//       prevQuestions.map(question =>
+//         question.id === selectedQuestion.id
+//           ? {
+//               ...question,
+//               selectedOption,
+//               answered: true,
+//               answeredCorrectly:
+//                 question[optionKey] === question.correct_answer,
+//             }
+//           : question,
+//       ),
+//     );
+//   };
+
+//   const renderQuestion = ({item}) => (
+//     <View style={styles.questionContainer}>
+//       <View style={styles.questionHeader}>
+//         <Text style={styles.questionText}>• {item.question_text}</Text>
+//         {item.hint && (
+//           <TouchableOpacity
+//             style={styles.hintButton}
+//             onPress={() => showHint(item.hint)}>
+//             <MaterialCommunityIcons
+//               name="lightbulb-outline"
+//               size={24}
+//               color="black"
+//             />
+//           </TouchableOpacity>
+//         )}
+//       </View>
+
+//       {['1', '2', '3', '4'].map(option => (
+//         <TouchableOpacity
+//           key={option}
+//           style={[
+//             styles.option,
+//             item.selectedOption === option && styles.selectedOption,
+//             item.selectedOption === option &&
+//               item[`option${option}`] === item.correct_answer &&
+//               styles.correctOption,
+//           ]}
+//           onPress={() => handleOptionPress(item, option)}>
+//           <View style={styles.optionContent}>
+//             <View style={styles.optionBadge}>
+//               <Text style={styles.optionBadgeText}>{option}</Text>
+//             </View>
+//             <Text style={styles.optionText}>{item[`option${option}`]}</Text>
+//           </View>
+//         </TouchableOpacity>
+//       ))}
+
+//       {item.selectedOption && (
+//         <View style={styles.answerDescription}>
+//           <View style={{display: 'flex', flexDirection: 'row'}}>
+//             {item[`option${item.selectedOption}`] === item.correct_answer ? (
+//               <LottieView
+//                 source={require('../utils/right.json')}
+//                 autoPlay
+//                 loop={false}
+//                 style={{width: 24, height: 24}}
+//               />
+//             ) : (
+//               <LottieView
+//                 source={require('../utils/wrong.json')}
+//                 autoPlay
+//                 loop={false}
+//                 style={{width: 24, height: 24}}
+//               />
+//             )}
+//             <Text
+//               style={[
+//                 styles.resultText,
+//                 item[`option${item.selectedOption}`] === item.correct_answer
+//                   ? styles.correctText
+//                   : styles.incorrectText,
+//               ]}>
+//               {item[`option${item.selectedOption}`] === item.correct_answer
+//                 ? 'Correct!'
+//                 : 'Incorrect!'}
+//             </Text>
+//           </View>
+//           <View>
+//             <Text
+//               style={{color: 'green', fontSize: wp('4%'), fontWeight: '600'}}>
+//               Answer
+//             </Text>
+//             <Text style={styles.descriptionText}>{item.description}</Text>
+//           </View>
+//         </View>
+//       )}
+//     </View>
+//   );
+
+//   const HintModal = () => (
+//     <Modal
+//       animationType="slide"
+//       transparent={true}
+//       visible={modalVisible}
+//       onRequestClose={() => setModalVisible(false)}>
+//       <View style={styles.modalOverlay}>
+//         <View style={styles.modalContent}>
+//           <View style={styles.modalHeader}>
+//             <Text style={styles.modalTitle}>Hint</Text>
+//             <TouchableOpacity
+//               style={styles.closeButton}
+//               onPress={() => setModalVisible(false)}>
+//               <MaterialCommunityIcons name="close" size={24} color="#000" />
+//             </TouchableOpacity>
+//           </View>
+//           <Text style={styles.hintText}>{currentHint}</Text>
+//         </View>
+//       </View>
+//     </Modal>
+//   );
+
+//   if (isLoading) {
+//     return (
+//       <View style={styles.loadingContainer}>
+//         <ActivityIndicator size="large" color="#0074E4" />
+//         <Text style={styles.loadingText}>Loading questions...</Text>
+//       </View>
+//     );
+//   }
+
+//   return (
+//     <View style={styles.container}>
+//       <View style={styles.header}>
+//         <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+//           <MaterialCommunityIcons name="arrow-left" size={24} color="White" />
+//         </TouchableOpacity>
+//         <Text style={styles.headerTitle}>Paper 1</Text>
+//       </View>
+//       <HintModal />
+//       {allQuestions.length > 0 ? (
+//         <FlatList
+//           data={allQuestions}
+//           renderItem={renderQuestion}
+//           keyExtractor={(item, index) => `${item.id}-${index}`}
+//           showsVerticalScrollIndicator={false}
+//           contentContainerStyle={styles.listContainer}
+//           onEndReached={() => {
+//             if (hasMoreQuestions && !isFetching) {
+//               setPage(prev => prev + 1);
+//             }
+//           }}
+//           onEndReachedThreshold={0.5}
+//           ListFooterComponent={() => (
+//             <View style={styles.footer}>
+//               {isFetching && <ActivityIndicator size="large" color="#0074E4" />}
+//               {!hasMoreQuestions && !isFetching && (
+//                 <Text style={styles.noMoreQuestionsText}>
+//                   You've reached the end!
+//                 </Text>
+//               )}
+//             </View>
+//           )}
+//         />
+//       ) : (
+//         <View style={styles.loadingContainer}>
+//           <Text style={styles.errorText}>No questions found.</Text>
+//           <TouchableOpacity
+//             style={styles.retryButton}
+//             onPress={() => {
+//               setPage(1);
+//               fetchQuestions(1);
+//             }}>
+//             <Text style={styles.retryButtonText}>Retry</Text>
+//           </TouchableOpacity>
+//         </View>
+//       )}
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#F5F7FA',
+//   },
+//   listContainer: {
+//     padding: wp('2%'),
+//   },
+//   header: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     padding: wp('4%'),
+//     backgroundColor: '#0074E4',
+//   },
+//   headerTitle: {
+//     fontSize: wp('5%'),
+//     fontWeight: '600',
+//     color: '#FFFFFF',
+//     marginLeft: wp('30%'),
+//     justifyContent: 'center',
+//   },
+//   questionContainer: {
+//     backgroundColor: '#FFFFFF',
+//     borderRadius: wp('4%'),
+//     padding: wp('4%'),
+//     marginBottom: hp('2%'),
+//     elevation: 3,
+//     shadowColor: '#000',
+//     shadowOffset: {width: 0, height: 2},
+//     shadowOpacity: 0.1,
+//     shadowRadius: 4,
+//   },
+//   questionHeader: {
+//     flexDirection: 'row',
+//     justifyContent: 'space-between',
+//     alignItems: 'center',
+//     marginBottom: hp('2%'),
+//   },
+//   questionText: {
+//     fontSize: wp('4.5%'),
+//     color: '#2C3E50',
+//     fontWeight: '600',
+//     flex: 1,
+//   },
+//   hintButton: {
+//     padding: wp('2%'),
+//     borderRadius: wp('50%'),
+//     backgroundColor: '#FFF9C4',
+//   },
+//   option: {
+//     backgroundColor: '#F8F9FA',
+//     borderRadius: wp('2%'),
+//     marginVertical: hp('1%'),
+//     borderWidth: 1,
+//     borderColor: '#E9ECEF',
+//     overflow: 'hidden',
+//   },
+//   optionContent: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     padding: wp('3%'),
+//   },
+//   optionBadge: {
+//     backgroundColor: '#E9ECEF',
+//     borderRadius: wp('50%'),
+//     width: wp('8%'),
+//     height: wp('8%'),
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     marginRight: wp('3%'),
+//   },
+//   optionBadgeText: {
+//     color: '#495057',
+//     fontWeight: '600',
+//   },
+//   optionText: {
+//     color: '#495057',
+//     fontSize: wp('4%'),
+//     flex: 1,
+//   },
+//   selectedOption: {
+//     backgroundColor: '#E3F2FD',
+//     borderColor: '#2196F3',
+//   },
+//   correctOption: {
+//     backgroundColor: '#E8F5E9',
+//     borderColor: '#4CAF50',
+//   },
+//   answerDescription: {
+//     marginTop: hp('2%'),
+//     padding: wp('3%'),
+//     backgroundColor: '#F8F9FA',
+//     borderRadius: wp('2%'),
+//   },
+//   resultText: {
+//     fontSize: wp('4%'),
+//     fontWeight: '600',
+//     marginBottom: hp('1%'),
+//     marginLeft: 8,
+//   },
+//   correctText: {
+//     color: '#4CAF50',
+//   },
+//   incorrectText: {
+//     color: '#F44336',
+//   },
+//   descriptionText: {
+//     color: '#6C757D',
+//     fontSize: wp('3.8%'),
+//     lineHeight: wp('5.5%'),
+//   },
+//   modalOverlay: {
+//     flex: 1,
+//     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   },
+//   modalContent: {
+//     backgroundColor: '#FFFFFF',
+//     borderRadius: wp('4%'),
+//     padding: wp('5%'),
+//     width: wp('90%'),
+//     maxHeight: hp('60%'),
+//   },
+//   modalHeader: {
+//     flexDirection: 'row',
+//     justifyContent: 'space-between',
+//     alignItems: 'center',
+//     marginBottom: hp('2%'),
+//   },
+//   modalTitle: {
+//     fontSize: wp('5%'),
+//     fontWeight: '600',
+//     color: '#2C3E50',
+//   },
+//   closeButton: {
+//     padding: wp('2%'),
+//   },
+//   hintText: {
+//     fontSize: wp('4%'),
+//     color: '#495057',
+//     lineHeight: wp('6%'),
+//   },
+//   loadingContainer: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   },
+//   loadingText: {
+//     marginTop: hp('2%'),
+//     color: '#6C757D',
+//     fontSize: wp('4%'),
+//   },
+//   footer: {
+//     padding: wp('4%'),
+//     alignItems: 'center',
+//   },
+//   noMoreQuestionsText: {
+//     color: 'black',
+//     fontSize: wp('4%'),
+//     fontWeight: '500',
+//   },
+//   errorText: {
+//     color: '#F44336',
+//     fontSize: wp('4%'),
+//     textAlign: 'center',
+//     marginBottom: hp('2%'),
+//   },
+//   retryButton: {
+//     backgroundColor: '#0074E4',
+//     paddingHorizontal: wp('6%'),
+//     paddingVertical: hp('1.5%'),
+//     borderRadius: wp('2%'),
+//   },
+//   retryButtonText: {
+//     color: '#FFFFFF',
+//     fontSize: wp('4%'),
+//     fontWeight: '600',
+//   },
+// });
+
+// export default paper1;
+
+import React, {useState, useEffect} from 'react';
+import {
+  View,
+  Text,
+  FlatList,
+  StyleSheet,
+  TouchableOpacity,
+  ActivityIndicator,
+  Alert,
+  Modal,
+} from 'react-native';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
+import LottieView from 'lottie-react-native';
+import axios from 'axios';
+
+const Paper1 = ({navigation}) => {
+  // State management
+  const [page, setPage] = useState(1);
+  const [allQuestions, setAllQuestions] = useState([]);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [currentHint, setCurrentHint] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
+  const [isFetching, setIsFetching] = useState(false);
+  const [hasMoreQuestions, setHasMoreQuestions] = useState(true);
+
+  // Fetch questions
+  const fetchQuestions = async pageNum => {
+    try {
+      setIsFetching(true);
+      const response = await axios.get(
+        `https://gkk.pythonanywhere.com/api/paper1/questions/`,
+        {
+          params: {page: pageNum},
+        },
+      );
+
+      const newQuestions = response.data;
+
+      if (newQuestions.length === 0) {
+        setHasMoreQuestions(false);
+      }
+
+      setAllQuestions(prev => {
+        const uniqueQuestions = newQuestions.filter(
+          newQ => !prev.find(existingQ => existingQ.id === newQ.id),
+        );
+        return [...prev, ...uniqueQuestions];
+      });
+
+      setIsLoading(false);
+      setIsFetching(false);
+    } catch (error) {
+      console.error('Error fetching questions:', error);
+      //   Alert.alert(
+      //     'Error',
+      //     'Unable to load questions. Please check your internet connection.',
+      //     [{text: 'Retry', onPress: () => fetchQuestions(pageNum)}],
+      //   );
+      setIsLoading(false);
+      setIsFetching(false);
+    }
+  };
+
+  // Initial fetching
+  useEffect(() => {
+    fetchQuestions(page);
+  }, [page]);
+
+  const showHint = hint => {
+    if (!hint) {
+      Alert.alert('No Hint', 'No hint available for this question.');
+      return;
+    }
+
+    setCurrentHint(hint);
+    setModalVisible(true);
+  };
+
+  const handleOptionPress = (selectedQuestion, selectedOption) => {
+    const optionKey = `option${selectedOption}`;
+    setAllQuestions(prevQuestions =>
+      prevQuestions.map(question =>
+        question.id === selectedQuestion.id
+          ? {
+              ...question,
+              selectedOption,
+              answered: true,
+              answeredCorrectly:
+                question[optionKey] === question.correct_answer,
+            }
+          : question,
+      ),
+    );
+  };
+
+  const renderQuestion = ({item}) => (
+    <View style={styles.questionContainer}>
+      <View style={styles.questionHeader}>
+        <Text style={styles.questionText}>• {item.question_text}</Text>
+        {item.hint && (
+          <TouchableOpacity
+            style={styles.hintButton}
+            onPress={() => showHint(item.hint)}>
+            <MaterialCommunityIcons
+              name="lightbulb-outline"
+              size={24}
+              color="black"
+            />
+          </TouchableOpacity>
+        )}
+      </View>
+
+      {['1', '2', '3', '4'].map(option => (
+        <TouchableOpacity
+          key={option}
+          style={[
+            styles.option,
+            item.selectedOption === option && styles.selectedOption,
+            item.selectedOption === option &&
+              item[`option${option}`] === item.correct_answer &&
+              styles.correctOption,
+          ]}
+          onPress={() => handleOptionPress(item, option)}>
+          <View style={styles.optionContent}>
+            <View style={styles.optionBadge}>
+              <Text style={styles.optionBadgeText}>{option}</Text>
+            </View>
+            <Text style={styles.optionText}>{item[`option${option}`]}</Text>
+          </View>
+        </TouchableOpacity>
+      ))}
+
+      {item.selectedOption && (
+        <View style={styles.answerDescription}>
+          <View style={{display: 'flex', flexDirection: 'row'}}>
+            {item[`option${item.selectedOption}`] === item.correct_answer ? (
+              <LottieView
+                source={require('../utils/right.json')}
+                autoPlay
+                loop={false}
+                style={{width: 24, height: 24}}
+              />
+            ) : (
+              <LottieView
+                source={require('../utils/wrong.json')}
+                autoPlay
+                loop={false}
+                style={{width: 24, height: 24}}
+              />
+            )}
+            <Text
+              style={[
+                styles.resultText,
+                item[`option${item.selectedOption}`] === item.correct_answer
+                  ? styles.correctText
+                  : styles.incorrectText,
+              ]}>
+              {item[`option${item.selectedOption}`] === item.correct_answer
+                ? 'Correct!'
+                : 'Incorrect!'}
+            </Text>
+          </View>
+          <View>
+            <Text
+              style={{color: 'green', fontSize: wp('4%'), fontWeight: '600'}}>
+              Answer
+            </Text>
+            <Text style={styles.descriptionText}>{item.description}</Text>
+          </View>
+        </View>
+      )}
+    </View>
+  );
+
+  const HintModal = () => (
+    <Modal
+      animationType="slide"
+      transparent={true}
+      visible={modalVisible}
+      onRequestClose={() => setModalVisible(false)}>
+      <View style={styles.modalOverlay}>
+        <View style={styles.modalContent}>
+          <View style={styles.modalHeader}>
+            <Text style={styles.modalTitle}>Hint</Text>
+            <TouchableOpacity
+              style={styles.closeButton}
+              onPress={() => setModalVisible(false)}>
+              <MaterialCommunityIcons name="close" size={24} color="#000" />
+            </TouchableOpacity>
+          </View>
+          <Text style={styles.hintText}>{currentHint}</Text>
+        </View>
+      </View>
+    </Modal>
+  );
+
+  if (isLoading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="#0074E4" />
+        <Text style={styles.loadingText}>Loading questions...</Text>
+      </View>
+    );
+  }
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.header}>
+        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+          <MaterialCommunityIcons name="arrow-left" size={24} color="White" />
+        </TouchableOpacity>
+        <Text style={styles.headerTitle}>Paper 1</Text>
+      </View>
+      <HintModal />
+      {allQuestions.length > 0 ? (
+        <FlatList
+          data={allQuestions}
+          renderItem={renderQuestion}
+          keyExtractor={(item, index) => `${item.id}-${index}`}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.listContainer}
+          ListFooterComponent={() => (
+            <View style={styles.footer}>
+              {isFetching && <ActivityIndicator size="large" color="#0074E4" />}
+            </View>
+          )}
+        />
+      ) : (
+        <View style={styles.loadingContainer}>
+          <Text style={styles.errorText}>No questions found.</Text>
+          <TouchableOpacity
+            style={styles.retryButton}
+            onPress={() => {
+              setPage(1);
+              fetchQuestions(1);
+            }}>
+            <Text style={styles.retryButtonText}>Retry</Text>
+          </TouchableOpacity>
+        </View>
+      )}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F5F7FA',
+  },
+  listContainer: {
+    padding: wp('2%'),
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: wp('4%'),
+    backgroundColor: '#0074E4',
+  },
+  headerTitle: {
+    fontSize: wp('5%'),
+    fontWeight: '600',
+    color: '#FFFFFF',
+    marginLeft: wp('30%'),
+    justifyContent: 'center',
+  },
+  questionContainer: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: wp('4%'),
+    padding: wp('4%'),
+    marginBottom: hp('2%'),
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  questionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: hp('2%'),
+  },
+  questionText: {
+    fontSize: wp('4.5%'),
+    color: '#2C3E50',
+    fontWeight: '600',
+    flex: 1,
+  },
+  hintButton: {
+    padding: wp('2%'),
+    borderRadius: wp('50%'),
+    backgroundColor: '#FFF9C4',
+  },
+  option: {
+    backgroundColor: '#F8F9FA',
+    borderRadius: wp('2%'),
+    marginVertical: hp('1%'),
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+    overflow: 'hidden',
+  },
+  optionContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: wp('3%'),
+  },
+  optionBadge: {
+    backgroundColor: '#E9ECEF',
+    borderRadius: wp('50%'),
+    width: wp('8%'),
+    height: wp('8%'),
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: wp('3%'),
+  },
+  optionBadgeText: {
+    color: '#495057',
+    fontWeight: '600',
+  },
+  optionText: {
+    color: '#495057',
+    fontSize: wp('4%'),
+    flex: 1,
+  },
+  selectedOption: {
+    backgroundColor: '#E3F2FD',
+    borderColor: '#2196F3',
+  },
+  correctOption: {
+    backgroundColor: '#E8F5E9',
+    borderColor: '#4CAF50',
+  },
+  answerDescription: {
+    marginTop: hp('2%'),
+    padding: wp('3%'),
+    backgroundColor: '#F8F9FA',
+    borderRadius: wp('2%'),
+  },
+  resultText: {
+    fontSize: wp('4%'),
+    fontWeight: '600',
+    marginBottom: hp('1%'),
+    marginLeft: 8,
+  },
+  correctText: {
+    color: '#4CAF50',
+  },
+  incorrectText: {
+    color: '#F44336',
+  },
+  descriptionText: {
+    color: '#6C757D',
+    fontSize: wp('3.8%'),
+    lineHeight: wp('5.5%'),
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalContent: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: wp('4%'),
+    padding: wp('5%'),
+    width: wp('90%'),
+    maxHeight: hp('60%'),
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: hp('2%'),
+  },
+  modalTitle: {
+    fontSize: wp('5%'),
+    fontWeight: '600',
+    color: '#2C3E50',
+  },
+  closeButton: {
+    padding: wp('2%'),
+  },
+  hintText: {
+    fontSize: wp('4%'),
+    color: '#495057',
+    lineHeight: wp('6%'),
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadingText: {
+    marginTop: hp('2%'),
+    color: '#6C757D',
+    fontSize: wp('4%'),
+  },
+  footer: {
+    padding: wp('4%'),
+    alignItems: 'center',
+  },
+  noMoreQuestionsText: {
+    color: 'black',
+    fontSize: wp('4%'),
+    fontWeight: '500',
+  },
+  errorText: {
+    color: '#F44336',
+    fontSize: wp('4%'),
+    textAlign: 'center',
+    marginBottom: hp('2%'),
+  },
+  retryButton: {
+    backgroundColor: '#0074E4',
+    paddingHorizontal: wp('6%'),
+    paddingVertical: hp('1.5%'),
+    borderRadius: wp('2%'),
+  },
+  retryButtonText: {
+    color: '#FFFFFF',
+    fontSize: wp('4%'),
+    fontWeight: '600',
+  },
+});
+
+export default Paper1;
