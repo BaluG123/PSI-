@@ -710,6 +710,7 @@ const styles = StyleSheet.create({
     fontSize: wp('5%'),
     fontWeight: '600',
     color: '#FFFFFF',
+    justifyContent: 'center',
   },
   questionContainer: {
     borderRadius: wp('4%'),

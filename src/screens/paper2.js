@@ -222,7 +222,7 @@ const Paper2 = ({navigation}) => {
           onPress={() => navigation.navigate('Home')}>
           <MaterialIcons name="arrow-back" size={24} color="white" />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Paper 1</Text>
+        <Text style={styles.headerTitle}>Paper 2</Text>
       </LinearGradient>
 
       <CustomModal />

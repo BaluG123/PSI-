@@ -1,1303 +1,1218 @@
 {
-    "questions": [
-      {
-        "level": 1,
-        "question": "What is the capital of India?",
-        "options": [
-          "Mumbai",
-          "New Delhi",
-          "Kolkata",
-          "Chennai"
-        ],
-        "correctAnswer": 1,
-        "hint": "It's located in the northern part of India",
-        "solution": "New Delhi is the capital of India, established as the capital in 1911."
-      },
-      {
-        "level": 2,
-        "question": "What is the chemical symbol for water?",
-        "options": [
-          "H2O",
-          "CO2",
-          "O2",
-          "N2"
-        ],
-        "correctAnswer": 0,
-        "hint": "It consists of two hydrogen atoms and one oxygen atom",
-        "solution": "The chemical symbol for water is H2O."
-      },
-      {
-        "level": 3,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "options": [
-          "Harper Lee",
-          "J.K. Rowling",
-          "George Orwell",
-          "Ernest Hemingway"
-        ],
-        "correctAnswer": 0,
-        "hint": "The author is known for this Pulitzer Prize-winning novel",
-        "solution": "Harper Lee wrote 'To Kill a Mockingbird'."
-      },
-      {
-        "level": 4,
-        "question": "What is the SI unit of electric current?",
-        "options": [
-          "Ampere",
-          "Volt",
-          "Ohm",
-          "Watt"
-        ],
-        "correctAnswer": 0,
-        "hint": "It is named after a French physicist",
-        "solution": "The SI unit of electric current is Ampere."
-      },
-      {
-        "level": 5,
-        "question": "What is the largest planet in our solar system?",
-        "options": [
-          "Earth",
-          "Mars",
-          "Jupiter",
-          "Saturn"
-        ],
-        "correctAnswer": 2,
-        "hint": "It is known for its Great Red Spot",
-        "solution": "Jupiter is the largest planet in our solar system."
-      },
-      {
-        "level": 6,
-        "question": "What is the purpose of a firewall in computer security?",
-        "options": [
-          "To encrypt data",
-          "To monitor network traffic",
-          "To block unauthorized access",
-          "To compress data"
-        ],
-        "correctAnswer": 2,
-        "hint": "It acts as a barrier to keep destructive elements out",
-        "solution": "A firewall is used to block unauthorized access to a network or computer system."
-      },
-      {
-        "level": 7,
-        "question": "Which of the following is a strong acid?",
-        "options": [
-          "Acetic Acid",
-          "Sulfuric Acid",
-          "Carbonic Acid",
-          "Formic Acid"
-        ],
-        "correctAnswer": 1,
-        "hint": "It is highly corrosive",
-        "solution": "Sulfuric Acid is a strong acid."
-      },
-      {
-        "level": 8,
-        "question": "What is the SI unit of force?",
-        "options": [
-          "Newton",
-          "Joule",
-          "Watt",
-          "Pascal"
-        ],
-        "correctAnswer": 0,
-        "hint": "It is named after Sir Isaac Newton",
-        "solution": "The SI unit of force is Newton."
-      },
-      {
-        "level": 9,
-        "question": "Which protocol is used for secure email transmission?",
-        "options": [
-          "SMTP",
-          "POP3",
-          "IMAP",
-          "SSL/TLS"
-        ],
-        "correctAnswer": 3,
-        "hint": "It encrypts email communications",
-        "solution": "SSL/TLS is used to encrypt email communications, providing secure transmission of emails between servers and clients."
-      },
-      {
-        "level": 10,
-        "question": "What is the purpose of normalization in database design?",
-        "options": [
-          "To increase data redundancy",
-          "To reduce data integrity",
-          "To eliminate data redundancy",
-          "To increase database size"
-        ],
-        "correctAnswer": 2,
-        "hint": "It organizes data efficiently",
-        "solution": "Normalization is used to organize data in a database efficiently and eliminate data redundancy while maintaining data integrity."
-      },
-      {
-        "level": 11,
-        "question": "Which layer of the OSI model handles routing?",
-        "options": [
-          "Transport Layer",
-          "Network Layer",
-          "Data Link Layer",
-          "Physical Layer"
-        ],
-        "correctAnswer": 1,
-        "hint": "It is responsible for packet forwarding",
-        "solution": "The Network Layer (Layer 3) is responsible for packet forwarding including routing through intermediate routers."
-      },
-      {
-        "level": 12,
-        "question": "What is the primary purpose of virtual memory in operating systems?",
-        "options": [
-          "To increase CPU speed",
-          "To extend physical memory using disk space",
-          "To improve graphics performance",
-          "To reduce power consumption"
-        ],
-        "correctAnswer": 1,
-        "hint": "It uses hard disk space to extend RAM",
-        "solution": "Virtual memory uses hard disk space to extend the available RAM, allowing more programs to run simultaneously."
-      },
-      {
-        "level": 13,
-        "question": "Which HTTP method is idempotent?",
-        "options": [
-          "POST",
-          "GET",
-          "PATCH",
-          "DELETE"
-        ],
-        "correctAnswer": 1,
-        "hint": "Multiple identical requests should have the same effect as a single request",
-        "solution": "GET method is idempotent as multiple identical requests should have the same effect as a single request."
-      },
-      {
-        "level": 14,
-        "question": "What is the purpose of a primary key in a database?",
-        "options": [
-          "To encrypt data",
-          "To uniquely identify records",
-          "To compress data",
-          "To sort data"
-        ],
-        "correctAnswer": 1,
-        "hint": "It ensures data integrity and relationships",
-        "solution": "A primary key uniquely identifies each record in a database table, ensuring data integrity and relationships."
-      },
-      {
-        "level": 15,
-        "question": "Which data structure uses LIFO principle?",
-        "options": [
-          "Queue",
-          "Stack",
-          "Tree",
-          "Linked List"
-        ],
-        "correctAnswer": 1,
-        "hint": "Last In First Out",
-        "solution": "Stack follows Last In First Out (LIFO) principle where the last element added is the first one to be removed."
-      },
-      {
-        "level": 16,
-        "question": "What is the purpose of JWT (JSON Web Token)?",
-        "options": [
-          "Data encryption",
-          "User authentication",
-          "Database indexing",
-          "File compression"
-        ],
-        "correctAnswer": 1,
-        "hint": "It is used for securely transmitting information",
-        "solution": "JWT is used for securely transmitting information between parties as a JSON object, typically used for user authentication."
-      },
-      {
-        "level": 17,
-        "question": "What is the chemical symbol for gold?",
-        "options": [
-          "Au",
-          "Ag",
-          "Fe",
-          "Cu"
-        ],
-        "correctAnswer": 0,
-        "hint": "It is derived from the Latin word 'aurum'",
-        "solution": "The chemical symbol for gold is Au."
-      },
-      {
-        "level": 18,
-        "question": "Which gas is responsible for the greenhouse effect?",
-        "options": [
-          "Oxygen",
-          "Nitrogen",
-          "Carbon Dioxide",
-          "Hydrogen"
-        ],
-        "correctAnswer": 2,
-        "hint": "It traps heat in the atmosphere",
-        "solution": "Carbon Dioxide is responsible for the greenhouse effect."
-      },
-      {
-        "level": 19,
-        "question": "Who is the author of 'The Great Gatsby'?",
-        "options": [
-          "F. Scott Fitzgerald",
-          "Ernest Hemingway",
-          "Mark Twain",
-          "J.D. Salinger"
-        ],
-        "correctAnswer": 0,
-        "hint": "The author is known for this classic American novel",
-        "solution": "F. Scott Fitzgerald is the author of 'The Great Gatsby'."
-      },
-      {
-        "level": 20,
-        "question": "Which is the largest ocean in the world?",
-        "options": [
-          "Atlantic Ocean",
-          "Indian Ocean",
-          "Pacific Ocean",
-          "Arctic Ocean"
-        ],
-        "correctAnswer": 2,
-        "hint": "It covers more than 30% of the Earth's surface",
-        "solution": "The Pacific Ocean is the largest ocean in the world."
-      },
-      {
-        "level": 21,
-        "question": "What does CPU stand for?",
-        "options": [
-          "Central Processing Unit",
-          "Central Process Unit",
-          "Computer Personal Unit",
-          "Central Processor Unit"
-        ],
-        "correctAnswer": 0,
-        "hint": "It is the electronic circuit that executes instructions",
-        "solution": "CPU stands for Central Processing Unit."
-      },
-      {
-        "level": 22,
-        "question": "Which of the following is a type of computer memory?",
-        "options": [
-          "RAM",
-          "ROM",
-          "Cache",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "It includes different types of storage",
-        "solution": "RAM, ROM, and Cache are all types of computer memory."
-      },
-      {
-        "level": 23,
-        "question": "Which protocol is used for transferring files over a network?",
-        "options": [
-          "HTTP",
-          "FTP",
-          "SMTP",
-          "TCP"
-        ],
-        "correctAnswer": 1,
-        "hint": "It stands for File Transfer Protocol",
-        "solution": "FTP (File Transfer Protocol) is used for transferring files over a network."
-      },
-      {
-        "level": 24,
-        "question": "What is the main cause of water pollution?",
-        "options": [
-          "Industrial waste",
-          "Sewage disposal",
-          "Agricultural runoff",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "It includes various sources of pollution",
-        "solution": "Industrial waste, sewage disposal, and agricultural runoff are all main causes of water pollution."
-      },
-      {
-        "level": 25,
-        "question": "What is the SI unit of power?",
-        "options": [
-          "Watt",
-          "Joule",
-          "Newton",
-          "Pascal"
-        ],
-        "correctAnswer": 0,
-        "hint": "It is named after James Watt",
-        "solution": "The SI unit of power is Watt."
-      },
-      {
-        "level": 26,
-        "question": "Which of the following is a weak acid?",
-        "options": [
-          "Hydrochloric Acid",
-          "Sulfuric Acid",
-          "Acetic Acid",
-          "Nitric Acid"
-        ],
-        "correctAnswer": 2,
-        "hint": "It is found in vinegar",
-        "solution": "Acetic Acid is a weak acid."
-      },
-      {
-        "level": 27,
-        "question": "Who is the current President of India?",
-        "options": [
-          "Narendra Modi",
-          "Ram Nath Kovind",
-          "Droupadi Murmu",
-          "Pranab Mukherjee"
-        ],
-        "correctAnswer": 2,
-        "hint": "The current President is the first tribal President of India",
-        "solution": "Droupadi Murmu is the current President of India."
-      },
-      {
-        "level": 28,
-        "question": "Which is the longest river in India?",
-        "options": [
-          "Ganga",
-          "Yamuna",
-          "Brahmaputra",
-          "Godavari"
-        ],
-        "correctAnswer": 0,
-        "hint": "It is considered the most sacred river by Hindus",
-        "solution": "Ganga is the longest river in India."
-      },
-      {
-        "level": 29,
-        "question": "What is the purpose of annealing in metallurgy?",
-        "options": [
-          "To increase hardness",
-          "To reduce internal stresses",
-          "To increase brittleness",
-          "To decrease ductility"
-        ],
-        "correctAnswer": 1,
-        "hint": "It's a heat treatment process that affects material properties",
-        "solution": "Annealing is a heat treatment process used to reduce internal stresses, soften material, and improve ductility."
-      },
-      {
-        "level": 30,
-        "question": "Which type of bearing is most suitable for thrust loads?",
-        "options": [
-          "Ball bearing",
-          "Roller bearing",
-          "Thrust bearing",
-          "Plain bearing"
-        ],
-        "correctAnswer": 2,
-        "hint": "These bearings are specifically designed for axial loads",
-        "solution": "Thrust bearings are specifically designed to handle axial loads or thrust loads in mechanical applications."
-      },
-      {
-        "level": 31,
-        "question": "What is the function of a surge tank in hydroelectric power plants?",
-        "options": [
-          "To store water",
-          "To control water hammer effect",
-          "To generate additional power",
-          "To filter water"
-        ],
-        "correctAnswer": 1,
-        "hint": "It helps prevent damage from sudden pressure changes",
-        "solution": "A surge tank is used to control water hammer effect by absorbing sudden pressure changes in the penstock."
-      },
-      {
-        "level": 32,
-        "question": "Which law states that the induced EMF is proportional to the rate of change of magnetic flux?",
-        "options": [
-          "Ohm's Law",
-          "Faraday's Law",
-          "Kirchhoff's Law",
-          "Lenz's Law"
-        ],
-        "correctAnswer": 1,
-        "hint": "This fundamental law explains electromagnetic induction",
-        "solution": "Faraday's Law states that the induced EMF is proportional to the rate of change of magnetic flux linkage."
-      },
-      {
-        "level": 33,
-        "question": "What is the purpose of a draft tube in a reaction turbine?",
-        "options": [
-          "To increase pressure head",
-          "To reduce friction losses",
-          "To recover kinetic energy",
-          "To control water flow"
-        ],
-        "correctAnswer": 2,
-        "hint": "It helps improve turbine efficiency",
-        "solution": "A draft tube recovers kinetic energy at turbine exit by converting velocity head into pressure head."
-      },
-      {
-        "level": 34,
-        "question": "In transformers, which type of losses are reduced by using laminated core?",
-        "options": [
-          "Copper losses",
-          "Eddy current losses",
-          "Hysteresis losses",
-          "Friction losses"
-        ],
-        "correctAnswer": 1,
-        "hint": "These losses are caused by induced currents in the core",
-        "solution": "Laminated core reduces eddy current losses by providing high resistance path to induced currents."
-      },
-      {
-        "level": 35,
-        "question": "What is the function of a commutator in DC machines?",
-        "options": [
-          "Speed control",
-          "Power control",
-          "Mechanical to electrical conversion",
-          "AC to DC conversion"
-        ],
-        "correctAnswer": 3,
-        "hint": "It's essential for DC output in generators",
-        "solution": "A commutator converts AC voltage induced in armature to DC voltage at the output terminals."
-      },
-      {
-        "level": 36,
-        "question": "Which type of stress is maximum at the neutral axis of a beam?",
-        "options": [
-          "Tensile stress",
-          "Compressive stress",
-          "Shear stress",
-          "No stress"
-        ],
-        "correctAnswer": 2,
-        "hint": "Consider the stress distribution across beam section",
-        "solution": "Shear stress is maximum at the neutral axis while bending stress is zero at this location."
-      },
-      {
-        "level": 37,
-        "question": "What is the purpose of capacitor banks in power systems?",
-        "options": [
-          "Voltage regulation",
-          "Power factor improvement",
-          "Frequency control",
-          "Speed control"
-        ],
-        "correctAnswer": 1,
-        "hint": "They help reduce reactive power demand",
-        "solution": "Capacitor banks are used for power factor improvement by supplying reactive power locally."
-      },
-      {
-        "level": 38,
-        "question": "Which semiconductor device is used for voltage regulation?",
-        "options": [
-          "Diode",
-          "Transistor",
-          "Zener diode",
-          "TRIAC"
-        ],
-        "correctAnswer": 2,
-        "hint": "It operates in reverse breakdown region",
-        "solution": "Zener diode is used for voltage regulation as it maintains constant voltage in reverse breakdown region."
-      },
-      {
-        "level": 39,
-        "question": "What is the purpose of slip rings in electrical machines?",
-        "options": [
-          "Speed control",
-          "Power transfer to rotor",
-          "Direction control",
-          "Torque control"
-        ],
-        "correctAnswer": 1,
-        "hint": "They provide electrical connection to rotating parts",
-        "solution": "Slip rings are used to transfer power to or from the rotor circuit in electrical machines."
-      },
-      {
-        "level": 40,
-        "question": "Which welding process uses non-consumable electrode?",
-        "options": [
-          "MIG welding",
-          "TIG welding",
-          "Stick welding",
-          "Submerged arc welding"
-        ],
-        "correctAnswer": 1,
-        "hint": "It uses tungsten electrode",
-        "solution": "TIG (Tungsten Inert Gas) welding uses non-consumable tungsten electrode."
-      },
-      {
-        "level": 41,
-        "question": "What is the function of a governor in steam turbines?",
-        "options": [
-          "Speed control",
-          "Pressure control",
-          "Temperature control",
-          "Flow control"
-        ],
-        "correctAnswer": 0,
-        "hint": "It maintains constant speed under varying loads",
-        "solution": "Governor maintains constant speed by controlling steam flow according to load variations."
-      },
-      {
-        "level": 42,
-        "question": "Which law is used to analyze unbalanced forces in trusses?",
-        "options": [
-          "Newton's Law",
-          "Hooke's Law",
-          "Lami's Theorem",
-          "Pascal's Law"
-        ],
-        "correctAnswer": 2,
-        "hint": "It deals with three forces in equilibrium",
-        "solution": "Lami's Theorem is used to analyze three forces in equilibrium in trusses and other structures."
-      },
-      {
-        "level": 43,
-        "question": "What is the purpose of thermostatic expansion valve in refrigeration systems?",
-        "options": [
-          "Compress refrigerant",
-          "Control refrigerant flow",
-          "Cool refrigerant",
-          "Filter refrigerant"
-        ],
-        "correctAnswer": 1,
-        "hint": "It regulates flow based on temperature",
-        "solution": "Thermostatic expansion valve controls refrigerant flow based on evaporator outlet temperature."
-      },
-      {
-        "level": 44,
-        "question": "What is the principle behind NPSH (Net Positive Suction Head) in centrifugal pumps?",
-        "options": [
-          "Pressure differential",
-          "Cavitation prevention",
-          "Flow control",
-          "Speed regulation"
-        ],
-        "correctAnswer": 1,
-        "hint": "It's related to vapor pressure and cavitation",
-        "solution": "NPSH is the minimum pressure required at pump suction to prevent cavitation, ensuring proper pump operation."
-      },
-      {
-        "level": 45,
-        "question": "In power transmission lines, what is the primary purpose of Bundle conductors?",
-        "options": [
-          "Reduce line cost",
-          "Decrease corona loss",
-          "Increase current capacity",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "They serve multiple purposes in high voltage transmission",
-        "solution": "Bundle conductors reduce corona loss, increase current carrying capacity, and can be more economical in high voltage transmission."
-      },
-      {
-        "level": 46,
-        "question": "What is the significance of Schmidt number in fluid mechanics?",
-        "options": [
-          "Ratio of momentum to mass diffusivity",
-          "Ratio of heat to mass transfer",
-          "Ratio of inertial to viscous forces",
-          "Ratio of buoyancy to viscous forces"
-        ],
-        "correctAnswer": 0,
-        "hint": "It relates to diffusion processes",
-        "solution": "Schmidt number is the ratio of momentum diffusivity to mass diffusivity, important in mass transfer calculations."
-      },
-      {
-        "level": 47,
-        "question": "Which type of gear is used when shafts are non-parallel and non-intersecting?",
-        "options": [
-          "Spur gear",
-          "Helical gear",
-          "Worm gear",
-          "Bevel gear"
-        ],
-        "correctAnswer": 2,
-        "hint": "These gears provide high reduction ratios",
-        "solution": "Worm gears are used for non-parallel, non-intersecting shafts and provide high reduction ratios."
-      },
-      {
-        "level": 48,
-        "question": "What is the function of a Buchholz relay in transformers?",
-        "options": [
-          "Voltage regulation",
-          "Temperature control",
-          "Fault detection",
-          "Current control"
-        ],
-        "correctAnswer": 2,
-        "hint": "It protects against internal faults",
-        "solution": "Buchholz relay detects faults in oil-immersed transformers by monitoring gas accumulation and oil flow."
-      },
-      {
-        "level": 49,
-        "question": "Which modulation technique is used in GSM mobile communications?",
-        "options": [
-          "QPSK",
-          "GMSK",
-          "QAM",
-          "FSK"
-        ],
-        "correctAnswer": 1,
-        "hint": "It's a modified form of MSK",
-        "solution": "GMSK (Gaussian Minimum Shift Keying) is used in GSM for its spectral efficiency and constant envelope."
-      },
-      {
-        "level": 50,
-        "question": "What is the purpose of Reheating in steam power plants?",
-        "options": [
-          "Increase thermal efficiency",
-          "Reduce steam wetness",
-          "Decrease turbine blade erosion",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "It serves multiple purposes in the cycle",
-        "solution": "Reheating increases thermal efficiency, reduces steam wetness, and prevents turbine blade erosion."
-      },
-      {
-        "level": 51,
-        "question": "In HVDC transmission, what is the purpose of harmonic filters?",
-        "options": [
-          "Voltage control",
-          "Current control",
-          "Remove AC components",
-          "Remove harmonic components"
-        ],
-        "correctAnswer": 3,
-        "hint": "They deal with converter-generated harmonics",
-        "solution": "Harmonic filters in HVDC systems remove harmonic components generated by converters to improve power quality."
-      },
-      {
-        "level": 52,
-        "question": "What is the principle of Electromagnetic Flow Meter?",
-        "options": [
-          "Faraday's law",
-          "Ampere's law",
-          "Lenz's law",
-          "Coulomb's law"
-        ],
-        "correctAnswer": 0,
-        "hint": "It uses induced voltage principle",
-        "solution": "Electromagnetic Flow Meters work on Faraday's law of electromagnetic induction to measure flow rate."
-      },
-      {
-        "level": 53,
-        "question": "Which semiconductor device is used for four-quadrant operation in power electronics?",
-        "options": [
-          "SCR",
-          "TRIAC",
-          "MOSFET",
-          "GTO"
-        ],
-        "correctAnswer": 1,
-        "hint": "It can conduct in both directions",
-        "solution": "TRIAC (Triode for Alternating Current) allows current flow in both directions and is used for four-quadrant operation."
-      },
-      {
-        "level": 54,
-        "question": "What is the significance of Critical Path Method (CPM) in project management?",
-        "options": [
-          "Resource allocation",
-          "Time management",
-          "Cost control",
-          "Quality control"
-        ],
-        "correctAnswer": 1,
-        "hint": "It identifies the longest duration path",
-        "solution": "CPM identifies the sequence of activities that determines the minimum project completion time."
-      },
-      {
-        "level": 55,
-        "question": "In induction motors, what causes crawling?",
-        "options": [
-          "Voltage fluctuations",
-          "Harmonic windings",
-          "Rotor resistance",
-          "Static friction"
-        ],
-        "correctAnswer": 1,
-        "hint": "It's related to harmonic magnetic fields",
-        "solution": "Crawling in induction motors is caused by harmonic magnetic fields due to non-uniform air gap or winding distribution."
-      },
-      {
-        "level": 56,
-        "question": "What is the purpose of Surge Impedance Loading (SIL) in transmission lines?",
-        "options": [
-          "Maximum power transfer",
-          "Voltage regulation",
-          "Stability limit",
-          "Current control"
-        ],
-        "correctAnswer": 2,
-        "hint": "It's related to natural loading",
-        "solution": "SIL represents the natural loading of a transmission line where reactive power requirements are balanced."
-      },
-      {
-        "level": 57,
-        "question": "Which principle is used in Strain Gauge pressure sensors?",
-        "options": [
-          "Piezoelectric effect",
-          "Piezoresistive effect",
-          "Hall effect",
-          "Seebeck effect"
-        ],
-        "correctAnswer": 1,
-        "hint": "It involves resistance change with deformation",
-        "solution": "Strain Gauges use the piezoresistive effect where electrical resistance changes with mechanical deformation."
-      },
-      {
-        "level": 58,
-        "question": "What is the function of a Synchro in control systems?",
-        "options": [
-          "Speed measurement",
-          "Position transmission",
-          "Torque control",
-          "Voltage regulation"
-        ],
-        "correctAnswer": 1,
-        "hint": "It's used for angular position data",
-        "solution": "Synchros are used for precise transmission of angular position information between remote locations."
-      },
-      {
-        "level": 59,
-        "question": "Which type of maintenance strategy uses condition monitoring?",
-        "options": [
-          "Breakdown maintenance",
-          "Preventive maintenance",
-          "Predictive maintenance",
-          "Corrective maintenance"
-        ],
-        "correctAnswer": 2,
-        "hint": "It involves monitoring equipment condition",
-        "solution": "Predictive maintenance uses condition monitoring to predict equipment failure and schedule maintenance accordingly."
-      },
-      {
-        "level": 60,
-        "question": "What is the purpose of Economic Load Dispatch in power systems?",
-        "options": [
-          "Minimize transmission losses",
-          "Optimize generation costs",
-          "Control frequency",
-          "Regulate voltage"
-        ],
-        "correctAnswer": 1,
-        "hint": "It deals with cost optimization",
-        "solution": "Economic Load Dispatch optimizes the distribution of power among generating units to minimize total generation cost."
-      },
-      {
+  "questions": [
+    {
+      "category": "ಸಾಮಾನ್ಯ ಜ್ಞಾನ (General Knowledge)",
+      "level": 1,
+      "question": "ಭಾರತದ ರಾಷ್ಟ್ರೀಯ ಚಿಹ್ನೆ ಯಾವುದು?",
+      "options": ["ಅಸೋಕ ಚಕ್ರ", "ರಾಜಧಾನಿ ಚಿಹ್ನೆ", "ಭಾರತ ಮಾತೆ", "ಗಾಂಧೀ ಚಿಹ್ನೆ"],
+      "correctAnswer": 0,
+      "hint": "ಭಾರತೀಯ ಸಂವಿಧಾನದಲ್ಲಿ ಇದನ್ನು ಉಲ್ಲೇಖಿಸಲಾಗಿದೆ",
+      "solution": "ಅಸೋಕ ಚಕ್ರವು ಭಾರತದ ರಾಷ್ಟ್ರೀಯ ಚಿಹ್ನೆಯಾಗಿದ್ದು, ಇದನ್ನು ಸಾರಿಗೆ ಚಕ್ರ ಎಂದೂ ಕರೆಯಲಾಗುತ್ತದೆ"
+    },
+    {
+      "category": "ಭಾರತೀಯ ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿ (Indian History and Culture)",
+      "level": 2,
+      "question": "ಭಾರತದ ಪ್ರಥಮ ಪ್ರಧಾನ ಮಂತ್ರಿ ಯಾರು?",
+      "options": [
+        "ಮಹಾತ್ಮಾ ಗಾಂಧಿ",
+        "ಜವಾಹರಲಾಲ್ ನೆಹರು",
+        "ಲಾಲ್ ಬಹಾದೂರ್ ಶಾಸ್ತ್ರಿ",
+        "ಸರ್ ಎಂ.ವಿಶ್ವೇಶ್ವರಯ್ಯ"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಈ ವ್ಯಕ್ತಿಯು ಭಾರತ ಸ್ವಾತಂತ್ರ್ಯ ಹೋರಾಟದ ಪ್ರಮುಖ ನಾಯಕ",
+      "solution": "ಜವಾಹರಲಾಲ್ ನೆಹರು 1947ರಿಂದ 1964ರ ವರೆಗೆ ಭಾರತದ ಪ್ರಥಮ ಪ್ರಧಾನ ಮಂತ್ರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಿದ್ದಾರೆ"
+    },
+    {
+      "category": "ಕರ್ನಾಟಕ ರಾಜ್ಯ ಇತಿಹಾಸ (Karnataka State History)",
+      "level": 3,
+      "question": "ಕರ್ನಾಟಕ ರಾಜ್ಯ ಸ್ಥಾಪನೆಯಾದ ದಿನಾಂಕ?",
+      "options": [
+        "1 ನವೆಂಬರ್ 1956",
+        "1 ನವೆಂಬರ್ 1960",
+        "1 ನವೆಂಬರ् 1973",
+        "1 ನವೆಂಬರ್ 1980"
+      ],
+      "correctAnswer": 0,
+      "hint": "ಮೈಸೂರು ರಾಜ್ಯ ಮತ್ತು ಇತರ ಭಾಗಗಳ ಏಕೀಕರಣದ ನಂತರ",
+      "solution": "1 ನವೆಂಬರ್ 1956ರಂದು ಕನ್ನಡ ಭಾಷಿಗರ ಆಧಾರದ ಮೇಲೆ ಕರ್ನಾಟಕ ರಾಜ್ಯ ಸ್ಥಾಪಿಸಲಾಯಿತು"
+    },
+    {
+      "category": "ರಾಷ್ಟ್ರೀಯ ಚಳವಳಿಗಳು (National Movements)",
+      "level": 4,
+      "question": "ಭಾರತ ಬಂಧನ್ ಆಂದೋಲನ ಯಾವ ವರ್ಷದಲ್ಲಿ ಆರಂಭಗೊಂಡಿತು?",
+      "options": ["1905", "1915", "1920", "1930"],
+      "correctAnswer": 0,
+      "hint": "ಬ�ंಗಾಳ ವಿभಜನೆಯ ವಿರೋಧದಲ್ಲಿ ಆರಂಭಗೊಂಡಿತು",
+      "solution": "1905ರಲ್ಲಿ ಲಾರ್ಡ್ ಕರ್ಝನ್ ನ ಬಂಗಾಳ ವಿಭಜನೆಯ ವಿರೋಧದಲ್ಲಿ ಭಾರತ ಬಂಧನ್ ಆಂದೋಲನ ಆರಂಭಗೊಂಡಿತು"
+    },
+    {
+      "category": "ಜಾಗತಿಕ ಇತಿಹಾಸ (World History)",
+      "level": 5,
+      "question": "ಮೊದಲ ಜಾಗತಿಕ ಯುದ್ಧ ಯಾವ ವರ್ಷಗಳಲ್ಲಿ ನಡೆಯಿತು?",
+      "options": ["1914-1918", "1939-1945", "1905-1910", "1920-1925"],
+      "correctAnswer": 0,
+      "hint": "ಇದನ್ನು 'ಮಹಾ ಯುದ್ಧ' ಎಂದೂ ಕರೆಯಲಾಗುತ್ತದೆ",
+      "solution": "1914ರಿಂದ 1918ರ ವರೆಗೆ ಮೊದಲ ಜಾಗತಿಕ ಯುದ್ಧ ನಡೆಯಿತು"
+    },
+    {
+      "category": "ಪ್ರಸ್ತುತ ಘಟನೆಗಳು (Current Affairs)",
+      "level": 6,
+      "question": "ಭಾರತದ 15ನೇ ಅಧ್ಯಕ್ಷ ಯಾರು?",
+      "options": [
+        "ರಾಮನಾಥ್ ಕೋವಿಂದ್",
+        "ದ್ರೌಪದಿ ಮುರ್ಮು",
+        "ಪ್ರಣವ್ ಮುಖರ್ಜಿ",
+        "ಎಸ್.ಎಂ. ಕೃಷ್ಣ"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಭಾರತದ ಮೊದಲ ಆದಿವಾಸಿ ಮಹಿಳಾ ಅಧ್ಯಕ್ಷೆ",
+      "solution": "ದ್ರೌಪದಿ ಮುರ್ಮು 2022ರಲ್ಲಿ ಭಾರತದ 15ನೇ ಅಧ್ಯಕ್ಷೆಯಾಗಿ ಅಧಿಷ್ಠಾನ ವಹಿಸಿದ್ದಾರೆ"
+    },
+    {
+      "category": "ರಾಷ್ಟ್ರೀಯ ಮತ್ತು ಅಂತಾರಾಷ್ಟ್ರೀಯ ಘಟನೆಗಳು (National and International Events)",
+      "level": 7,
+      "question": "ಯುಎನ್ ಸಂಸ್ಥೆಯ ಮಹಾಸಭೆಯಲ್ಲಿ ಭಾರತ ಯಾವ ಬಾಂಧವ್ಯ ಸಂಘಟನೆಯ ಸದಸ್ಯನಾಗಿದೆ?",
+      "options": ["ಬ್ರಿಕ್ಸ್", "ಎಸ್.ಸಿ.ಒ", "ಜಿ-20", "ಒಪೆಕ್"],
+      "correctAnswer": 2,
+      "hint": "ಇದು ಪ್ರಮುಖ ಆರ್ಥಿಕ ಮಹಾಶಕ್ತಿಗಳ ಸಮೂಹ",
+      "solution": "ಜಿ-20 ಒಂಬತ್ತು ಮಹಾಶಕ್ತಿಗಳ ಸಮೂಹ, ಇದರಲ್ಲಿ ಭಾರತವು 2023ರಲ್ಲಿ ಅಧ್ಯಕ್ಷತೆ ವಹಿಸಿಕೊಂಡಿತ್ತು"
+    },
+    {
+      "category": "ಕ್ರೀಡೆ (Sports)",
+      "level": 8,
+      "question": "2023ರಲ್ಲಿ ಏಷ್ಯಾ ಕಪ್ ಕ್ರಿಕೆಟ್ ಟೂರ್ನಮೆಂಟ್ ಯಾರು ಗೆದ್ದರು?",
+      "options": ["ಭಾರತ", "ಪಾಕಿಸ್ತಾನ್", "ಶ್ರೀಲಂಕಾ", "ಬಾಂಗ್ಲಾದೇಶ"],
+      "correctAnswer": 0,
+      "hint": "ಭಾರತ ಕ್ರಿಕೆಟ್ ತಂಡ ಸಾಕಷ್ಟು ಶಕ್ತಿಯನ್ನು ಪ್ರದರ್ಶಿಸಿತ್ತು",
+      "solution": "ಭಾರತ 2023ರ ಏಷ್ಯಾ ಕಪ್ ಕ್ರಿಕೆಟ್ ಟೂರ್ನಮೆಂಟ್ ಗೆದ್ದಿದ್ದು, ಫೈನಲ್ಲಿ ಶ್ರೀಲಂಕಾವನ್ನು ಸೋಲಿಸಿತ್ತು"
+    },
+    {
+      "category": "ಪುರಸ್ಕಾರಗಳು ಮತ್ತು ಗೌರವಗಳು (Awards and Honors)",
+      "level": 9,
+      "question": "ಭಾರತದ ಅತ್ಯೋಚ್ಚ ಪ್ರಶಸ್ತಿ 'ಭಾರತ ರತ್ನ' ಯಾರಿಗೆ ನೀಡಲಾಗಿದೆ?",
+      "options": [
+        "ಎ.ಪಿ.ಜೆ. ಅಬ್ದುಲ್ ಕಲಾಂ",
+        "ಸಚಿನ್ ತೆಂಡೂಲ್ಕರ್",
+        "ಲತಾ ಮಂಗೇಶ್ಕರ್",
+        "ಎಂ.ಎಸ್. ಧೋನಿ"
+      ],
+      "correctAnswer": 2,
+      "hint": "ಈ ವ್ಯಕ್ತಿ ಭಾರತೀಯ ಚಿತ್ರ ಮತ್ತು ಸಂಗೀತ ಕ್ಷೇತ್ರಕ್ಕೆ ಹೆಸರಾಗಿದ್ದಾರೆ",
+      "solution": "ಲತಾ ಮಂಗೇಶ್ಕರ್ ಅವರಿಗೆ 1999ರಲ್ಲಿ ಭಾರತ ರತ್ನ ಪ್ರಶಸ್ತಿ ನೀಡಲಾಯಿತು"
+    },
+    {
+      "category": "ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ (Science and Technology Developments)",
+      "level": 10,
+      "question": "ಚಂದ್ರಯಾನ-3 ಯೋಜನೆಯಲ್ಲಿ ಚಂದ್ರನ ಮೇಲೆ ಯಶಸ್ವಿಯಾಗಿ ಇಳಿದ ಭಾರತೀಯ ರೋವರ್ ಹೆಸರೇನು?",
+      "options": ["ಯಾಂಗ್", "ಪ್ರಜ್ಞಾನ್", "ಚಂದ್ರ", "ಆರ್ಟಮಿಸ್"],
+      "correctAnswer": 1,
+      "hint": "ಈ ಯಾನ ಭಾರತದ ಅಂತರಿಕ್ಷ ವಿಜ್ಞಾನ ಸಂಶೋಧನೆಯ ಮಹತ್ವಪೂರ್ಣ ಘಟ್ಟ",
+      "solution": "ಪ್ರಜ್ಞಾನ್ ಚಂದ್ರಯಾನ-3 ಯೋಜನೆಯ ರೋವರ್ ಆಗಿತ್ತು, ಇದು 2023ರಲ್ಲಿ ಯಶಸ್ವಿಯಾಗಿ ಚಂದ್ರನ ಮೇಲೆ ಇಳಿಯಿತು"
+    },
+    {
+      "category": "ಭಾರತೀಯ ರಾಜಧಾನಿ ಮತ್ತು ಆಡಳಿತ (Indian Polity and Governance)",
+      "level": 11,
+      "question": "ಭಾರತ ಸಂವಿಧಾನ ಯಾವ ದಿನಾಂಕ ಜಾರಿಗೆ ಬಂದಿತು?",
+      "options": [
+        "15 ಆಗಸ್ಟ್ 1947",
+        "26 ಜನವರಿ 1950",
+        "15 ಆಗಸ್ಟ್ 1950",
+        "26 ಜನವರಿ 1947"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಇದನ್ನು 'ಗಣರಾಜ್ಯ ದಿನ' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ",
+      "solution": "26 ಜನವರಿ 1950ರಂದು ಭಾರತ ಸಂವಿಧಾನ ಜಾರಿಗೆ ಬಂದಿತು ಮತ್ತು ಭಾರತವು ಸ್ವಾಯತ್ತ ಗಣರಾಜ್ಯವಾಯಿತು"
+    },
+    {
+      "category": "ಮೌಲಿಕ ಹಕ್ಕುಗಳು (Fundamental Rights)",
+      "level": 12,
+      "question": "ಭಾರತ ಸಂವಿಧಾನ ಎಷ್ಟು ಮೌಲಿಕ ಹಕ್ಕುಗಳನ್ನು ಖಾತ್ರಿ ಪಡಿಸಿದೆ?",
+      "options": ["4", "5", "6", "7"],
+      "correctAnswer": 2,
+      "hint": "ಇವುಗಳನ್ನು ಭಾಗ III ರಲ್ಲಿ ವಿವರಿಸಲಾಗಿದೆ",
+      "solution": "ಭಾರತ ಸಂವಿಧಾನ 6 ಮೌಲಿಕ ಹಕ್ಕುಗಳನ್ನು ಖಾತ್ರಿ ಪಡಿಸಿದೆ: ಸಮಾನತೆ, ಸ್ವಾತಂತ್ರ್ಯ, ಶೋಷಣೆ ವಿರೋಧಿ, ಧಾರ್ಮಿಕ ಸ್ವಾತಂತ್ರ್ಯ, ಶಿಕ್ಷಣ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಹಕ್ಕುಗಳು"
+    },
+    {
+      "category": "General Knowledge",
+      "level": 13,
+      "question": "ಭಾರತದ ರಾಷ್ಟ್ರೀಯ ಚಿಹ್ನೆಯಲ್ಲಿ ಎಷ್ಟು ಸಿಂಹಗಳಿವೆ?",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": 1,
+      "hint": "ಇದನ್ನು ಅಶೋಕ ಸ್ಂಭದಿಂದ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ",
+      "solution": "ಭಾರತದ ರಾಷ್ಟ್ರೀಯ ಚಿಹ್ನೆಯಲ್ಲಿ 2 ಸಿಂಹಗಳಿವೆ"
+    },
+    {
+      "category": "Indian History and Culture",
+      "level": 14,
+      "question": "ಮೊಗಲ್ ಚಕ್ರವರ್ತಿ ಅಕ್ಬರ್ ಯಾವ ಬಣ್ಣವನ್ನು ಹೆಚ್ಚಿಗೆ ಬೆಂಬಲಿಸಿದನು?",
+      "options": [
+        "ಹಿಂದೂ ಧರ್ಮ",
+        "ಇಸ್ಲಾಂ ಧರ್ಮ",
+        "ಸಮಾನ ಧಾರ್ಮಿಕ ಸಹಿಷ್ಣುತೆ",
+        "ಬೌದ್ಧ ಧರ್ಮ"
+      ],
+      "correctAnswer": 2,
+      "hint": "ಅವನ ಧಾರ್ಮಿಕ ನೀತಿ 'ಸುಲಹ್-ಎ-ಕುಲ್' ಎಂದು ಕರೆಯಲ್ಪಡುತ್ತದೆ",
+      "solution": "ಅಕ್ಬರ್ ಸಮಾನ ಧಾರ್ಮಿಕ ಸಹಿಷ್ಣುತೆಯನ್ನು ಬೆಂಬಲಿಸಿದ ಮೊಗಲ್ ಚಕ್ರವರ್ತಿ"
+    },
+    {
+      "category": "Karnataka State History",
+      "level": 15,
+      "question": "ಯಾವ ಚಾಲುಕ್ಯ ಚಕ್ರವರ್ತಿಯನ್ನು 'ಕರ್ನಾಟಕ ಖಂಡಪರಾಕ್ರಮ' ಎಂದು ಕರೆಯಲಾಗುತ್ತಿತ್ತು?",
+      "options": [
+        "ಪುಲಿಕೇಶಿ II",
+        "ಸೋಮೇಶ್ವರ I",
+        "ಹೆಚ್ಚಳ್ಳ ಬೀಳ್ಳ",
+        "ರಾಜಾ ಕೃಷ್ಣ ಡೆಕ್ಕನ್"
+      ],
+      "correctAnswer": 0,
+      "hint": "ಇವರು 7ನೇ ಶತಮಾನದ ಮಹಾನ್ ಚಾಲುಕ್ಯ ನಾಯಕ",
+      "solution": "ಪುಲಿಕೇಶಿ II ಅವರನ್ನು 'ಕರ್ನಾಟಕ ಖಂಡಪರಾಕ್ರಮ' ಎಂದು ಕರೆಯಲಾಗುತ್ತಿತ್ತು"
+    },
+    {
+      "category": "National Movements",
+      "level": 16,
+      "question": "ಕ್ವಿಟ್ ಇಂಡಿಯಾ ಚಳವಳಿಯನ್ನು ಯಾವ ವರ್ಷ ಪ್ರಾರಂಭಿಸಲಾಯಿತು?",
+      "options": ["1940", "1942", "1944", "1946"],
+      "correctAnswer": 1,
+      "hint": "ಈ ಚಳವಳಿಯನ್ನು ಮಹಾತ್ಮಾ ಗಾಂಧೀಜಿ ನೇತೃತ್ವ ನೀಡಿದ್ದರು",
+      "solution": "ಕ್ವಿಟ್ ಇಂಡಿಯಾ ಚಳವಳಿಯನ್ನು 1942ರಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲಾಯಿತು"
+    },
+    {
+      "category": "World History",
+      "level": 17,
+      "question": "ಯಾವ ಯುದ್ಧ ನಂತರ ಸಂಯುಕ್ತ ರಾಷ್ಟ್ರ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಲಾಯಿತು?",
+      "options": [
+        "ಮೊದಲನೇ ಜಗತ್ತಿನ ಯುದ್ಧ",
+        "ಎರಡನೇ ಜಗತ್ತಿನ ಯುದ್ಧ",
+        "ಕೋರಿಯಾ ಯುದ್ಧ",
+        "ವಿಯೆಟ್ನಾಂ ಯುದ್ಧ"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಈ ಯುದ್ಧ 1939-1945 ರಲ್ಲಿ ನಡೆಯಿತು",
+      "solution": "ಎರಡನೇ ಜಗತ್ತಿನ ಯುದ್ಧ ನಂತರ 1945ರಲ್ಲಿ ಸಂಯುಕ್ತ ರಾಷ್ಟ್ರ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಲಾಯಿತು"
+    },
+    {
+      "category": "Current Affairs",
+      "level": 18,
+      "question": "2023ರಲ್ಲಿ ಯಾವ ದೇಶವು G20 ಅಧ್ಯಕ್ಷತೆಯನ್ನು ವಹಿಸಿಕೊಂಡಿತು?",
+      "options": ["ಅಮೇರಿಕಾ", "ಚೀನಾ", "ಭಾರತ", "ಜಪಾನ್"],
+      "correctAnswer": 2,
+      "hint": "ಈ ದೇಶವು ಗೊವಾದಲ್ಲಿ G20 ಶೃಂಗ ಸಮ್ಮೇಳನ ಹಮ್ಮಿಕೊಂಡಿತ್ತು",
+      "solution": "ಭಾರತವು 2023ರಲ್ಲಿ G20 ಅಧ್ಯಕ್ಷತೆಯನ್ನು ವಹಿಸಿಕೊಂಡಿತು"
+    },
+    {
+      "category": "Sports",
+      "level": 19,
+      "question": "2023ರಲ್ಲಿ ಏಕಾಂಗಿ ಕ್ರಿಕೆಟ್ ವಿಶ್ವಕಪ್ ಯಾವ ದೇಶದಲ್ಲಿ ಆಯೋಜಿಸಲಾಯಿತು?",
+      "options": ["ಭಾರತ", "ಇಂಗ್ಲೆಂಡ್", "ಆಸ್ಟ್ರೇಲಿಯಾ", "ಪಾಕಿಸ್ತಾನ"],
+      "correctAnswer": 0,
+      "hint": "ಈ ಟೂರ್ನಮೆಂಟ್ ಅನ್ನು ಅಕ್ಟೋಬರ್-ನವೆಂಬರ್ ನಲ್ಲಿ ಆಯೋಜಿಸಲಾಯಿತು",
+      "solution": "2023ರ ಏಕಾಂಗಿ ಕ್ರಿಕೆಟ್ ವಿಶ್ವಕಪ್ ಭಾರತದಲ್ಲಿ ಆಯೋಜಿಸಲಾಯಿತು"
+    },
+    {
+      "category": "Awards and Honors",
+      "level": 20,
+      "question": "2023ರಲ್ಲಿ ಯಾರಿಗೆ ನೋಬೆಲ್ ಪ್ರಶಸ್ತಿ ನೀಡಲಾಯಿತು?",
+      "options": [
+        "ಮಲಾಲಾ ಯೂಸಫ್‌ಜೈ",
+        "ಮಲಾಲಾ ಯೂಸಫ್‌ಜೈ",
+        "ಎಲೆನ್ ಸ್ಟೀಫನ್",
+        "ಅಬ್ದುಲ್ ಕಲಾಂ"
+      ],
+      "correctAnswer": 2,
+      "hint": "ಈ ವ್ಯಕ್ತಿ ಶಾಂತಿ ಹಾಗೂ ಮಾನವಾಧಿಕಾರ ಕ್ಷೇತ್ರಕ್ಕೆ ಸಂಬಂಧಿಸಿದ್ದಾರೆ",
+      "solution": "ಎಲೆನ್ ಸ್ಟೀಫನ್ ಅವರಿಗೆ 2023ರಲ್ಲಿ ನೋಬೆಲ್ ಪ್ರಶಸ್ತಿ ನೀಡಲಾಯಿತು"
+    },
+    {
+      "category": "Science and Technology Developments",
+      "level": 21,
+      "question": "ಆರ್ಟಿಫಿಷಿಯಲ್ ಇಂಟೆಲಿಜೆನ್ಸ್ (AI) ಯ ಯಾವ ಪ್ರಮುಖ ಮಾದರಿಯನ್ನು ಓಪನ್ AI ಬಿಡುಗಡೆ ಮಾಡಿದೆ?",
+      "options": ["ಸಿಸಿಪಿಟಿ-3", "ಸಿಸಿಪಿಟಿ-4", "ಸಿಸಿಪಿಟಿ-5", "ಚಾಟ್ GPT-4"],
+      "correctAnswer": 3,
+      "hint": "ಈ AI ಮಾದರಿಯಲ್ಲಿ ಸಂವಾದಾತ್ಮಕ ಮತ್ತು ರಚನಾತ್ಮಕ ಸಾಮರ್ಥ್ಯಗಳಿವೆ",
+      "solution": "ಓಪನ್ AI ಚಾಟ್ GPT-4 ಮಾದರಿಯನ್ನು ಬಿಡುಗಡೆ ಮಾಡಿದೆ"
+    },
+    {
+      "category": "Indian Polity and Governance",
+      "level": 22,
+      "question": "ಭಾರತೀಯ ಸಂವಿಧಾನ ಎಷ್ಟು ಅಧಿಕಾರಗಳನ್ನು ರಾಷ್ಟ್ರಪತಿಗೆ ನೀಡಿದೆ?",
+      "options": ["8", "10", "12", "14"],
+      "correctAnswer": 2,
+      "hint": "ಇವುಗಳಲ್ಲಿ ಕಾರ್ಯಪಾಲಕ, ನ್ಯಾಯಾಂಗ ಮತ್ತು ಶಿಷ್ಟಾಚಾರ ಸಂಬಂಧಿತ ಅಧಿಕಾರಗಳಿವೆ",
+      "solution": "ಭಾರತೀಯ ಸಂವಿಧಾನ ರಾಷ್ಟ್ರಪತಿಗೆ 12 ಮುಖ್ಯ ಅಧಿಕಾರಗಳನ್ನು ನೀಡಿದೆ"
+    },
+    {
+      "category": "Constitution of India",
+      "level": 23,
+      "question": "ಭಾರತ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದ ಮೌಲಿಕ ಕರ್ತವ್ಯಗಳನ್ನು ವಿವರಿಸುತ್ತದೆ?",
+      "options": ["ಅನುಚ್ಛೇದ 40", "ಅನುಚ್ಛೇದ 50", "ಅನುಚ್ಛೇದ 51A", "ಅನುಚ್ಛೇದ 60"],
+      "correctAnswer": 2,
+      "hint": "ಈ ಅನುಚ್ಛೇದವು 2002ರಲ್ಲಿ ಸಂಶೋಧಿಸಲಾಯಿತು",
+      "solution": "ಅನುಚ್ಛೇದ 51A ಭಾರತ ನಾಗರಿಕರ ಮೌಲಿಕ ಕರ್ತವ್ಯಗಳನ್ನು ವಿವರಿಸುತ್ತದೆ"
+    },
+    {
+      "category": "Logical Reasoning",
+      "level": 24,
+      "question": "ಈ ಸರಣಿಯಲ್ಲಿ ಮುಂದಿನ ಸಂಖ್ಯೆಯನ್ನು ಗುರುತಿಸಿ: 2, 6, 12, 20, 30, ?",
+      "options": ["40", "42", "44", "46"],
+      "correctAnswer": 1,
+      "hint": "ಪ್ರತಿ ಪಠ್ಯ ಸಂಖ್ಯೆಯ ಅಂತರ ಹೆಚ್ಚುತ್ತಾ ಹೋಗುತ್ತದೆ",
+      "solution": "ಸರಣಿಯ ಮಾದರಿ: 2, 6(+4), 12(+6), 20(+8), 30(+10), 42(+12)"
+    },
+    {
+      "category": "Quantitative Aptitude",
+      "level": 25,
+      "question": "ಒಂದು ವ್ಯಾಪಾರಸ್ಥ 10% ಲಾಭದಲ್ಲಿ ಒಂದು ವಸ್ತುವನ್ನು ಮಾರಿದ್ದಾರೆ. ಅವರ ಮೂಲ ವೆಚ್ಚ 5000 ರೂ. ಅವರ ಮಾರಾಟ ಬೆಲೆ ಎಷ್ಟಿರಬೇಕು?",
+      "options": ["5500 ರೂ.", "5450 ರೂ.", "5250 ರೂ.", "5750 ರೂ."],
+      "correctAnswer": 0,
+      "hint": "ಲಾಭ = ಮೂಲ ವೆಚ್ಚ × ಲಾಭ ಪ್ರಮಾಣ",
+      "solution": "ಮೂಲ ವೆಚ್ಚ = 5000 ರೂ., ಲಾಭ ಪ್ರಮಾಣ = 10%, ಮಾರಾಟ ಬೆಲೆ = 5500 ರೂ."
+    },
+    {
+      "category": "Mental Ability - Verbal Reasoning",
+      "level": 26,
+      "question": "ಈ ಪದಗುಚ್ಛಗಳಲ್ಲಿ ಯಾವ ಪದ ಇತರ ಪದಗಳಿಗಿಂತ ಭಿನ್ನವಾಗಿದೆ?",
+      "options": ["ಪುಸ್ತಕ", "ಪತ್ರಿಕೆ", "ಚಿಹ್ನೆ", "ಲೇಖನ"],
+      "correctAnswer": 2,
+      "hint": "ಒಂದು ಪದವು ಇತರ ಪದಗಳಿಗಿಂತ ಭಿನ್ನ ಸಂಕೇತ/ಅರ್ಥ ಹೊಂದಿದೆ",
+      "solution": "ಚಿಹ್ನೆ ಇತರ ಪದಗಳಿಗಿಂತ ಭಿನ್ನ, ಉಳಿದ ಪದಗಳೆಲ್ಲಾ ಓದಿಸುವ ವಿಷಯಗಳನ್ನು ಸೂಚಿಸುತ್ತವೆ"
+    },
+    {
+      "category": "ಸಾಮಾನ್ಯ ಜ್ಞಾನ",
+      "level": 27,
+      "question": "ಕರ್ನಾಟಕದ ರಾಜಧಾನಿ ಯಾವ ಪಟ್ಟಣ?",
+      "options": ["ಮೈಸೂರು", "ಬೆಂಗಳೂರು", "ಹುಬ್ಬಳ್ಳಿ", "ಮಂಗಳೂರು"],
+      "correctAnswer": 1,
+      "hint": "ಇದು ರಾಜ್ಯದ ಅತಿ ದೊಡ್ಡ ನಗರ",
+      "solution": "ಬೆಂಗಳೂರು ಕರ್ನಾಟಕ ರಾಜ್ಯದ ರಾಜಧಾನಿ ಮತ್ತು ಪ್ರಮುಖ ನಗರ"
+    },
+    {
+      "category": "ಭೌಗೋಳಿಕ ಜ್ಞಾನ",
+      "level": 28,
+      "question": "ಕರ್ನಾಟಕ ರಾಜ್ಯ ಯಾವ ದಿಕ್ಕಿನಲ್ಲಿ ಸಮುದ್ರ ಕಂಠೋಣವನ್ನು ಹೊಂದಿದೆ?",
+      "options": ["ಪೂರ್ವ", "ಪಶ್ಚಿಮ", "ಉತ್ತರ", "ದಕ್ಷಿಣ"],
+      "correctAnswer": 1,
+      "hint": "ಈ ಕಂಠೋಣವು ಅರೇಬಿಯನ್ ಸಮುದ್ರಕ್ಕೆ ಸಮೀಪ",
+      "solution": "ಕರ್ನಾಟಕ ರಾಜ್ಯವು ಪಶ್ಚಿಮ ಕಡೆಯಲ್ಲಿ ಸಮುದ್ರ ಕಂಠೋಣವನ್ನು ಹೊಂದಿದೆ"
+    },
+    {
+      "category": "ಕಾನೂನು ಮತ್ತು ಸಂವಿಧಾನ",
+      "level": 29,
+      "question": "ಭಾರತ ಸಂವಿಧಾನ ಯಾವ ಸಲಾಗಿ ಅಂಗೀಕಾರಗೊಂಡಿತು?",
+      "options": ["1947", "1950", "1952", "1949"],
+      "correctAnswer": 3,
+      "hint": "ಈ ವರ್ಷದಲ್ಲಿ ಸಂವಿಧಾನ ಸಭೆಯಿಂದ ಅಂಗೀಕಾರಗೊಂಡಿತು",
+      "solution": "ಭಾರತ ಸಂವಿಧಾನ 1949ರ 26 ನವೆಂಬರ್ ರಂದು ಅಂಗೀಕಾರಗೊಂಡಿತು"
+    },
+    {
+      "category": "ಆಡಳಿತ ಮತ್ತು ಶಾಸನ",
+      "level": 30,
+      "question": "ಭಾರತ ರಾಜ್ಯಾಂಗ ಅಧಿಕಾರ ವಿಭಜನೆಯ ಯಾವ ಪಟ್ಟಿಯಲ್ಲಿ ಕಾನೂನು ಮತ್ತು ಶಿಕ್ಷಣ ಸೇರಿವೆ?",
+      "options": ["ಕೇಂದ್ರ ಪಟ್ಟಿ", "ರಾಜ್ಯ ಪಟ್ಟಿ", "ಸಮಾಂತರ ಪಟ್ಟಿ", "ಅವಶೇಷ ಪಟ್ಟಿ"],
+      "correctAnswer": 2,
+      "hint": "ಈ ಪಟ್ಟಿಯಲ್ಲಿ ಕೇಂದ್ರ ಮತ್ತು ರಾಜ್ಯ ಎರಡೂ ಕಾನೂನು ಮಾಡಬಹುದು",
+      "solution": "ಕಾನೂನು ಮತ್ತು ಶಿಕ್ಷಣ ಸಮಾಂತರ ಪಟ್ಟಿಯಲ್ಲಿ ಸೇರಿವೆ"
+    },
+    {
+      "category": "ಸಂಖ್ಯಾ ಶಾಸ್ತ್ರ ಮತ್ತು ತಾರ್ಕಿಕ ಚಿಂತನೆ",
+      "level": 31,
+      "question": "ಒಂದು ಗೋಳಾಕಾರ ಮೇಜಿನ ಸುತ್ತಲೂ 12 ಜನ ವ್ಯಕ್ತಿಗಳಿದ್ದಾರೆ. ಪ್ರತಿ ಮೂರನೇ ವ್ಯಕ್ತಿಯನ್ನು ಹೊರನೆಡೆಯಲಾಯಿತು. ಕೊನೆಯಲ್ಲಿ ಎಷ್ಟು ಜನ ಉಳಿಯುತ್ತಾರೆ?",
+      "options": ["4", "3", "6", "2"],
+      "correctAnswer": 0,
+      "hint": "ಒಂದೊಂದು ಹಂತದಲ್ಲಿ ಮೂರನೇ ವ್ಯಕ್ತಿಯನ್ನು ಹೊರನೆಡೆಯಲಾಗುವುದು",
+      "solution": "12 ರಿಂದ ಪ್ರಥಮ ಹಂತದಲ್ಲಿ 8, ಎರಡನೇ ಹಂತದಲ್ಲಿ 4 ಜನ ಉಳಿಯುತ್ತಾರೆ"
+    },
+    {
+      "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಸಂಬಂಧಗಳು ಮತ್ತು ಸಮಕಾಲೀನ ಘಟನೆಗಳು",
+      "level": 32,
+      "question": "ಯುಎನ್ ಸುರಕ್ಷಾ ಪರಿಷತ್ ನಲ್ಲಿ ಶಾಶ್ವತ ಸದಸ್ಯ ರಾಷ್ಟ್ರಗಳ ಸಂಖ್ಯೆ",
+      "options": ["4", "5", "6", "3"],
+      "correctAnswer": 1,
+      "hint": "ಇವು ಚೀನಾ, ಫ್ರಾನ್ಸ್, ರಷ್ಯಾ, ಯುಎಸ್ಎ ಮತ್ತು ಇಂಗ್ಲೆಂಡ್",
+      "solution": "5 ಶಾಶ್ವತ ಸದಸ್ಯ ರಾಷ್ಟ್ರಗಳಿವೆ"
+    },
+    {
+      "category": "ಸಾಮಾನ್ಯ ಜ್ಞಾನ",
+      "level": 33,
+      "question": "ಕರ್ನಾಟಕ ರಾಜ್ಯದ ಮೂಲ ಭಾಷೆ ಯಾವುದು?",
+      "options": ["ಹಿಂದಿ", "ಕನ್ನಡ", "ಮರಾಠಿ", "ತೆಲುಗು"],
+      "correctAnswer": 1,
+      "hint": "ಇದು ರಾಜ್ಯದ ಅಧಿಕೃತ ಭಾಷೆ",
+      "solution": "ಕನ್ನಡ ಕರ್ನಾಟಕ ರಾಜ್ಯದ ಮೂಲ ಭಾಷೆ"
+    },
+    {
+      "level": 34,
+      "category": "ಭೌಗೋಳಿಕ ಜ್ಞಾನ",
+      "question": "ಕರ್ನಾಟಕದ ಅತಿ ದೊಡ್ಡ ನದಿ ಯಾವುದು?",
+      "options": ["ಕಾವೇರಿ", "ಗೋದಾವರಿ", "ಭೀಮಾ", "ಮಲಪ್ಪಾ"],
+      "correctAnswer": 0,
+      "hint": "ಈ ನದಿ ತಮಿಳುನಾಡಿಗೆ ಹರಿಯುತ್ತದೆ",
+      "solution": "ಕಾವೇರಿ ಕರ್ನಾಟಕದ ಅತಿ ಮುಖ್ಯ ನದಿ"
+    },
+    {
+      "level": 35,
+      "category": "ಇತಿಹಾಸ",
+      "question": "ಕರ್ನಾಟಕ ರಾಜ್ಯ ಯಾವ ವರ್ಷ ಸ್ಥಾಪಿಸಲಾಯಿತು?",
+      "options": ["1956", "1960", "1947", "1973"],
+      "correctAnswer": 0,
+      "hint": "ಭಾಷಾ ಆಧಾರಿತ ರಾಜ್ಯಗಳ ಪುನರ್ ರಚನೆಯ ವರ್ಷ",
+      "solution": "1956ರಲ್ಲಿ ಮೈಸೂರು ರಾಜ್ಯವನ್ನು ಪುನರ್ ನಾಮಕರಣ ಮಾಡಿ ಕರ್ನಾಟಕ ರಾಜ್ಯ ಸ್ಥಾಪಿಸಲಾಯಿತು"
+    },
+    {
+      "level": 36,
+      "category": "ಕಾನೂನು ಮತ್ತು ಸಂವಿಧಾನ",
+      "question": "ಭಾರತ ಸಂವಿಧಾನದ ಮೊದಲ ಪ್ರಮುಖ ಸಂಶೋಧನೆ ಯಾವ ವರ್ಷ ಮಾಡಲಾಯಿತು?",
+      "options": ["1951", "1952", "1955", "1950"],
+      "correctAnswer": 0,
+      "hint": "ಈ ಸಂಶೋಧನೆ ಮೂಲಭೂತ ಹಕ್ಕುಗಳಿಗೆ ಸಂಬಂಧಿಸಿದೆ",
+      "solution": "1951ರಲ್ಲಿ ಮೊದಲ ಸಂವಿಧಾನ ಸಂಶೋಧನೆ ಮಾಡಲಾಯಿತು"
+    },
+    {
+      "level": 37,
+      "category": "ಭೂಗೋಲ",
+      "question": "ಕರ್ನಾಟಕ ರಾಜ್ಯದ ಒಟ್ಟು ಭೌಗೋಳಿಕ ವಿಸ್ತೀರ್ಣ ಎಷ್ಟು?",
+      "options": [
+        "191,791 ಚ.ಕಿ.ಮೀ.",
+        "182,799 ಚ.ಕಿ.ಮೀ.",
+        "201,245 ಚ.ಕಿ.ಮೀ.",
+        "175,500 ಚ.ಕಿ.ಮೀ."
+      ],
+      "correctAnswer": 1,
+      "hint": "ದಕ್ಷಿಣ ಭಾರತದ ಒಂದು ದೊಡ್ಡ ರಾಜ್ಯ",
+      "solution": "ಕರ್ನಾಟಕ ರಾಜ್ಯದ ಒಟ್ಟು ಭೌಗೋಳಿಕ ವಿಸ್ತೀರ್ಣ 182,799 ಚ.ಕಿ.ಮೀ."
+    },
+    {
+      "level": 38,
+      "category": "ರಾಜಕೀಯ ವ್ಯವಸ್ಥೆ",
+      "question": "ಕರ್ನಾಟಕ ರಾಜ್ಯ ವಿಧಾನಸಭೆಯ ಸಭಾಸದ್ಯರ ಸಂಖ್ಯೆ ಎಷ್ಟಿದೆ?",
+      "options": ["224", "210", "175", "250"],
+      "correctAnswer": 1,
+      "hint": "ಇದರಲ್ಲಿ ನಾಮನಿರ್ದೇಶಿತ ಮತ್ತು ಆಯ್ಕೆಯಾದ ಸದಸ್ಯರಿರುತ್ತಾರೆ",
+      "solution": "ಕರ್ನಾಟಕ ವಿಧಾನಸಭೆಯಲ್ಲಿ 210 ಸಭಾಸದ್ಯರಿರುತ್ತಾರೆ"
+    },
+    {
+      "level": 39,
+      "category": "ಸಂಖ್ಯಾಶಾಸ್ತ್ರ",
+      "question": "ಒಂದು ಸಂಖ್ಯೆಯನ್ನು 12ಕ್ಕೆ ಭಾಗಿಸಿದಾಗ ಉಳಿಯುವ ಉಳಿಯಿಕೆ 8. ಮೂಲ ಸಂಖ್ಯೆ ಎಷ್ಟು?",
+      "options": ["20", "32", "44", "56"],
+      "correctAnswer": 2,
+      "hint": "ಉಳಿಯಿಕೆ ಮತ್ತು ಮೂಲ ಸಂಖ್ಯೆಯ ನಡುವಿನ ಸಂಬಂಧ ಅರಿಯಿರಿ",
+      "solution": "44 ÷ 12 = 3 ಉಳಿಯಿಕೆ 8"
+    },
+    {
+      "level": 40,
+      "category": "ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ",
+      "question": "ಸ್ಮಾರ್ಟ್ ಫೋನ್ ನಲ್ಲಿ GPS ಯ ಪೂರ್ಣ ರೂಪ ಏನು?",
+      "options": [
+        "Global Positioning Service",
+        "Global Positioning System",
+        "Global Position Satellite",
+        "Geographic Positioning System"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಉಪಗ್ರಹ ಆಧಾರಿತ ನ್ಯಾವಿಗೇಶನ್ ಪ್ರಣಾಳಿ",
+      "solution": "GPS = Global Positioning System"
+    },
+    {
+      "level": 41,
+      "category": "ಭಾಷಾ ಮತ್ತು ಸಾಹಿತ್ಯ",
+      "question": "ಕನ್ನಡ ಸಾಹಿತ್ಯ ಪರಿಷತ್ ಯಾವ ನಗರದಲ್ಲಿ ಸ್ಥಾಪಿಸಲಾಯಿತು?",
+      "options": ["ಮೈಸೂರು", "ಬೆಂಗಳೂರು", "ಹುಬ್ಬಳ್ಳಿ", "ಧಾರವಾಡ"],
+      "correctAnswer": 1,
+      "hint": "ಈ ನಗರ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ಕೇಂದ್ರ",
+      "solution": "ಬೆಂಗಳೂರಿನಲ್ಲಿ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಪರಿಷತ್ ಸ್ಥಾಪಿಸಲಾಯಿತು"
+    },
+    {
+      "level": 42,
+      "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಸಂಬಂಧಗಳು",
+      "question": "ಯುಎನ್ ಸಂಘಟನೆಯ ಮುಖ್ಯಾಲಯ ಎಲ್ಲಿದೆ?",
+      "options": ["ಜಿನೀವಾ", "ನ್ಯೂಯಾರ್ಕ್", "ವಾಷಿಂಗ್ಟನ್", "ಲಂಡನ್"],
+      "correctAnswer": 1,
+      "hint": "ಇದು ಅಮೆರಿಕಾ ಸಂಯುಕ್ತ ಸಂಸ್ಥಾನದ ಒಂದು ನಗರ",
+      "solution": "ಯುಎನ್ ಸಂಘಟನೆಯ ಮುಖ್ಯಾಲಯ ನ್ಯೂಯಾರ್ಕಿನಲ್ಲಿದೆ"
+    },
+    {
+      "level": 43,
+      "category": "ಸಂವಿಧಾನಿಕ ಕಾನೂನು",
+      "question": "ಭಾರತ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ಮೌಲಿಕ ಹಕ್ಕುಗಳ ವಿರುದ್ಧ ನ್ಯಾಯಾಲಯಕ್ಕೆ ಅಜಿಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡುತ್ತದೆ?",
+      "options": [
+        "ಅನುಚ್ಛೇದ 32",
+        "ಅನುಚ್ಛೇದ 226",
+        "ಅನುಚ್ಛೇದ 131",
+        "ಅನುಚ್ಛೇದ 245"
+      ],
+      "correctAnswer": 0,
+      "hint": "ಇದನ್ನು 'ಹಕ್ಕುಗಳ ಸಂರಕ್ಷಕ' ಎಂದೂ ಕರೆಯಲಾಗುತ್ತದೆ",
+      "solution": "ಅನುಚ್ಛೇದ 32 ಮೌಲಿಕ ಹಕ್ಕುಗಳ ಉಲ್ಲಂಘನೆಯ ವಿಷಯದಲ್ಲಿ ಸುಪ್ರೀಂ ಕೋರ್ಟ್‌ಗೆ ನೇರ ಅಜಿ ಸಲ್ಲಿಸಲು ಅನುಮತಿಸುತ್ತದೆ"
+    },
+    {
+      "level": 44,
+      "category": "ಅಪರಾಧ ಮತ್ತು ಕಾನೂನು",
+      "question": "ಭಾರತೀಯ ದಂಡ ಸಂಹಿತೆಯ (IPC) ಯಾವ ಪ್ರಕರಣ ಹೆಚ್ಚಿನ ಶಿಕ್ಷೆಯನ್ನು ನಿಗದಿ ಮಾಡುತ್ತದೆ?",
+      "options": ["ಪ್ರಕರಣ 302", "ಪ್ರಕರಣ 307", "ಪ್ರಕರಣ 376", "ಪ್ರಕರಣ 120B"],
+      "correctAnswer": 0,
+      "hint": "ಈ ಪ್ರಕರಣ ಮಾನವ ಹತ್ಯೆ ಸಂಬಂಧಿಸಿದೆ",
+      "solution": "ಐಪಿಸಿ ಪ್ರಕರಣ 302 ಮಾನವ ಹತ್ಯೆಗೆ ಮರಣಶಿಕ್ಷೆ ಅಥವಾ ಆಜೀವಾನಂತ ಕಾರಾವಾಸ ನಿಗದಿಪಡಿಸುತ್ತದೆ"
+    },
+    {
+      "level": 45,
+      "category": "ಆರ್ಥಿಕ ಮತ್ತು ಆಡಳಿತ ವ್ಯವಸ್ಥೆ",
+      "question": "ಭಾರತ ಹಣಕಾಸಿನ ಆಯೋಗ (ಫಿನಾನ್ಸ್ ಕಮೀಷನ್) ಎಷ್ಟು ವರ್ಷಗಳಿಗೊಮ್ಮೆ ರಚಿಸಲಾಗುತ್ತದೆ?",
+      "options": [
+        "3 ವರ್ಷಗಳಿಗೊಮ್ಮೆ",
+        "5 ವರ್ಷಗಳಿಗೊಮ್ಮೆ",
+        "7 ವರ್ಷಗಳಿಗೊಮ್ಮೆ",
+        "10 ವರ್ಷಗಳಿಗೊಮ್ಮೆ"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಇದು ಕೇಂದ್ರ ಸರಕಾರ ರಚಿಸುವ ಒಂದು ಮಹತ್ವಪೂರ್ಣ ಆಯೋಗ",
+      "solution": "ಭಾರತ ಹಣಕಾಸಿನ ಆಯೋಗವನ್ನು 5 ವರ್ಷಗಳಿಗೊಮ್ಮೆ ಪ್ರಧಾನಮಂತ್ರಿ ರಚಿಸುತ್ತಾರೆ"
+    },
+    {
+      "level": 46,
+      "category": "ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ",
+      "question": "ಉಪಗ್ರಹ ಸಂಚಾರ ಮಾಡುವ ಮೂಲ ತಂತ್ರಜ್ಞಾನ ಯಾವುದು?",
+      "options": ["GPS", "RADAR", "ಡೋಪ್ಲರ್ ಪ್ರಭಾವ", "ಮಿಕ್ಸ್ಡ್ ಸಿಗ್ನಲ್"],
+      "correctAnswer": 2,
+      "hint": "ಈ ಪ್ರಭಾವವು ಅಲೆಗಳ ಸಂಚಾರ ಮತ್ತು ಸ್ಥಾನ ಗುರುತಿಸುವಿಕೆಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ",
+      "solution": "ಡೋಪ್ಲರ್ ಪ್ರಭಾವವು ಉಪಗ್ರಹ ಸಂಚಾರ ಮತ್ತು ಸ್ಥಾನ ಗುರುತಿಸುವಿಕೆಯಲ್ಲಿ ಮೂಲಭೂತ ತಂತ್ರಜ್ಞಾನ"
+    },
+    {
+      "level": 47,
+      "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಸಂಬಂಧಗಳು",
+      "question": "BRICS ಸಂಘಟನೆಯ ಯಾವ ಸದಸ್ಯ ರಾಷ್ಟ್ರಗಳಿವೆ?",
+      "options": [
+        "ಭಾರತ, ಚೀನಾ, ಬ್ರಾಜಿಲ್, ರಷ್ಯಾ, ದಕ್ಷಿಣ ಆಫ್ರಿಕಾ",
+        "ಭಾರತ, ಜಪಾನ್, ಚೀನಾ, ಜರ್ಮನಿ, ಇಟಲಿ",
+        "ಭಾರತ, ಆಸ್ಟ್ರೇಲಿಯಾ, ಇಂಗ್ಲೆಂಡ್, ಫ್ರಾನ್ಸ್, ಜರ್ಮನಿ",
+        "ಭಾರತ, ಅಮೇರಿಕಾ, ಚೀನಾ, ಫ್ರಾನ್ಸ್, ಇಂಗ್ಲೆಂಡ್"
+      ],
+      "correctAnswer": 0,
+      "hint": "ಈ ಸಂಘಟನೆ ಉದಿಸುತ್ತಿರುವ ಆರ್ಥಿಕ ಶಕ್ತಿಗಳನ್ನು ಒಳಗೊಂಡಿದೆ",
+      "solution": "BRICS ಸಂಘಟನೆಯ ಸದಸ್ಯ ರಾಷ್ಟ್ರಗಳು ಭಾರತ, ಚೀನಾ, ಬ್ರಾಜಿಲ್, ರಷ್ಯಾ, ಮತ್ತು ದಕ್ಷಿಣ ಆಫ್ರಿಕಾ"
+    },
+    {
+      "level": 48,
+      "category": "ಸಾಂವಿಧಾನಿಕ ತತ್ವಗಳು",
+      "question": "ಭಾರತ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು 'ಪ್ರಜಾಸತ್ತಾತ್ಮಕ ಅಧಿಕಾರ ವಿಕೇಂದ್ರೀಕರಣ'ಕ್ಕೆ ಆಧಾರ ಒದಗಿಸುತ್ತದೆ?",
+      "options": ["ಅನುಚ್ಛೇದ 40", "ಅನುಚ್ಛೇದ 50", "ಅನುಚ್ಛೇದ 73", "ಅನುಚ್ಛೇದ 245"],
+      "correctAnswer": 0,
+      "hint": "ಪಂಚಾಯತ್ ರಾಜ್ ವ್ಯವಸ್ಥೆಗೆ ಸಂಬಂಧಿಸಿದ ಅನುಚ್ಛೇದ",
+      "solution": "ಅನುಚ್ಛೇದ 40 ಗ್ರಾಮ ಪಂಚಾಯತ್ ಮತ್ತು ಸ್ಥಳೀಯ ಸ್ವಸ್ಥಾಯ ಸಂಸ್ಥೆಗಳಿಗೆ ಅಧಿಕಾರ ವಿಕೇಂದ್ರೀಕರಣಕ್ಕೆ ಆಧಾರ ಒದಗಿಸುತ್ತದೆ"
+    },
+    {
+      "level": 49,
+      "category": "ಸಂವಿಧಾನಿಕ ಕಾನೂನು",
+      "question": "ಭಾರತ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ನಾಗರಿಕ ಸೇವೆಗಳ ನಿಯೋಜನೆಯನ್ನು ನಿಯಂತ್ರಿಸುತ್ತದೆ?",
+      "options": [
+        "ಅನುಚ್ಛೇದ 309",
+        "ಅನುಚ್ಛೇದ 310",
+        "ಅನುಚ್ಛೇದ 311",
+        "ಅನುಚ್ಛೇದ 312"
+      ],
+      "correctAnswer": 0,
+      "hint": "ಸಿವಿಲ್ ಸೇವೆಗಳ ನಿಯಮನಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಅನುಚ್ಛೇದ",
+      "solution": "ಅನುಚ್ಛೇದ 309 ನಾಗರಿಕ ಸೇವೆಗಳ ನಿಯೋಜನೆಯ ಬಗ್ಗೆ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ನಿಗದಿಪಡಿಸುತ್ತದೆ"
+    },
+    {
+      "level": 50,
+      "category": "ಆರ್ಥಿಕ ನಿರ್ವಹಣೆ",
+      "question": "ಭಾರತೀಯ ರಿಸರ್ವ್ ಬ್ಯಾಂಕ್ ಯಾವ ಆರ್ಥಿಕ ನೀತಿಯನ್ನು ಅನುಸರಿಸಿ ಹಣಕಾಸಿನ ಸ್ಥಿರತೆಯನ್ನು ಸಾಧಿಸುತ್ತದೆ?",
+      "options": [
+        "ಮೌಲ್ಯ ಹಣಕಾಸಿನ ನೀತಿ",
+        "ಮೌಲ್ಯ ವ್ಯವಸ್ಥಾಪನಾ ನೀತಿ",
+        "ಮೌಲ್ಯ ಅಂಕೆಯ ನೀತಿ",
+        "ಮೌಲ್ಯ ಸಂಚಯ ನೀತಿ"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಈ ನೀತಿ ಹಣದಿಂದ ಹಣಕಾಸಿನ ಸಮತೋಲನವನ್ನು ನಿಯಂತ್ರಿಸುತ್ತದೆ",
+      "solution": "ಮೌಲ್ಯ ವ್ಯವಸ್ಥಾಪನಾ ನೀತಿಯ ಮೂಲಕ RBI ಹಣಕಾಸಿನ ಸ್ಥಿರತೆಯನ್ನು ಸಾಧಿಸುತ್ತದೆ"
+    },
+    {
+      "level": 51,
+      "category": "ಅಪರಾಧ ಶಾಸ್ತ್ರ",
+      "question": "ಅಪರಾಧ ಪ್ರಕ್ರಿಯಾ ಸಂಹಿತೆಯ (CrPC) ಯಾವ ಪ್ರಕರಣವು ಮಾಲೀಕಾನ ವಿರುದ್ಧ ಅಪರಾಧ ಪ್ರಕರಣಗಳ ವ್ಯಾಪ್ತಿಯನ್ನು ನಿಗದಿಪಡಿಸುತ್ತದೆ?",
+      "options": ["ಪ್ರಕರಣ 155", "ಪ್ರಕರಣ 156", "ಪ್ರಕರಣ 157", "ಪ್ರಕರಣ 158"],
+      "correctAnswer": 1,
+      "hint": "ಸಾಮಾನ್ಯ ಪೊಲೀಸ್ ವಹಿವಾಟಿಗೆ ಸಂಬಂಧಿಸಿದ ಪ್ರಕರಣ",
+      "solution": "CrPC ಪ್ರಕರಣ 156 ಪೊಲೀಸ್ ಅಧಿಕಾರಿಗಳ ವಿಚಾರಣಾ ಅಧಿಕಾರಗಳನ್ನು ನಿಗದಿಪಡಿಸುತ್ತದೆ"
+    },
+    {
+      "level": 52,
+      "category": "ರಾಜಕೀಯ ವ್ಯವಸ್ಥೆ",
+      "question": "ಪಞ್ಚಾಯತ್ ರಾಜ್ ವ್ಯವಸ್ಥೆಯ ಯಾವ ಸಂವಿಧಾನಿಕ ತಿದ್ದುಪಡಿಯು ಸ್ಥಳೀಯ ಸ್ವಾಡಳಿತವನ್ನು ಬಲಪಡಿಸಿತು?",
+      "options": [
+        "೭೩ನೇ ತಿದ್ದುಪಡಿ",
+        "೭೪ನೇ ತಿದ್ದುಪಡಿ",
+        "೮೬ನೇ ತಿದ್ದುಪಡಿ",
+        "೯೨ನೇ ತಿದ್ದುಪಡಿ"
+      ],
+      "correctAnswer": 0,
+      "hint": "ಗ್ರಾಮೀಣ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳ ಅಧಿಕಾರಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ತಿದ್ದುಪಡಿ",
+      "solution": "೭೩ನೇ ಸಂವಿಧಾನಿಕ ತಿದ್ದುಪಡಿಯು ಪಞ್ಚಾಯತ್ ರಾಜ್ ವ್ಯವಸ್ಥೆಯನ್ನು ಬಲಪಡಿಸಿ ಗ್ರಾಮೀಣ ಸ್ವಾಡಳಿತಕ್ಕೆ ಮಹತ್ವ ನೀಡಿತು"
+    },
+    {
+      "level": 53,
+      "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಸಂಬಂಧಗಳು",
+      "question": "ಯುಎನ್ ಸಿಕ್ಯೂರಿಟಿ ಕೌನ್ಸಿಲ್‌ನ ಸ್ಥಾಯಿ ಸದಸ್ಯ ರಾಷ್ಟ್ರಗಳಾವವು?",
+      "options": [
+        "ಭಾರತ, ಜಪಾನ್, ಜರ್ಮನಿ, ಬ್ರಾಜಿಲ್",
+        "ಅಮೇರಿಕಾ, ಚೀನಾ, ರಷ್ಯಾ, ಫ್ರಾನ್ಸ್, ಇಂಗ್ಲೆಂಡ್",
+        "ಜಪಾನ್, ಇಟಲಿ, ಕಾನಡಾ, ಆಸ್ಟ್ರೇಲಿಯಾ",
+        "ಸಾಂಗ್ಹಾಯ್, ಕೊರಿಯಾ, ಇಂಡೋನೇಷ್ಯಾ"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಈ ರಾಷ್ಟ್ರಗಳಿಗೆ ವಿಶೇಷ ಅಧಿಕಾರಗಳಿವೆ",
+      "solution": "ಅಮೇರಿಕಾ, ಚೀನಾ, ರಷ್ಯಾ, ಫ್ರಾನ್ಸ್, ಮತ್ತು ಇಂಗ್ಲೆಂಡ್ ಯಾವು UN ಸಿಕ್ಯೂರಿಟಿ ಕೌನ್ಸಿಲ್‌ನ ಸ್ಥಾಯಿ ಸದಸ್ಯ ರಾಷ್ಟ್ರಗಳಾಗಿವೆ"
+    },
+    {
+      "level": 54,
+      "category": "ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ",
+      "question": "ಕ್ವಾಂಟಂ ಕಂಪ್ಯೂಟಿಂಗ್‌ನ ಮೂಲಭೂತ ಏಕಕಗಳನ್ನು ಏನೆಂದು ಕರೆಯಲಾಗುತ್ತದೆ?",
+      "options": ["ಬಿಟ್", "ಕ್ಯೂಬಿಟ್", "ನ್ಯೂಟ್ರಿನೊ", "ಎಲೆಕ್ಟ್ರಾನ್"],
+      "correctAnswer": 1,
+      "hint": "ಕ್ವಾಂಟಂ ಸಿಸ್ಟಂ‌ನ ಮೂಲಭೂತ ಏಕಕ",
+      "solution": "ಕ್ವಾಂಟಂ ಕಂಪ್ಯೂಟಿಂಗ್‌ನಲ್ಲಿ ಕ್ಯೂಬಿಟ್ ಮೂಲಭೂತ ಏಕಕವಾಗಿದೆ"
+    },
+    {
+      "level": 55,
+      "category": "ನ್ಯಾಯಾಂಗ ವ್ಯವಸ್ಥೆ",
+      "question": "ಭಾರತೀಯ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ಸುಪ್ರೀಂ ಕೋರ್ಟ್‌ಗೆ ವ್ಯಾಖ್ಯಾನಿಸುವ ಅಧಿಕಾರವನ್ನು ನೀಡುತ್ತದೆ?",
+      "options": [
+        "ಅನುಚ್ಛೇದ 132",
+        "ಅನುಚ್ಛೇದ 133",
+        "ಅನುಚ್ಛೇದ 134",
+        "ಅನುಚ್ಛೇದ 135"
+      ],
+      "correctAnswer": 0,
+      "hint": "ಸಂವಿಧಾನಿಕ ಪ್ರಶ್ನೆಗಳ ವ್ಯಾಖ್ಯಾನಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಅನುಚ್ಛೇದ",
+      "solution": "ಅನುಚ್ಛೇದ 132 ಸಂವಿಧಾನಿಕ ಪ್ರಶ್ನೆಗಳ ಬಗ್ಗೆ ಸುಪ್ರೀಂ ಕೋರ್ಟ್‌ಗೆ ಅಂತಿಮ ಅರ್ಥ ನಿರ್ಧರಿಸುವ ಅಧಿಕಾರ ನೀಡುತ್ತದೆ"
+    },
+    {
+      "level": 56,
+      "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಕಾನೂನು",
+      "question": "ರೋಮ್ ನಿಯಮಾವಳಿಯ ಅಡಿಯಲ್ಲಿ ಯಾವ ಅಂತಾರಾಷ್ಟ್ರೀಯ ನ್ಯಾಯಾಲಯ ಅಪರಾಧಿಗಳನ್ನು ವಿಚಾರಣೆ ಮಾಡುತ್ತದೆ?",
+      "options": [
+        "ಅಂತಾರಾಷ್ಟ್ರೀಯ ನ್ಯಾಯಾಲಯ",
+        "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಅಪರಾಧ ನ್ಯಾಯಾಲಯ",
+        "ಹೇಗ್ ನ್ಯಾಯಾಲಯ",
+        "ಯುಎನ್ ಮಾನವಾಧಿಕಾರ ನ್ಯಾಯಾಲಯ"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಈ ನ್ಯಾಯಾಲಯವು ಮಾನವಾನಿಷ್ಟ ಅಪರಾಧಗಳ ವಿಚಾರಣೆ ನಡೆಸುತ್ತದೆ",
+      "solution": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಅಪರಾಧ ನ್ಯಾಯಾಲಯ (ICC) ರೋಮ್ ನಿಯಮಾವಳಿಯ ಅಡಿಯಲ್ಲಿ ಯುದ್ಧ ಅಪರಾಧ ಮತ್ತು ಮಾನವಾನಿಷ್ಟ ಅಪರಾಧಗಳನ್ನು ವಿಚಾರಣೆ ಮಾಡುತ್ತದೆ"
+    },
+    {
+      "level": 57,
+      "category": "ಆರ್ಥಿಕ ನಿೀಟಿಗಳು",
+      "question": "ಜಿಡಿಪಿ ಗಣನೆಯಲ್ಲಿ ಯಾವ ಮೂಲಭೂತ ವಿಧಾನವನ್ನು ಬಳಸಲಾಗುತ್ತದೆ?",
+      "options": [
+        "ಖರ್ಚು ವಿಧಾನ",
+        "ಆದಾಯ ವಿಧಾನ",
+        "ಉತ್ಪಾದನಾ ವಿಧಾನ",
+        "ವ್ಯಾಪಾರ ವಿಧಾನ"
+      ],
+      "correctAnswer": 2,
+      "hint": "ಈ ವಿಧಾನವು ಒಟ್ಟು ಉತ್ಪಾದನೆಯನ್ನು ಅಳೆಯುತ್ತದೆ",
+      "solution": "ಉತ್ಪಾದನಾ ವಿಧಾನವು ಜಿಡಿಪಿ ಗಣನೆಯಲ್ಲಿ ಮೂಲಭೂತ ವಿಧಾನವಾಗಿ ಬಳಸಲ್ಪಡುತ್ತದೆ"
+    },
+    {
+      "level": 58,
+      "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಸಂಬಂಧಗಳು",
+      "question": "ಶಾಂಘಾಯ್ ಸಹಯೋಗ ಸಂಘಟನೆ (SCO) ಯ ಸ್ಥಾಪನಾ ವರ್ಷ?",
+      "options": ["1996", "2001", "2005", "2010"],
+      "correctAnswer": 1,
+      "hint": "ಈ ಸಂಘಟನೆಯ ಮೂಲ ಘಟಕ ಚೀನಾ, ರಷ್ಯಾ ಮತ್ತು ಮಧ್ಯ ಏಷ್ಯಾ ರಾಷ್ಟ್ರಗಳಿವೆ",
+      "solution": "SCO ಅಥವಾ ಶಾಂಘಾಯ್ ಸಹಯೋಗ ಸಂಘಟನೆಯನ್ನು 2001 ರಲ್ಲಿ ಸ್ಥಾಪಿಸಲಾಯಿತು"
+    },
+    {
+      "level": 59,
+      "category": "ಸಂವಿಧಾನಿಕ ಕಾನೂನು",
+      "question": "ಯಾವ ಸಂವಿಧಾನಿಕ ತಿದ್ದುಪಡಿಯು ಮಹಿಳಾ ಸಂರಕ್ಷಣೆಗೆ ಹೆಚ್ಚಿನ ಅಧಿಕಾರಗಳನ್ನು ನೀಡಿತು?",
+      "options": [
+        "೭೩ನೇ ತಿದ್ದುಪಡಿ",
+        "೭೪ನೇ ತಿದ್ದುಪಡಿ",
+        "೮೬ನೇ ತಿದ್ದುಪಡಿ",
+        "೧೦೮ನೇ ತಿದ್ದುಪಡಿ"
+      ],
+      "correctAnswer": 1,
+      "hint": "ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳಲ್ಲಿ ಮಹಿಳಾ ಮೀಸಲಾತಿಗೆ ಸಂಬಂಧಿಸಿದ ತಿದ್ದುಪಡಿ",
+      "solution": "೭೪ನೇ ಸಂವಿಧಾನಿಕ ತಿದ್ದುಪಡಿಯು ನಗರ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳಲ್ಲಿ ಮಹಿಳೆಯರಿಗೆ ೧/೩ ಮೀಸಲಾತಿ ಮತ್ತು ಅಧಿಕಾರಗಳನ್ನು ನೀಡಿತು"
+    },
+    {
+      "level": 60,
+      "category": "ಅಪರಾಧ ಶಾಸ್ತ್ರ",
+      "question": "ಯಾವ ಅಂಶಗಳನ್ನು ಕಳ್ಳತನ ಅಪರಾಧಕ್ಕೆ ಪಾಲ್ಗೊಳ್ಳಲಾಗಿರುವ ಎಂಬ ಮಾನದಂಡಗಳಾಗಿ ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ?",
+      "options": [
+        "ಉದ್ದೇಶ, ಕ್ರಿಯಾ, ಪರಿಣಾಮ",
+        "ಮೌಲ್ಯ, ಯಂತ್ರ, ಸ್ಥಳ",
+        "ಹಣ, ವಸ್ತು, ಗುರಿ",
+        "ಮಾಹಿತಿ, ಯೋಜನೆ, ಅಮಲು"
+      ],
+      "correctAnswer": 0,
+      "hint": "ಅಪರಾಧ ನಿಗಧಿಪಡಿಸಲು ಮೂಲಭೂತ ಅಂಶಗಳು",
+      "solution": "ಉದ್ದೇಶ, ಕ್ರಿಯಾ ಮತ್ತು ಪರಿಣಾಮ ಕಳ್ಳತನ ಅಪರಾಧ ನಿಗಧಿಪಡಿಸಲು ಮೂಲಭೂತ ಮಾನದಂಡಗಳಾಗಿವೆ"
+    },   {
         "level": 61,
-        "question": "What is the function of a Cycloconverter?",
+        "category": "ಅಪರಾಧ ಶಾಸ್ತ್ರ",
+        "question": "ಶಾಸನಬದ್ಧ ಪ್ರಾಯಶಃ ಸಿದ್ಧಿ ಎಂಬ ಕಾನೂನು ಸಂಕಲ್ಪನೆಯ ಮೂಲ ಉದ್ದೇಶವೇನು?",
         "options": [
-          "DC to AC conversion",
-          "AC to DC conversion",
-          "AC to AC frequency conversion",
-          "DC to DC conversion"
+            "ಅಪರಾಧಿಗಳಿಗೆ ಕಠಿಣ ಶಿಕ್ಷೆ ನೀಡುವುದು",
+            "ಅಪರಾಧ ಮಾಡಲು ಸಾಧ್ಯತೆಯ ಮೇಲೆ ಶಿಕ್ಷೆ ನೀಡುವುದು",
+            "ಅಪರಾಧಿಯ ಮಾನಸಿಕ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸುವುದು",
+            "ಅಪರಾಧಿಯ ಸಾಮಾಜಿಕ ಹಿನ್ನೆಲೆಯನ್ನು ಅಧ್�ययನ ಮಾಡುವುದು"
         ],
-        "correctAnswer": 2,
-        "hint": "It's used for variable frequency output",
-        "solution": "Cycloconverter performs direct AC to AC frequency conversion, typically from higher to lower frequency."
-      },
-      {
+        "correctAnswer": 1,
+        "hint": "ಅಪರಾಧ ಮಾಡಲು ಸಾಧ್ಯತೆಯ ಮೇಲೆ ಆಧಾರಿಸಿ",
+        "solution": "ಶಾಸನಬದ್ಧ ಪ್ರಾಯಶಃ ಸಿದ್ಧಿ ಎಂಬ ಸಂಕಲ್ಪನೆಯ ಮೂಲ ಉದ್ದೇಶವನ್ನು ಅಪರಾಧ ಮಾಡಲು ಸಾಧ್ಯತೆಯ ಮೇಲೆ ಶಿಕ್ಷೆ ನೀಡುವ ಮೂಲಕ ಅಪರಾಧ ತಡೆಯಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ."
+    },
+    {
         "level": 62,
-        "question": "In railway signaling, what is the purpose of Track Circuit?",
+        "category": "ಅಪರಾಧ ಶಾಸ್ತ್ರ",
+        "question": "ಭಾರತೀಯ ದಂಡ ಸಂಹಿತೆಯ ಯಾವ ಪ್ರಕರಣ ಅಪರಾಧಿಗಳ ಮಾನಸಿಕ ಸ್ಥಿತಿಯ ಪರಿಶೀಲನೆಗೆ ಸಂಬಂಧಿಸಿದೆ?",
         "options": [
-          "Train detection",
-          "Speed control",
-          "Direction control",
-          "Signal control"
+            "ಪ್ರಕರಣ ೮୪",
+            "ಪ್ರಕರಣ ༣༧༦",
+            "ಪ್ರಕರಣ ༡༡༢",
+            "ಪ್ರಕರಣ ༪"
         ],
         "correctAnswer": 0,
-        "hint": "It ensures track occupancy detection",
-        "solution": "Track Circuit is used for automatic train detection and track occupancy verification in railway signaling systems."
-      },
-      {
+        "hint": "ಅಪರಾಧಿಯ ವಯಸ್ಸಿಗೆ ಸಂಬಂಧಿಸಿದ ಪ್ರಕರಣ",
+        "solution": "ಭಾರತೀಯ ದಂಡ ಸಂಹಿತೆಯ ಪ್ರಕರಣ ༨୪ ಅಪರಾಧಿಯ ಮಾನಸಿಕ ಸ್ಥಿತಿ ಮತ್ತು ವಯಸ್ಸಿಗೆ ಸಂಬಂಧಿಸಿದ್ದು, ಇದು ಅಪರಾಧಿಯ ಜವಾಬ್ದಾರಿಯನ್ನು ನಿರ್ಧರಿಸಲು ಮಹತ್ವಪೂರ್ಣ."
+    },
+    {
         "level": 63,
-        "question": "What causes hunting in synchronous machines?",
+        "category": "ಅಪರಾಧ ಶಾಸ್ತ್ರ",
+        "question": "ಅಪರಾಧಿಕ ಹೊಣೆಗಾರಿಕೆಯ ಯಾವ ರೀತಿಯ ಮಾನಸಿಕ ಸ್ಥಿಥಿಯನ್ನು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ?",
         "options": [
-          "Voltage fluctuations",
-          "Load changes",
-          "Mechanical oscillations",
-          "All of the above"
+            "ಜಾಣ್ಮೆಯ ಹೊಣೆಗಾರಿಕೆ",
+            "ಅನಿಚ್ಚಾಪೂರ್ವಕ ಹೊಣೆಗಾರಿಕೆ",
+            "ಹಠಾತ್ ಹೊಣೆಗಾರಿಕೆ",
+            "ಅಪಘಾತಿಕ ಹೊಣೆಗಾರಿಕೆ"
         ],
-        "correctAnswer": 3,
-        "hint": "Multiple factors contribute to this phenomenon",
-        "solution": "Hunting in synchronous machines is caused by sudden load changes, voltage fluctuations, and mechanical oscillations affecting rotor position."
-      },
-      {
+        "correctAnswer": 0,
+        "hint": "ಉದ್ದೇಶಪೂರ್ವಕ ಹಾನಿಗೆ ಸಂಬಂಧಿಸಿದ ಹೊಣೆಗಾರಿಕೆ",
+        "solution": "ಜಾಣ್ಮೆಯ ಹೊಣೆಗಾರಿಕೆಯಲ್ಲಿ ಅಪರಾಧಿಯು ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ಹಾನಿ ಮಾಡಲು ಯೋಜಿಸಿ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತಾನೆ."
+    },
+    {
         "level": 64,
-        "question": "Which type of braking system is used in modern electric locomotives?",
+        "category": "ಅಪರಾಧ ಶಾಸ್ತ್ರ",
+        "question": "ಭಾರತೀಯ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ಅಪರಾಧಿಗಳ ಮಾನವ ಹಕ್ಕುಗಳನ್ನು ಸಂರಕ್ಷಿಸುತ್ತದೆ?",
         "options": [
-          "Regenerative braking",
-          "Dynamic braking",
-          "Both A and B",
-          "Mechanical braking only"
+            "ಅನುಚ್ಛೇದ ೨೧",
+            "ಅನುಚ್ಛೇದ ೩೨",
+            "ಅನುಚ್ಛೇದ ೧೪",
+            "ಅನುಚ್ಛೇದ ೪೪"
         ],
-        "correctAnswer": 2,
-        "hint": "Multiple braking methods are used",
-        "solution": "Modern electric locomotives use both regenerative and dynamic braking systems for efficient speed control and energy recovery."
-      },
-      {
+        "correctAnswer": 0,
+        "hint": "ಜೀವನ ಹಾಗೂ ವೈಯಕ್ತಿಕ ಸ್ವಾತಂತ್ರ್ಯಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಅನುಚ್ಛೇದ",
+        "solution": "ಅನುಚ್ಛೇದ ೨೧ ಜೀವನ ಮತ್ತು ವೈಯಕ್ತಿಕ ಸ್ವಾತಂತ್ರ್ಯ ಹಕ್ಕನ್ನು ಖಾತ್ರಿಪಡಿಸುತ್ತದೆ ಮತ್ತು ಅಪರಾಧಿಗಳ ಮಾನವ ಹಕ್ಕುಗಳನ್ನು ಸಂರಕ್ಷಿಸುತ್ತದೆ."
+    },
+    {
         "level": 65,
-        "question": "What is the purpose of a Pantograph in electric trains?",
+        "category": "ಸಂವಿಧಾನ",
+        "question": "ಭಾರತೀಯ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ಮೌಲಿಕ ಹಕ್ಕುಗಳ ವ್ಯಾಪ್ತಿಯನ್ನು ವಿವರಿಸುತ್ತದೆ?",
         "options": [
-          "Current collection",
-          "Speed measurement",
-          "Voltage regulation",
-          "Power conversion"
+            "ಅನುಚ್ಛೇದ 12",
+            "ಅನುಚ್ಛೇದ 14",
+            "ಅನುಚ್ಛೇದ 19",
+            "ಅನುಚ್ಛೇದ 21"
         ],
-        "correctAnswer": 0,
-        "hint": "It interfaces with overhead lines",
-        "solution": "Pantograph collects electrical current from overhead catenary lines to power electric trains."
-      },
-      {
+        "correctAnswer": 1,
+        "hint": "ಸಮಾನತೆಯ ಹಕ್ಕಿಗೆ ಸಂಬಂಧಿಸಿದ ಅನುಚ್ಛೇದ",
+        "solution": "ಅನುಚ್ಛೇದ 14 ಕಾನೂನಿನ ಮುಂದೆ ಸಮಾನತೆ ಮತ್ತು ಕಾನೂನಿನ ಸಮಾನ ಸಂರಕ್ಷಣೆಯ ಹಕ್ಕನ್ನು ಖಾತ್ರಿಪಡಿಸುತ್ತದೆ"
+    },
+    {
         "level": 66,
-        "question": "Which insulation class has the highest temperature rating?",
+        "category": "ಭೂಗೋಳ ಮತ್ತು ಇತಿಹಾಸ",
+        "question": "ಕರ್ನಾಟಕ ರಾಜ್ಯದ ಯಾವ ಜಿಲ್ಲೆಯು ಅಂಚೇನಿ ಬೆಟ್ಟಗಳಿಂದ ಹೆಸರಾಂಗಿದೆ?",
         "options": [
-          "Class A",
-          "Class F",
-          "Class H",
-          "Class B"
+            "ಉಡುಪಿ ಜಿಲ್ಲೆ",
+            "ಚಿಕ್ಕಮಗಳೂರು ಜಿಲ್ಲೆ",
+            "ಕೊಡಗು ಜಿಲ್ಲೆ",
+            "ಶಿವಮೊಗ್ಗ ಜಿಲ್ಲೆ"
         ],
         "correctAnswer": 2,
-        "hint": "Temperature ratings increase alphabetically",
-        "solution": "Class H insulation has the highest temperature rating of 180°C among these classes."
-      },
-      {
+        "hint": "ಪಶ್ಚಿಮ ಘಟ್ಟ ಪ್ರದೇಶದ ಜಿಲ್ಲೆ",
+        "solution": "ಕೊಡಗು ಜಿಲ್ಲೆಯನ್ನು ಅಂಚೇನಿ ಬೆಟ್ಟಗಳ ಬಗ್ಗೆ ಹೆಸರಾಂಗಿದೆ"
+    },
+    {
         "level": 67,
-        "question": "What is the function of a Traction Motor Control System?",
+        "category": "ಕಾನೂನು",
+        "question": "ಭಾರತೀಯ ದಂಡ ಸಂಹಿತೆಯ ಯಾವ ಪ್ರಕರಣವು ಮಹಿಳೆಯ ಲೈಂಗಿಕ ಶೋಷಣೆಗೆ ಸಂಬಂಧಿಸಿದೆ?",
         "options": [
-          "Speed control",
-          "Torque control",
-          "Power optimization",
-          "All of the above"
+            "ಪ್ರಕರಣ 354",
+            "ಪ್ರಕರಣ 376",
+            "ಪ್ರಕರಣ 498A",
+            "ಪ್ರಕರಣ 302"
         ],
-        "correctAnswer": 3,
-        "hint": "It manages multiple aspects of motor operation",
-        "solution": "Traction Motor Control System manages speed, torque, and power optimization for efficient train operation."
-      },
-      {
+        "correctAnswer": 1,
+        "hint": "ಲೈಂಗಿಕ ಅಪರಾಧಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಪ್ರಕರಣ",
+        "solution": "ಪ್ರಕರಣ 376 ಮಹಿಳೆಯ ಲೈಂಗಿಕ ಶೋಷಣೆಗೆ ಸಂಬಂಧಿಸಿದ ಮೂಲ ಕಾನೂನು"
+    },
+    {
         "level": 68,
-        "question": "In railway electrification, what voltage is used in AC traction systems in India?",
+        "category": "ಸಾಮಾಜಿಕ ನ್ಯಾಯ",
+        "question": "ಭಾರತ ಸರ್ಕಾರದ ಯಾವ ಕಾಳಜಿ ಕಾಯಿದೆಯು ಮಕ್ಕಳ ಹಕ್ಕುಗಳನ್ನು ಸಂರಕ್ಷಿಸುತ್ತದೆ?",
         "options": [
-          "25 kV",
-          "15 kV",
-          "1500 V",
-          "3000 V"
+            "ಮಹಿಳಾ ಅಧಿಕಾರ ಕಾಯಿದೆ",
+            "ಮಕ್ಕಳ ಹಕ್ಕು ಸಂರಕ್ಷಣಾ ಕಾಯಿದೆ",
+            "ಶ್ರಮಿಕ ಕಾಯಿದೆ",
+            "ಹಿಂದುಳಿದ ವರ್ಗಗಳ ಕಲ್ಯಾಣ ಕಾಯಿದೆ"
         ],
-        "correctAnswer": 0,
-        "hint": "It's a standard voltage for AC traction",
-        "solution": "Indian Railways uses 25 kV AC single-phase system for mainline electrification."
-      },
-      {
+        "correctAnswer": 1,
+        "hint": "ಮಕ್ಕಳ ಸಂರಕ್ಷಣೆಗಾಗಿ ಮಾಡಲಾದ ಕಾಯಿದೆ",
+        "solution": "ಮಕ್ಕಳ ಹಕ್ಕು ಸಂರಕ್ಷಣಾ ಕಾಯಿದೆ ಮಕ್ಕಳ ಹಕ್ಕು ಮತ್ತು ಸಂರಕ್ಷಣೆಯನ್ನು ಖಾತ್ರಿಪಡಿಸುತ್ತದೆ"
+    },
+    {
         "level": 69,
-        "question": "Which type of motor is preferred for railway air conditioning systems?",
-        "options": [
-          "DC Series Motor",
-          "Three Phase Induction Motor",
-          "Universal Motor",
-          "Synchronous Motor"
+        "category": "ಭಾಷಾ ಮತ್ತು ಸಾಹಿತ್ಯ",
+        "question": "ಯಾವ ಕನ್ನಡ ಸಾಹಿತಿಯನ್ನು 'ಕನ್ನಡ ಕೋಮಲ' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ?",
+  "options": [
+            "ಡಿ.ವಿ. ಗುಂಡಪ್ಪ",
+            "ಕುವೆಂಪು",
+            "ಮಾಸ್ಟಿ ದೊಡ್ಡರಂಗೇಗೌಡ",
+            "ದಿವಾಕರ್ ಕಾಮಥ"
         ],
-        "correctAnswer": 1,
-        "hint": "Consider reliability and maintenance requirements",
-        "solution": "Three Phase Induction Motors are preferred for railway AC systems due to their reliability and low maintenance."
-      },
-      {
+        "correctAnswer": 3,
+        "hint": "ಕನ್ನಡ ಕಾವ್ಯ ಸಾಹಿತ್ಯಕ್ಕೆ ಕೊಡುಗೆ ನೀಡಿದ ಸಾಹಿತಿ",
+        "solution": "ದಿವಾಕರ್ ಕಾಮಥ್ ಅವರನ್ನು 'ಕನ್ನಡ ಕೋಮಲ' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ"
+    },
+    {
         "level": 70,
-        "question": "What is the purpose of Linear Variable Differential Transformer (LVDT)?",
+        "category": "ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ",
+        "question": "ಯಾವ ಭಾರತೀಯ ವಿಜ್ಞಾನಿಯನ್ನು 'ಮಿಸೈಲ್ ಮ್ಯಾನ್' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ?",
         "options": [
-          "Current measurement",
-          "Displacement measurement",
-          "Temperature measurement",
-          "Pressure measurement"
+            "ಸಿ.ವಿ. ರಾಮನ್",
+            "ಎ.ಪಿ.ಜೆ. ಅಬ್ದುಲ್ ಕಲಾಂ",
+            "ಹೋಮಿ ಭಾಭಾ",
+            "ಎಸ್.ಆರ್. ನಾಗಾರ್ಜುನ"
         ],
         "correctAnswer": 1,
-        "hint": "It converts mechanical movement to electrical signal",
-        "solution": "LVDT is used for accurate measurement of linear displacement by converting mechanical movement to electrical signal."
-      },
-      {
+        "hint": "ಭಾರತ ಮಿಸೈಲ್ ಪ್ರೋಗ್ರಾಂನ ಮುಖ್ಯಸ್ಥ",
+        "solution": "ಎ.ಪಿ.ಜೆ. ಅಬ್ದುಲ್ ಕಲಾಂ ಅವರನ್ನು 'ಮಿಸೈಲ್ ಮ್ಯಾನ್' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ"
+    },
+    {
         "level": 71,
-        "question": "In railway signaling, what is the purpose of Block Instruments?",
+        "category": "ಆಡಳಿತ",
+        "question": "ಕರ್ನಾಟಕ ರಾಜ್ಯದ ಲೋಕಾಯುಕ್ತ ಸಂಸ್ಥೆಯ ಮುಖ್ಯಸ್ಥನನ್ನು ಯಾರು ನೇಮಿಸುತ್ತಾರೆ?",
         "options": [
-          "Train detection",
-          "Train spacing control",
-          "Speed control",
-          "Signal control"
+            "ಮುಖ್ಯಮಂತ್ರಿ",
+            "ರಾಜ್ಯಪಾಲ",
+            "ಮುಖ್ಯ ನ್ಯಾಯಮೂರ್ತಿ",
+            "ವಿಧಾನಸಭಾ ಅಧ್ಯಕ್ಷ"
         ],
         "correctAnswer": 1,
-        "hint": "They maintain safe distance between trains",
-        "solution": "Block Instruments control train spacing by maintaining safe distance between consecutive trains in a block section."
-      },
-      {
+        "hint": "ರಾಜ್ಯ ಸಂವಿಧಾನಿಕ ಅಧಿಕಾರಿ",
+        "solution": "ರಾಜ್ಯಪಾಲ ಲೋಕಾಯುಕ್ತ ಸಂಸ್ಥೆಯ ಮುಖ್ಯಸ್ಥನನ್ನು ನೇಮಿಸುತ್ತಾರೆ"
+    },
+    {
         "level": 72,
-        "question": "What causes wheel slip in electric locomotives?",
+        "category": "ಆರ್ಥಿಕ ಮಾಹಿತಿ",
+        "question": "ಭಾರತದ ಯಾವ ಸಂಸ್ಥೆಯಿಂದ ಸಾಲ ದರಗಳನ್ನು ನಿಗಧಿಪಡಿಸಲಾಗುತ್ತದೆ?",
         "options": [
-          "Excessive torque",
-          "Poor rail conditions",
-          "Heavy loads",
-          "All of the above"
+            "ಹಣಕಾಸು ಸಚಿವಾಲಯ",
+            "ಭಾರತೀಯ ರಿಜರ್ವ್ ಬ್ಯಾಂಕ್",
+            "ಆರ್ಥಿಕ ಆಯೋಗ",
+            "ಹಣಕಾಸು ಆಯೋಗ"
         ],
-        "correctAnswer": 3,
-        "hint": "Multiple factors contribute to wheel slip",
-        "solution": "Wheel slip occurs due to combination of excessive torque, poor rail conditions, and heavy loads affecting adhesion."
-      },
-      {
+        "correctAnswer": 1,
+        "hint": "ಮೌಟಿಕ ನೀತಿ ನಿಯಂತ್ರಣ ಸಂಸ್ಥೆ",
+        "solution": "ಭಾರತೀಯ ರಿಜರ್ವ್ ಬ್ಯಾಂಕ್ ಸಾಲ ದರಗಳನ್ನು ನಿಗಧಿಪಡಿಸಿ ನಿಯಂತ್ರಿಸುತ್ತದೆ"
+    },
+    {
         "level": 73,
-        "question": "Which protection system is used for overhead equipment in railways?",
+        "category": "ಅಪರಾಧ ಶಾಸ್ತ್ರ",
+        "question": "ಭಾರತೀಯ ದಂಡ ಸಂಹಿತೆಯಲ್ಲಿ 'ಮಾನಸಿಕ ಸ್ಥಿತಿ'ಯ ಕುರಿತ ಯಾವ ಪ್ರಮಖ ಅಂಶಗಳನ್ನು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ?",
         "options": [
-          "Distance protection",
-          "Differential protection",
-          "Both A and B",
-          "Neither A nor B"
+        "ಉದ್ದೇಶ, ಮೌಲ್ಯ, ಪರಿಣಾಮ",
+        "ಮಾನಸಿಕ ಸ್ಥಿತಿ, ಕ್ರಿಯಾ, ಪ್ರಯೋಜನ",
+        "ಸ್ಥಳ, ಸಮಯ, ಚೇತರಿಕೆ",
+        "ಮಾಹಿತಿ, ಯೋಜನೆ, ಸಾಕ್ಷ್ಯ"
         ],
-        "correctAnswer": 2,
-        "hint": "Multiple protection schemes are used",
-        "solution": "Both distance and differential protection systems are used for overhead equipment protection in railways."
-      },
-      {
+        "correctAnswer": 1,
+        "hint": "ಅಪರಾಧದ ಮಾನಸಿಕ ಅಂಶಗಳ ಮೌಲ್ಯಮಾಪನ",
+        "solution": "ಮಾನಸಿಕ ಸ್ಥಿತಿ, ಕ್ರಿಯಾ ಮತ್ತು ಪ್ರಯೋಜನ ಅಪರಾಧ ಮೌಲ್ಯಮಾಪನದ ಮೂಲಭೂತ ಅಂಶಗಳಾಗಿವೆ"
+        },
+        {
         "level": 74,
-        "question": "What is the purpose of a Neutral Section in railway electrification?",
+        "category": "ಸಂವಿಧಾನ",
+        "question": "ಭಾರತೀಯ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ಮೌಲಿಕ ಹಕ್ಕುಗಳನ್ನು ಗ್ಯಾರಂಟಿ ಮಾಡುತ್ತದೆ?",
         "options": [
-          "Phase separation",
-          "Voltage control",
-          "Current limitation",
-          "Power factor correction"
+        "ಅನುಚ್ಛೇದ 12-35",
+        "ಅನುಚ್ಛೇದ 14-24",
+        "ಅನುಚ್ಛೇದ 15-30",
+        "ಅನುಚ್ಛೇದ 10-20"
         ],
         "correctAnswer": 0,
-        "hint": "It separates different power supply sections",
-        "solution": "Neutral Section separates different phases of power supply in AC traction systems to prevent phase mixing."
-      },
-      {
+        "hint": "ಮೌಲಿಕ ಹಕ್ಕುಗಳ ವ್ಯಾಪ್ತಿ",
+        "solution": "ಅನುಚ್ಛೇದ 12-35 ಭಾರತೀಯ ಸಂವಿಧಾನದಲ್ಲಿ ಮೌಲಿಕ ಹಕ್ಕುಗಳನ್ನು ವಿವರಿಸುತ್ತದೆ"
+        },
+        {
         "level": 75,
-        "question": "Which type of bearing is used in traction motor suspensions?",
+        "category": "ಕಾನೂನು",
+        "question": "ಕಾನೂನಿನಲ್ಲಿ 'ಆಯಾ ಸಮಯದ ಸಂಶಯಾಸ್ಪದ ಮಾನಸಿಕ ಸ್ಥಿತಿ'ಯನ್ನು ಏನೆಂದು ಕರೆಯಲಾಗುತ್ತದೆ?",
         "options": [
-          "Ball bearing",
-          "Roller bearing",
-          "Journal bearing",
-          "Needle bearing"
-        ],
-        "correctAnswer": 1,
-        "hint": "Consider load handling capacity",
-        "solution": "Roller bearings are used in traction motor suspensions due to their high load capacity and reliability."
-      },
-      {
-        "level": 76,
-        "question": "What is the function of a Static Var Compensator (SVC) in railways?",
-        "options": [
-          "Voltage regulation",
-          "Power factor correction",
-          "Harmonic suppression",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "It serves multiple power quality functions",
-        "solution": "SVC provides voltage regulation, power factor correction, and harmonic suppression in railway power systems."
-      },
-      {
-        "level": 77,
-        "question": "Which type of foundation is commonly used for overhead equipment masts?",
-        "options": [
-          "Side bearing",
-          "Direct embedding",
-          "Concrete block",
-          "All of the above"
-        ],
-        "correctAnswer": 2,
-        "hint": "Consider stability requirements",
-        "solution": "Concrete block foundations are commonly used for overhead equipment masts due to stability and durability."
-      },
-      {
-        "level": 78,
-        "question": "What is the purpose of a Phase Break in AC traction systems?",
-        "options": [
-          "Circuit isolation",
-          "Phase separation",
-          "Voltage control",
-          "Current limitation"
-        ],
-        "correctAnswer": 1,
-        "hint": "It manages power supply sections",
-        "solution": "Phase Break provides separation between different phases of power supply in AC traction systems."
-      },
-      {
-        "level": 79,
-        "question": "Which type of motor is used in railway point machines?",
-        "options": [
-          "Series DC Motor",
-          "Shunt DC Motor",
-          "Universal Motor",
-          "Three Phase Motor"
+        "ಮೆನ್ಸ್ ರಿಯಾ",
+        "ಮೆನ್ಸ್ ಕಾಟ್",
+        "ಮೆನ್ಸ್ ಲೀಗಲ್",
+        "ಮೆನ್ಸ್ ಕ್ಲಾರಿಟಿ"
         ],
         "correctAnswer": 0,
-        "hint": "Consider torque requirements",
-        "solution": "Series DC Motors are used in point machines due to their high starting torque characteristics."
-      },
-      {
-        "level": 80,
-        "question": "What is the purpose of Earth Fault Relay in traction substations?",
-        "options": [
-          "Overcurrent protection",
-          "Ground fault protection",
-          "Differential protection",
-          "Distance protection"
-        ],
-        "correctAnswer": 1,
-        "hint": "It protects against specific fault type",
-        "solution": "Earth Fault Relay protects against ground faults in traction substation equipment."
-      },
-      {
-        "level": 81,
-        "question": "Which factor affects the adhesion coefficient in rail traction?",
-        "options": [
-          "Weather conditions",
-          "Rail surface condition",
-          "Speed",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Multiple factors influence adhesion",
-        "solution": "Adhesion coefficient is affected by weather conditions, rail surface condition, and speed of the train."
-      },
-      {
-        "level": 82,
-        "question": "What is the purpose of Bogie-mounted brake systems?",
-        "options": [
-          "Better braking efficiency",
-          "Reduced maintenance",
-          "Space optimization",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Consider multiple advantages",
-        "solution": "Bogie-mounted brake systems provide better braking efficiency, reduced maintenance, and optimal space utilization."
-      },
-      {
-        "level": 83,
-        "question": "Which type of transformer is used in AC electric locomotives?",
-        "options": [
-          "Step-up transformer",
-          "Step-down transformer",
-          "Auto transformer",
-          "None of the above"
-        ],
-        "correctAnswer": 1,
-        "hint": "Consider voltage requirements",
-        "solution": "Step-down transformers are used in AC electric locomotives to reduce catenary voltage to suitable levels."
-      },
-      {
-        "level": 84,
-        "question": "What is the purpose of Current Transformers in traction systems?",
-        "options": [
-          "Current measurement",
-          "Protection",
-          "Both A and B",
-          "Neither A nor B"
-        ],
-        "correctAnswer": 2,
-        "hint": "They serve multiple purposes",
-        "solution": "Current Transformers are used for both current measurement and protection purposes in traction systems."
-      },
-      {
-        "level": 85,
-        "question": "Which type of cooling system is used in traction transformers?",
-        "options": [
-          "ONAN",
-          "ONAF",
-          "OFAF",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Multiple cooling methods may be used",
-        "solution": "Traction transformers may use ONAN, ONAF, or OFAF cooling systems depending on requirements."
-      },
-      {
-        "level": 86,
-        "question": "What is the purpose of Return Conductors in DC traction systems?",
-        "options": [
-          "Current return path",
-          "Voltage regulation",
-          "Rail potential control",
-          "All of the above"
-        ],
-        "correctAnswer": 2,
-        "hint": "They manage electrical aspects",
-        "solution": "Return Conductors control rail potential and provide current return path in DC traction systems."
-      },
-      {
-        "level": 87,
-        "question": "Which device is used for speed measurement in modern locomotives?",
-        "options": [
-          "Tachometer",
-          "Encoder",
-          "Hall sensor",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Multiple devices may be used",
-        "solution": "Modern locomotives use combinations of tachometers, encoders, and Hall sensors for speed measurement."
-      },
-      {
-        "level": 88,
-        "question": "What causes flash-over in traction motors?",
-        "options": [
-          "Voltage surges",
-          "Brush wear",
-          "Commutator conditions",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Multiple factors contribute",
-        "solution": "Flash-over occurs due to voltage surges, brush wear, and poor commutator conditions in traction motors."
-      },
-      {
-        "level": 89,
-        "question": "Which protection system is used for traction motors?",
-        "options": [
-          "Overcurrent protection",
-          "Earth fault protection",
-          "Temperature protection",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Multiple protections are necessary",
-        "solution": "Traction motors use multiple protection systems including overcurrent, earth fault, and temperature protection."
-      },
-      {
-        "level": 90,
-        "question": "What is the purpose of Negative Return Feeder in AC traction?",
-        "options": [
-          "Current return path",
-          "Rail potential control",
-          "EMI reduction",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "It serves multiple purposes",
-        "solution": "Negative Return Feeder provides current return path, controls rail potential, and reduces electromagnetic interference."
-      },
-      {
-        "level": 91,
-        "question": "Which type of insulator is used in overhead equipment?",
-        "options": [
-          "Pin type",
-          "Suspension type",
-          "Stay type",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Different types serve different purposes",
-        "solution": "Different types of insulators (pin, suspension, stay) are used in overhead equipment based on requirements."
-      },
-      {
-        "level": 92,
-        "question": "What causes neutral section failures?",
-        "options": [
-          "Mechanical stress",
-          "Electrical stress",
-          "Environmental factors",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Multiple factors contribute",
-        "solution": "Neutral section failures occur due to combination of mechanical, electrical, and environmental stresses."
-      },
-      {
-        "level": 93,
-        "question": "Which factor affects pantograph performance?",
-        "options": [
-          "Contact force",
-          "Speed",
-          "Weather conditions",
-          "All of the above"
-        ],
-        "correctAnswer": 3,
-        "hint": "Multiple factors influence operation",
-        "solution": "Pantograph performance is affected by contact force, speed, and weather conditions."
-      },
-      {
-        "level": 94,
-        "question": "Which protocol is used for secure email transmission?",
-        "options": [
-          "SMTP",
-          "POP3",
-          "IMAP",
-          "SSL/TLS"
-        ],
-        "correctAnswer": 3,
-        "hint": "Think about the protocol used to encrypt email communications.",
-        "solution": "SSL/TLS is used to encrypt email communications, providing secure transmission of emails between servers and clients."
-      },
-      {
-        "level": 95,
-        "question": "What is the purpose of a deadlock in operating systems?",
-        "options": [
-          "To prevent system crashes",
-          "To manage memory allocation",
-          "A situation where processes wait indefinitely",
-          "To improve system performance"
-        ],
-        "correctAnswer": 2,
-        "hint": "Understand the concept of deadlock in operating systems.",
-        "solution": "Deadlock is a situation where two or more processes are unable to proceed because each is waiting for resources held by another."
-      },
-      {
-        "level": 96,
-        "question": "Which sorting algorithm has the best average-case time complexity?",
-        "options": [
-          "Bubble Sort",
-          "Quick Sort",
-          "Selection Sort",
-          "Insertion Sort"
-        ],
-        "correctAnswer": 1,
-        "hint": "Consider the average time complexity of different sorting algorithms.",
-        "solution": "Quick Sort has an average time complexity of O(n log n) and is generally considered the fastest sorting algorithm in practice."
-      },
-      {
-        "level": 97,
-        "question": "Which layer of the OSI model handles routing?",
-        "options": [
-          "Transport Layer",
-          "Network Layer",
-          "Data Link Layer",
-          "Physical Layer"
-        ],
-        "correctAnswer": 1,
-        "hint": "Identify the layer responsible for routing in the OSI model.",
-        "solution": "The Network Layer (Layer 3) is responsible for packet forwarding including routing through intermediate routers."
-      },
-      {
-        "level": 98,
-        "question": "Which HTTP method is idempotent?",
-        "options": [
-          "POST",
-          "GET",
-          "PATCH",
-          "DELETE"
-        ],
-        "correctAnswer": 1,
-        "hint": "Understand the concept of idempotency in HTTP methods.",
-        "solution": "GET method is idempotent as multiple identical requests should have the same effect as a single request."
-      },
-      {
-        "level": 99,
-        "question": "Which data structure uses LIFO principle?",
-        "options": [
-          "Queue",
-          "Stack",
-          "Tree",
-          "Linked List"
-        ],
-        "correctAnswer": 1,
-        "hint": "Identify the data structure that follows the LIFO principle.",
-        "solution": "Stack follows Last In First Out (LIFO) principle where the last element added is the first one to be removed."
-      },
-      {
-        "level": 100,
-        "question": "What is the purpose of JWT (JSON Web Token)?",
-        "options": [
-          "Data encryption",
-          "User authentication",
-          "Database indexing",
-          "File compression"
-        ],
-        "correctAnswer": 1,
-        "hint": "Understand the role of JWT in authentication.",
-        "solution": "JWT is used for securely transmitting information between parties as a JSON object, typically used for user authentication."
-      }
-    ]}
+        "hint": "ಅಪರಾಧಿಯ ಮಾನಸಿಕ ಸ್ಥಿತಿಯ ಕಾನೂನಿನ ಪದ",
+        "solution": "ಮೆನ್ಸ್ ರಿಯಾ ಅಪರಾಧಿಯ ಮಾನಸಿಕ ಸ್ಥಿತಿಯನ್ನು ಸೂಚಿಸುವ ಕಾನೂನಿನ ಪದ"
+        },
+        {
+            "level": 76,
+            "category": "ಅಪರಾಧ ವಿಚಾರಣಾ ಕಾಯ್ದೆ",
+            "question": "ಸಿಆರ್‌ಪಿಸಿ ಅನ್ವಯ ಮೀಸಲಾತಿ ವಾರಂಟ್ ಯಾವ ಪ್ರಕರಣಗಳಲ್ಲಿ ಜಾರಿಗೊಳಿಸಲಾಗುತ್ತದೆ?",
+            "options": [
+                "ಕೇವಲ ಗಂಭೀರ ಅಪರಾಧಗಳಲ್ಲಿ",
+                "3 ವರ್ಷಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಶಿಕ್ಷೆಯ ಪ್ರಕರಣಗಳಲ್ಲಿ",
+                "7 ವರ್ಷಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಶಿಕ್ಷೆಯ ಪ್ರಕರಣಗಳಲ್ಲಿ",
+                "10 ವರ್ಷಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಶಿಕ್ಷೆಯ ಪ್ರಕರಣಗಳಲ್ಲಿ"
+            ],
+            "correctAnswer": 1,
+            "hint": "ಮೀಸಲಾತಿ ವಾರಂಟ್‌ಗೆ ಶಿಕ್ಷಾ ಮಿತಿ",
+            "solution": "ಸಿಆರ್‌ಪಿಸಿ ಅನ್ವಯ 3 ವರ್ಷಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಶಿಕ್ಷೆಯ ಪ್ರಕರಣಗಳಲ್ಲಿ ಮೀಸಲಾತಿ ವಾರಂಟ್ ಜಾರಿಗೊಳಿಸಲಾಗುತ್ತದೆ"
+        },
+        {
+            "level": 77,
+            "category": "ಸಂವಿಧಾನಿಕ ಕಾಯ್ದೆ",
+            "question": "ಭಾರತೀಯ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ಅಧಿಕಾರ ವಿಭಜನೆಯ ಮೂಲಭೂತ ಸಿದ್ಧಾಂತವನ್ನು ಸಂರಕ್ಷಿಸುತ್ತದೆ?",
+            "options": [
+                "ಅನುಚ್ಛೇದ 50",
+                "ಅನುಚ್ಛೇದ 54",
+                "ಅನುಚ್ಛೇದ 60",
+                "ಅನುಚ್ಛೇದ 70"
+            ],
+            "correctAnswer": 0,
+            "hint": "ಅಧಿಕಾರ ವಿಭಜನೆಯ ಸಂವಿಧಾನಿಕ ಆಧಾರ",
+            "solution": "ಅನುಚ್ಛೇದ 50 ಅಧಿಕಾರ ವಿಭಜನೆಯ ಮೂಲಭೂತ ಸಿದ್ಧಾಂತವನ್ನು ಖಾತ್ರಿಪಡಿಸುತ್ತದೆ"
+        },
+        {
+            "level": 78,
+            "category": "ಕಾನೂನು ವ್ಯಾಖ್ಯಾನ",
+            "question": "ಡೋಮಿನಿಯಂ ಡಿ ಕೂಯೋ ಸಿದ್ಧಾಂತವನ್ನು ಯಾವ ಕಾನೂನಿನ ಹೊಸ ಅಧ್ಯಾಯವೆಂದು ಪರಿಗಣಿಸಲಾಗಿದೆ?",
+            "options": [
+                "ಮಾಲ್ಯಾ ಕಾಯ್ದೆ",
+                "ಪ್ರಾಪರ್ಟಿ ಕಾನೂನು",
+                "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಕಾನೂನು",
+                "ಭೂಮಿ ಸುಧಾರಣಾ ಕಾಯ್ದೆ"
+            ],
+            "correctAnswer": 1,
+            "hint": "ಭೂಮಿ ಮಾಲೀಕತ್ವ ಸಿದ್ಧಾಂತ",
+            "solution": "ಡೋಮಿನಿಯಂ ಡಿ ಕೂಯೋ ಸಿದ್ಧಾಂತವನ್ನು ಪ್ರಾಪರ್ಟಿ ಕಾನೂನಿನ ಹೊಸ ಅಧ್ಯಾಯವೆಂದು ಪರಿಗಣಿಸಲಾಗಿದೆ"
+        },
+        {
+            "level": 79,
+            "category": "ಅಧಿಕಾರ ಹಂಚಿಕೆ",
+            "question": "ಭಾರತೀಯ ಸಂವಿಧಾನದ ಏಳನೇ ಅನುಸೂಚಿಯಲ್ಲಿ ಯಾವ ರೀತಿಯ ಅಧಿಕಾರ ಹಂಚಿಕೆಯನ್ನು ನಿಗಧಿಪಡಿಸಲಾಗಿದೆ?",
+            "options": [
+                "ಕೇಂದ್ರ ಮತ್ತು ರಾಜ್ಯ ಸರ್ಕಾರಗಳ ನಡುವಿನ ಅಧಿಕಾರ ವಿಭಜನೆ",
+                "ಪೊಲೀಸ್ ಮತ್ತು ನ್ಯಾಯಾಂಗ ನಡುವಿನ ಅಧಿಕಾರ ವಿಭಜನೆ",
+                "ಸಂಸತ್ ಮತ್ತು ಕಾರ್ಯಪಾಲಕ ನಡುವಿನ ಅಧಿಕಾರ ವಿಭಜನೆ",
+                "ಸ್ಥಳೀಯ ಮತ್ತು ರಾಜ್ಯ ಸಂಸ್ಥೆಗಳ ನಡುವಿನ ಅಧಿಕಾರ ವಿಭಜನೆ"
+            ],
+            "correctAnswer": 0,
+            "hint": "ಸಂವಿಧಾನಿಕ ಅಧಿಕಾರ ಹಂಚಿಕೆಯ ಮೂಲ",
+            "solution": "ಏಳನೇ ಅನುಸೂಚಿಯಲ್ಲಿ ಕೇಂದ್ರ ಮತ್ತು ರಾಜ್ಯ ಸರ್ಕಾರಗಳ ನಡುವಿನ ಅಧಿಕಾರ ವಿಭಜನೆಯನ್ನು ನಿಗಧಿಪಡಿಸಲಾಗಿದೆ"
+        },
+        {
+            "level": 80,
+            "category": "ಅಪರಾಧ ಶಾಸ್ತ್ರ",
+            "question": "ಭಾರತೀಯ ದಂಡ ಸಂಹಿತೆಯ ಯಾವ ಸೆಕ್ಷನ್ ಅಡಿಯಲ್ಲಿ ಪ್ರಕೃತಿಯ ವಿರುದ್ಧ ನಡೆಯುವ ಅಪರಾಧಗಳನ್ನು ವಿವರಿಸಲಾಗಿದೆ?",
+            "options": [
+                "ಸೆಕ್ಷನ್ 370",
+                "ಸೆಕ್ಷನ್ 375",
+                "ಸೆಕ್ಷನ್ 377",
+                "ಸೆಕ್ಷನ್ 380"
+            ],
+            "correctAnswer": 2,
+            "hint": "ಪ್ರಕೃತಿ ವಿರುದ್ಧ ಲೈಂಗಿಕ ನಡವಳಿಕೆ",
+            "solution": "ಸೆಕ್ಷನ್ 377 ಪ್ರಕೃತಿಯ ವಿರುದ್ಧ ನಡೆಯುವ ಲೈಂಗಿಕ ನಡವಳಿಕೆಯನ್ನು ನಿಷೇಧಿಸುತ್ತದೆ"
+        },
+        {
+            "level": 81,
+            "category": "ಸಂವಿಧಾನ",
+            "question": "ಭಾರತೀಯ ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ಕಾನೂನಿನ ಮೃಗಾಂಕ ಸಿದ್ಧಾಂತವನ್ನು ನಿಭಾಯಿಸುತ್ತದೆ?",
+            "options": [
+                "ಅನುಚ್ಛೇದ 14",
+                "ಅನುಚ್ಛೇದ 19",
+                "ಅನುಚ್ಛೇದ 21",
+                "ಅನುಚ್ಛೇದ 32"
+            ],
+            "correctAnswer": 0,
+            "hint": "ಸಮಾನ ಕಾನೂನಿನ ಹಕ್ಕು",
+            "solution": "ಅನುಚ್ಛೇದ 14 ಕಾನೂನಿನ ಮೃಗಾಂಕ ಸಿದ್ಧಾಂತವನ್ನು ಖಾತ್ರಿಪಡಿಸುತ್ತದೆ"
+        },
+        {
+            "level": 82,
+            "category": "ಪೊಲೀಸ್ ಸಂಘಟನೆ",
+            "question": "ಭಾರತೀಯ ಪೊಲೀಸ್ ಸೇವಾ ಕಾಯ್ದೆಯ ಮೂಲ ಉದ್ದೇಶವೇನು?",
+            "options": [
+                "ಪೊಲೀಸ್ ಸಿಬ್ಬಂದಿಯ ಸಂಬಳ ನಿಗಧಿಪಡಿಸುವುದು",
+                "ಪೊಲೀಸ್ ಸಂಘಟನೆಯ ಘಟಕ ರಚನೆ",
+                "ಪೊಲೀಸ್ ಸಿಬ್ಬಂದಿಯ ಶಿಸ್ತು ಮತ್ತು ಸೇವಾ ಷರತ್ತುಗಳ ನಿಯಮನ",
+                "ಪೊಲೀಸ್ ಇಲಾಖೆಯ ಮೇಲ್ವಿಚಾರಣೆ"
+            ],
+            "correctAnswer": 2,
+            "hint": "ಪೊಲೀಸ್ ಸಿಬ್ಬಂದಿ ನಿಯಮನ",
+            "solution": "ಪೊಲೀಸ್ ಸೇವಾ ಕಾಯ್ದೆಯ ಮೂಲ ಉದ್ದೇಶ ಸಿಬ್ಬಂದಿಯ ಶಿಸ್ತು ಮತ್ತು ಸೇವಾ ಷರತ್ತುಗಳನ್ನು ನಿಯಂತ್ರಿಸುವುದಾಗಿದೆ"
+        },
+        {
+            "level": 83,
+            "category": "ಕಾನೂನು ವ್ಯಾಖ್ಯಾನ",
+            "question": "ಏಕೀಕೃತ ನ್ಯಾಯಾಲಯ ಪ್ರಕ್ರಿಯಾ ಸಂಹಿತೆಯ ಮೂಲ ಉದ್ದೇಶ ಏನು?",
+            "options": [
+                "ಸಾಕ್ಷಿಗಳ ಸಂರಕ್ಷಣೆ",
+                "ನ್ಯಾಯಿಕ ಪ್ರಕ್ರಿಯಾ ಸರಳೀಕರಣ",
+                "ನ್ಯಾಯಾಲಯ ಸಂಖ್ಯೆ ಹೆಚ್ಚಳ",
+                "ನ್ಯಾಯಾಧಿಶರ ನೇಮಕಾತಿ"
+            ],
+            "correctAnswer": 1,
+            "hint": "ಕಾನೂನು ಪ್ರಕ್ರಿಯಾ ಸರಳೀಕರಣ",
+            "solution": "ಏಕೀಕೃತ ನ್ಯಾಯಾಲಯ ಪ್ರಕ್ರಿಯಾ ಸಂಹಿತೆಯ ಮೂಲ ಉದ್ದೇಶ ನ್ಯಾಯಿಕ ಪ್ರಕ್ರಿಯಾವನ್ನು ಸರಳಗೊಳಿಸುವುದಾಗಿದೆ"
+        },
+        {
+            "level": 84,
+            "category": "ಸಾಮಾಜಿಕ ನ್ಯಾಯ",
+            "question": "ಸಂವಿಧಾನದ ಯಾವ ಅನುಚ್ಛೇದವು ಅಲ್ಪಸಂಖ್ಯಾತರ ಹಕ್ಕುಗಳನ್ನು ಸಂರಕ್ಷಿಸುತ್ತದೆ?",
+            "options": [
+                "ಅನುಚ್ಛೇದ 29-30",
+                "ಅನುಚ್ಛೇದ 15-16",
+                "ಅನುಚ್ಛೇದ 25-26",
+                "ಅನುಚ್ಛೇದ 20-21"
+            ],
+            "correctAnswer": 0,
+            "hint": "ಅಲ್ಪಸಂಖ್ಯಾತರ ಸಂಸ್ಕೃತಿಕ ಮತ್ತು ಶೈಕ್ಷಣಿಕ ಹಕ್ಕುಗಳು",
+            "solution": "ಅನುಚ್ಛೇದ 29-30 ಅಲ್ಪಸಂಖ್ಯಾತ ಸಮುದಾಯಗಳ ಸಂಸ್ಕೃತಿಕ ಮತ್ತು ಶೈಕ್ಷಣಿಕ ಹಕ್ಕುಗಳನ್ನು ಸಂರಕ್ಷಿಸುತ್ತವೆ"
+        },
+        {
+            "level": 85,
+            "category": "ವರ್ತಮಾನ ಸಮಸ್ಯೆಗಳು",
+            "question": "2024ರಲ್ಲಿ ಭಾರತದ ಯಾವ ಸಂಸ್ಥಾನಕ್ಕೆ ನಾಗರಿಕ ಸೇವೆಗಳಲ್ಲಿ 10% ಮೀಸಲಾತಿ ನೀಡಲಾಯಿತು?",
+            "options": [
+                "ಕರ್ನಾಟಕ",
+                "ಆಂಧ್ರಪ್ರದೇಶ",
+                "ಉತ್ತರ ಪ್ರದೇಶ",
+                "ಹರಿಯಾಣ"
+            ],
+            "correctAnswer": 3,
+            "hint": "ಹೊಸ ಮೀಸಲಾತಿ ನೀತಿ",
+            "solution": "ಹರಿಯಾಣಾ ಸರ್ಕಾರವು 2024ರಲ್ಲಿ ಸ್ಥಳೀಯ ಯುವಕರಿಗೆ ನಾಗರಿಕ ಸೇವೆಗಳಲ್ಲಿ 10% ಮೀಸಲಾತಿ ನೀಡಿದೆ"
+        },
+        {
+            "level": 86,
+            "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಕಾನೂನು",
+            "question": "2024ರಲ್ಲಿ ಅಂತಾರಾಷ್ಟ್ರೀಯ ನ್ಯಾಯಾಲಯದಲ್ಲಿ ಯಾವ ರಾಷ್ಟ್ರ ಇಸ್ರಾಯೇಲ್‌ಗೆ ವಿರುದ್ಧವಾಗಿ ಮೊಕದ್ದಮೆ ಹೂಡಿತು?",
+            "options": [
+                "ದक्षिण ಆಫ್ರಿಕಾ",
+                "ಘಾನಾ",
+                "ಜಾಂಬಿಯಾ",
+                "ಉಗಾಂಡಾ"
+            ],
+            "correctAnswer": 0,
+            "hint": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಮಾನವಾಧಿಕಾರ ಉಲ್ಲಂಘನೆ",
+            "solution": "ದಕ್ಷಿಣ ಆಫ್ರಿಕಾ ಅಂತಾರಾಷ್ಟ್ರೀಯ ನ್ಯಾಯಾಲಯದಲ್ಲಿ ಇಸ್ರಾಯೇಲ್‌ಗೆ ವಿರುದ್ಧವಾಗಿ ಮೊಕದ್ದಮೆ ಹೂಡಿದೆ"
+        },
+        {
+            "level": 87,
+            "category": "ಆರ್ಥಿಕ ನೀತಿ",
+            "question": "2024ರಲ್ಲಿ ಭಾರತ ಸರ್ಕಾರ ಯಾವ ಸಾಲ ಸಂಸ್ಥೆಯನ್ನು ಖಾಸಗೀಕರಿಸಲಿದೆ?",
+      "options": [
+                "ಎಲ್‌ಐಸಿ",
+                "ಎಸ್‌ಬಿಐ",
+                "ಪಂಜಾಬ್ ನ್ಯಾಷನಲ್ ಬ್ಯಾಂಕ್",
+                "ಇಂಡಿಯನ್ ಓವರ್‌ಸೀಸ್ ಬ್ಯಾಂಕ್"
+            ],
+            "correctAnswer": 2,
+            "hint": "ಬ್ಯಾಂಕಿಂಗ್ ಖಾಸಗೀಕರಣ",
+            "solution": "ಪಂಜಾಬ್ ನ್ಯಾಷನಲ್ ಬ್ಯಾಂಕ್‌ನ ಖಾಸಗೀಕರಣಕ್ಕೆ ಭಾರತ ಸರ್ಕಾರ ಸಿದ್ಧಗೊಂಡಿದೆ"
+        },
+        {
+            "level": 88,
+            "category": "ಸಂವಿಧಾನಿಕ ಸುಧಾರಣೆ",
+            "question": "2024ರ ಲೋಕಸಭಾ ಚುನಾವಣೆಯಲ್ಲಿ ಹೊಸ ಸಂಸದರಿಗಾಗಿ ಯಾವ ಹೊಸ ನಿಯಮ ಜಾರಿಗೆ ಬಂದಿದೆ?",
+            "options": [
+                "50% ಮಹಿಳಾ ಮೀಸಲಾತಿ",
+                "35 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆ ವಯಸ್ಸಿನ ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ಅವಕಾಶ",
+                "ಶೈಕ್ಷಣಿಕ ಅರ್ಹತಾ ನಿಯಮ",
+                "ಆಧಾರ್ ಕಾರ್ಡ್ ನಿರ್ಬಂಧ"
+            ],
+            "correctAnswer": 2,
+            "hint": "ಚುನಾವಣಾ ಅರ್ಹತಾ ಮಾನದಂಡ",
+            "solution": "2024ರ ಲೋಕಸಭಾ ಚುನಾವಣೆಯಲ್ಲಿ ಹೊಸ ಶೈಕ್ಷಣಿಕ ಅರ್ಹತಾ ನಿಯಮ ಜಾರಿಗೆ ಬಂದಿದೆ"
+        },
+        {
+            "level": 89,
+            "category": "ರಾಷ್ಟ್ರೀಯ ಭದ್ರತಾ",
+            "question": "2024ರಲ್ಲಿ ಭಾರತ ಸರ್ಕಾರ ಯಾವ ಹೊಸ ಸೈಬರ್ ಸುರಕ್ಷಾ ನೀತಿಯನ್ನು ಅಳವಡಿಸಿಕೊಂಡಿದೆ?",
+            "options": [
+                "ಸೈಬರ್ ಸುರಕ್ಷಾ 2.0",
+                "ಡಿಜಿಟಲ್ ಭಾರತ್ ಸುರಕ್ಷಾ ಯೋಜನೆ",
+                "ಸೈಬರ್ ಅಖಂಡತಾ ಮಿಷನ್",
+                "ರಾಷ್ಟ್ರೀಯ ಡಿಜಿಟಲ್ ಸಂರಕ್ಷಣಾ ನೀತಿ"
+            ],
+            "correctAnswer": 1,
+            "hint": "ಡಿಜಿಟಲ್ ಭದ್ರತಾ ಯೋಜನೆ",
+            "solution": "ಡಿಜಿಟಲ್ ಭಾರತ್ ಸುರಕ್ಷಾ ಯೋಜನೆಯನ್ನು ಭಾರತ ಸರ್ಕಾರ ಅಳವಡಿಸಿಕೊಂಡಿದೆ"
+        },
+        {
+            "level": 90,
+            "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಸಂಬಂಧಗಳು",
+            "question": "2024ರಲ್ಲಿ 'ಮಾಲ್ಟಾ ಮಾಡೆಲ್' ಎಂಬ ಅಂತಾರಾಷ್ಟ್ರೀಯ ಒಪ್ಪಂಧವನ್ನು ಯಾವ ಎರಡು ರಾಷ್ಟ್ರಗಳು ಸಹಿ ಮಾಡಿದವು?",
+            "options": [
+                "ಭಾರತ ಮತ್ತು ಯೂಎಇ",
+                "ಅಮೆರಿಕಾ ಮತ್ತು ಜಾಪಾನ್",
+                "ಇಟಲಿ ಮತ್ತು ಗ್ರೀಸ್",
+                "ಕನಡಾ ಮತ್ತು ಆಸ್ಟ್ರೇಲಿಯಾ"
+            ],
+            "correctAnswer": 0,
+            "hint": "ಶಾಂತಿ ಮತ್ತು ಆರ್ಥಿಕ ಸಹಯೋಗ",
+            "solution": "ಭಾರತ ಮತ್ತು ಯೂಎಇ 2024ರಲ್ಲಿ 'ಮಾಲ್ಟಾ ಮಾಡೆಲ್' ಆರ್ಥಿಕ ಸಹಯೋಗ ಒಪ್ಪಂಧವನ್ನು ಸಹಿ ಮಾಡಿದವು"
+        },
+        {
+            "level": 91,
+            "category": "ಯಾಂತ್ರಿಕ ನವೋನ್ಮೇಷ",
+            "question": "2024ರಲ್ಲಿ ಭಾರತಿೀಯ ಬಾಹ್ಯಾಕಾಶ ಸಂಶೋಧನಾ ಸಂಸ್ಥೆ (ಇಸ್ರೋ) ಯಾವ ಹೊಸ ರೋಬೋಟಿಕ್ ಮಿಷನ್‌ಗೆ ಚಾಲನೆ ನೀಡಿದೆ?",
+            "options": [
+                "ಚಂದ್ರಯಾನ್-4",
+                "ಮಾನವ ರೋಬೋಟಿಕ್ ಮಿಷನ್",
+                "ಬಾಹ್ಯಾಕಾಶ ಆಯಾಮ-2",
+                "ಅಂತರಗ್ರಹ ರೋಬೋಟಿಕ್ ಪ್ರವೇಶ"
+            ],
+            "correctAnswer": 1,
+            "hint": "ಹೊಸ ಬಾಹ್ಯಾಕಾಶ ಸಂಶೋಧನಾ ಮಿಷನ್",
+            "solution": "ಇಸ್ರೋ 2024ರಲ್ಲಿ ಸ್ವಾಯತ್ತ ರೋಬೋಟಿಕ್ ಮಾನವ ಮಿಷನ್‌ಗೆ ಚಾಲನೆ ನೀಡಿದೆ"
+        },
+        {
+            "level": 92,
+            "category": "ಜೈವಿಕ ಸಂಶೋಧನೆ",
+            "question": "2024ರಲ್ಲಿ ಯಾವ ಭಾರತೀಯ ಸಂಶೋಧಕರ ತಂಡವು ಮಲೇರಿಯಾ ನಿವಾರಣೆಗಾಗಿ ಹೊಸ ಔಷಧಿ ಅಣುವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದೆ?",
+            "options": [
+                "ಐಐಟಿ ಮುಂಬೈ",
+                "ಐಐಎಸ್‌ಸಿ ಬೆಂಗಳೂರು",
+                "ಐಐಟಿ ಹೈದರಾಬಾದ್",
+                "ಐಐಟಿ ಖರಗಪುರ"
+            ],
+            "correctAnswer": 1,
+            "hint": "ಮಲೇರಿಯಾ ವಿರೋಧಿ ಔಷಧಿ ಅಭಿವೃದ್ಧಿ",
+            "solution": "ಐಐಎಸ್‌ಸಿ ಬೆಂಗಳೂರಿನ ಸಂಶೋಧಕರ ತಂಡವು 2024ರಲ್ಲಿ ಮಲೇರಿಯಾ ನಿವಾರಣೆ ಔಷಧಿ ಅಣುವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದೆ"
+        },
+        {
+            "level": 93,
+            "category": "ಆರ್ಥಿಕ ನಿಯಮಗಳು",
+            "question": "2024ರಲ್ಲಿ ಭಾರತ ರಿಸರ್ವ್ ಬ್ಯಾಂಕ್ ಯಾವ ಹೊಸ ಡಿಜಿಟಲ್ ಮುಂಗಡ ನಿಯಮಗಳನ್ನು ಜಾರಿಗೊಳಿಸಿದೆ?",
+            "options": [
+                "ಡಿಜಿಟಲ್ ಬ್ಯಾಂಕಿಂಗ್ 2.0",
+                "ಸಂಚಯ ಮಂಜೂರಾತಿ ಮಾನದಂಡ",
+                "ಆನ್‌ಲೈನ್ ಮಂಜೂರಾತಿ ನಿಯಮಗಳು",
+                "ಅಂತರ್ ಬ್ಯಾಂಕ್ ಡಿಜಿಟಲ್ ಪಾವತಿ ಯೋಜನೆ"
+            ],
+            "correctAnswer": 2,
+            "hint": "ಡಿಜಿಟಲ್ ಹಣಕಾಸು ನಿಯಂತ್ರಣ",
+            "solution": "ಭಾರತ ರಿಸರ್ವ್ ಬ್ಯಾಂಕ್ ಆನ್‌ಲೈನ್ ಮಂಜೂರಾತಿ ಹೊಸ ನಿಯಮಗಳನ್ನು 2024ರಲ್ಲಿ ಜಾರಿಗೊಳಿಸಿದೆ"
+        },
+        {
+            "level": 94,
+            "category": "ಸಾಂವಿಧಾನಿಕ ಸಂಶೋಧನೆಗಳು",
+            "question": "2024ರ ಚುನಾವಣಾ ಸಂಶೋಧನೆಯಲ್ಲಿ ಯಾವ ಹೊಸ ನಿಯಮ ಜಾರಿಗೆ ಬಂದಿದೆ?",
+            "options": [
+                "ಚಿಹ್ನೆ ಬದಲಾವಣೆ ನಿಯಮ",
+                "ಅಭ್ಯರ್ಥಿ ಇಲಾಖಾ ಬಿಡುಗಡೆ ನಿಯಮ",
+                "ವಾಸ್ ಮೀಸಲಾತಿ ಪ್ರಮಾಣ",
+                "ಹಣಕಾಸು ಘೋಷಣಾ ಪತ್ರ"
+            ],
+            "correctAnswer": 3,
+            "hint": "ಚುನಾವಣಾ ಸಂಶೋಧನಾ ನಿಯಮ",
+            "solution": "2024ರ ಚುನಾವಣಾ ಸಂಶೋಧನೆಯಲ್ಲಿ ಅಭ್ಯರ್ಥಿಗಳ ಹಣಕಾಸು ಘೋಷಣಾ ಪತ್ರ ಹೊಸ ನಿಯಮ ಜಾರಿಗೆ ಬಂದಿದೆ"
+        },
+        {
+            "level": 95,
+            "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಕಾನೂನು",
+            "question": "2024ರಲ್ಲಿ ಯಾವ ಅಂತಾರಾಷ್ಟ್ರೀಯ ನ್ಯಾಯಾಲಯವು ಇಸ್ರಾಯೇಲ್‌ನ ಯುದ್ಧ ಅಪರಾಧಗಳ ವಿಚಾರಣೆಗಾಗಿ ಅಧಿಕೃತ ಆದೇಶ ಹೊರಡಿಸಿತು?",
+            "options": [
+                "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಅಪರಾಧ ನ್ಯಾಯಾಲಯ",
+                "ಐಕ್ಯ ರಾಷ್ಟ್ರ ಸಂಘ ಅಂತಾರಾಷ್ಟ್ರೀಯ ನ್ಯಾಯಾಲಯ",
+                "ಹೇಗ್ ನ್ಯಾಯಾಲಯ",
+                "ಅಂತಾರಾಷ್ಟ್ರೀಯ ನ್ಯಾಯ ನ್ಯಾಯಾಲಯ"
+            ],
+            "correctAnswer": 2,
+            "hint": "ಯುದ್ಧ ಅಪರಾಧಗಳ ವಿಚಾರಣೆ",
+            "solution": "ಹೇಗ್ ನ್ಯಾಯಾಲಯವು 2024ರಲ್ಲಿ ಇಸ್ರಾಯೇಲ್‌ನ ಯುದ್ಧ ಅಪರಾಧಗಳ ವಿಚಾರಣೆಗಾಗಿ ಅಧಿಕೃತ ಆದೇಶ ಹೊರಡಿಸಿತು"
+        },
+        {
+            "level": 96,
+            "category": "ಆರ್ಥಿಕ ನಿೀತಿ",
+            "question": "2024ರಲ್ಲಿ ಭಾರತ ಸರ್ಕಾರವು ಯಾವ ಹೊಸ ಆರ್ಥಿಕ ಮಾದರಿಯನ್ನು ಪರಿಚಯಿಸಿತು?",
+            "options": [
+                "ಡಿಜಿಟಲ್ ಆರ್ಥಿಕ ಮಾದರಿ",
+                "ಹಸಿರು ಆರ್ಥಿಕ ಮಾದರಿ",
+                "ಮೌಲ್ಯ ವರ್ಧಿತ ಆರ್ಥಿಕ ಮಾದರಿ",
+                "ಸಹಕಾರ ಆಧಾರಿತ ಆರ್ಥಿಕ ಮಾದರಿ"
+            ],
+            "correctAnswer": 2,
+            "hint": "ಹೊಸ ಆರ್ಥಿಕ ಸಂಚಯ ವ್ಯೂಹ",
+            "solution": "ಭಾರತ ಸರ್ಕಾರವು 2024ರಲ್ಲಿ ಮೌಲ್ಯ ವರ್ಧಿತ ಆರ್ಥಿಕ ಮಾದರಿಯನ್ನು ಪರಿಚಯಿಸಿತು"
+        },
+        {
+            "level": 97,
+            "category": "ಸಾಂಘಿಕ ಸಂಶೋಧನೆ",
+            "question": "2024ರಲ್ಲಿ ಭಾರತೀಯ ಸಂಶೋಧಕರ ಯಾವ ತಂಡವು ಕೃಷಿ ಉತ್ಪಾದಕತೆ ಹೆಚ್ಚಿಸಲು ಹೊಸ ಜೀನ್ ಸಂಪಾದನಾ ತಂತ್ರವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದೆ?",
+            "options": [
+                "ಐಐಟಿ ಮುಂಬೈ",
+                "ಐಐಎಸ್‌ಸಿ ಬೆಂಗಳೂರು",
+                "ಪಿಜಿಐ ಚೆನ್ನೈ",
+                "ಐಐಟಿ ಖರಗಪುರ"
+            ],
+            "correctAnswer": 1,
+            "hint": "ಜೈವಿಕ ಕೃಷಿ ಸಂಶೋಧನೆ",
+            "solution": "ಐಐಎಸ್‌ಸಿ ಬೆಂಗಳೂರಿನ ಸಂಶೋಧಕರ ತಂಡವು 2024ರಲ್ಲಿ ಹೊಸ ಜೀನ್ ಸಂಪಾದನಾ ತಂತ್ರವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದೆ"
+        },
+        {
+            "level": 98,
+            "category": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ಸಂಬಂಧಗಳು",
+            "question": "2024ರಲ್ಲಿ ಭಾರತ ಯಾವ ಹೊಸ ಬಹುಪಕ್ಷೀಯ ಒಕ್ಕೂಟಕ್ಕೆ ಒಳಗಾಯಿತು?",
+            "options": [
+                "ಐ2ಯು ಅಲ್ಲಿಯನ್ಸ್",
+                "ಮಧ್ಯ ಪೂರ್ವ ಸಮೃದ್ಧಿ ಒಕ್ಕೂಟ",
+                "ಆಫ್ರಿಕಾ-ಏಷ್ಯಾ ಸಹಯೋಗ ಒಕ್ಕೂಟ",
+                "ಸಮುದ್ರ ಮಾರ್ಗ ಒಕ್ಕೂಟ"
+            ],
+            "correctAnswer": 3,
+            "hint": "ಹೊಸ ಅಂತಾರಾಷ್ಟ್ರೀಯ ಒಕ್ಕೂಟ",
+            "solution": "ಭಾರತ 2024ರಲ್ಲಿ ಸಮುದ್ರ ಮಾರ್ಗ ಒಕ್ಕೂಟಕ್ಕೆ ಒಳಗಾಯಿತು"
+        },
+        {
+            "level": 99,
+            "category": "ರಾಷ್ಟ್ರೀಯ ಭದ್ರತಾ",
+            "question": "2024ರಲ್ಲಿ ಭಾರತ ಸರ್ಕಾರ ಯಾವ ಹೊಸ ಸೈಬರ್ ಭದ್ರತಾ ಕಾನೂನನ್ನು ಜಾರಿಗೊಳಿಸಿತು?",
+            "options": [
+                "ರಾಷ್ಟ್ರೀಯ ಡಿಜಿಟಲ್ ಭದ್ರತಾ ಕಾಯಿದೆ",
+                "ಸೈಬರ್ ಭದ್ರತಾ ಸಂಹಿತೆ",
+                "ಡಿಜಿಟಲ್ ಸಂರಕ್ಷಣಾ ಕಾಯಿದೆ",
+                "ಇಲೆಕ್ಟ್ರಾನಿಕ್ ಭದ್ರತಾ ಕಾನೂನು"
+            ],
+            "correctAnswer": 1,
+            "hint": "ಡಿಜಿಟಲ್ ಭದ್ರತಾ ಕಾನೂನು",
+            "solution": "ಭಾರತ ಸರ್ಕಾರ 2024ರಲ್ಲಿ ಸೈಬರ್ ಭದ್ರತಾ ಸಂಹಿತೆಯನ್ನು ಜಾರಿಗೊಳಿಸಿತು"
+        },
+        {
+            "level": 100,
+            "category": "ಆರೋಗ್ಯ ಮತ್ತು ನವೋನ್ಮೇಷ",
+            "question": "2024ರಲ್ಲಿ ಭಾರತೀಯ ವೈದ್ಯಕೀಯ ಸಂಶೋಧಕರ ಯಾವ ತಂಡವು ಹೊಸ ಕ್ಯಾನ್ಸರ್ ಚಿಕಿತ್ಸಾ ತಂತ್ರವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿತು?",
+            "options": [
+                "ಎಂಸಿಐ ಚೆನ್ನೈ",
+                "ಐಎನ್‌ಎಂಎಲ್ ಬೆಂಗಳೂರು",
+                "ಎಂಸಿಐ ಬೆಂಗಳೂರು",
+                "ಐಐಟಿ ಮುಂಬೈ ವೈದ್ಯಕೀಯ ಸಂಶೋಧನಾ ಕೇಂದ್ರ"
+            ],
+            "correctAnswer": 2,
+            "hint": "ಕ್ಯಾನ್ಸರ್ ಚಿಕಿತ್ಸಾ ನವೋನ್ಮೇಷ",
+            "solution": "ಎಂಸಿಐ ಬೆಂಗಳೂರಿನ ಸಂಶೋಧಕರ ತಂಡವು 2024ರಲ್ಲಿ ಹೊಸ ಕ್ಯಾನ್ಸರ್ ಚಿಕಿತ್ಸಾ ತಂತ್ರವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿತು"
+        }
+  ]
+}

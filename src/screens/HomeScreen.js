@@ -234,29 +234,28 @@ const HomeScreen = ({navigation}) => {
       screen: 'Quizzes',
       color: '#3498db',
       description: 'Practice with full-length tests',
-      // },
-      // {
-      //   title: 'Subject Wise',
-      //   icon: 'subject',
-      //   screen: 'SubjectTests',
-      //   color: '#2ecc71',
-      //   description: 'Targeted topic preparation',
-      // },
-      // {
-      //   title: 'Progress Track',
-      //   icon: 'analytics',
-      //   screen: 'Progress',
-      //   color: '#e74c3c',
-      //   description: 'Monitor your performance',
-      // },
-      // {
-      //   title: 'Study Material',
-      //   icon: 'my-library-books',
-      //   screen: 'StudyMaterial',
-      //   color: '#9b59b6',
-      //   description: 'Comprehensive resources',
-      // },
     },
+    {
+      title: 'Syllabus',
+      icon: 'menu-book',
+      screen: 'Syllabus',
+      color: '#2ecc71',
+      description: 'Targeted topic preparation',
+    },
+    // {
+    //   title: 'Progress Track',
+    //   icon: 'analytics',
+    //   screen: 'Progress',
+    //   color: '#e74c3c',
+    //   description: 'Monitor your performance',
+    // },
+    // {
+    //   title: 'Study Material',
+    //   icon: 'my-library-books',
+    //   screen: 'StudyMaterial',
+    //   color: '#9b59b6',
+    //   description: 'Comprehensive resources',
+    // },
   ];
 
   // Animation values

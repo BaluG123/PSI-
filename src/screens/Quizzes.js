@@ -33,7 +33,7 @@ const Quizzes = ({navigation}) => {
       description: 'Practice with full-length tests paper2',
     },
     {
-      title: 'Practice Quiz',
+      title: ' GK Quiz',
       icon: 'play-circle-fill',
       screen: 'PracticeQuiz',
       color: '#3498db',

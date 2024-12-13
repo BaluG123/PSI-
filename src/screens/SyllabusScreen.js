@@ -208,7 +208,7 @@ const SyllabusScreen = () => {
       ],
     },
     {
-      paper: 'Paper III - Karnataka Police Specific',
+      paper: 'Karnataka Police Specific',
       topics: [
         {
           title: 'Police Procedures',

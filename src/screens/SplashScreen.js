@@ -123,7 +123,7 @@ const SplashScreen = ({navigation}) => {
       <View style={styles.contentContainer}>
         {/* Animated Logo */}
         <Animated.Image
-          source={require('../assets/karnataka-police-logo.jpg')} // Replace with your actual logo path
+          source={require('../assets/psilogo.png')} // Replace with your actual logo path
           style={[styles.logo, logoAnimatedStyle]}
           resizeMode="contain"
         />
