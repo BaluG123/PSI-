@@ -1,23 +1,36 @@
 // import React from 'react';
 // import {View, Text, Image, StyleSheet} from 'react-native';
+// import LinearGradient from 'react-native-linear-gradient';
+// import {
+//   widthPercentageToDP as wp,
+//   heightPercentageToDP as hp,
+// } from 'react-native-responsive-screen';
 
 // // Splash Screen
 // const SplashScreen = ({navigation}) => {
 //   React.useEffect(() => {
-//     setTimeout(() => {
+//     const timer = setTimeout(() => {
 //       navigation.replace('Home');
 //     }, 2000);
-//   }, []);
+
+//     return () => clearTimeout(timer);
+//   }, [navigation]);
 
 //   return (
-//     <View style={styles.splashContainer}>
-//       <Image
-//         source={require('../assets/karnataka-police-logo.jpg')}
-//         style={styles.logo}
-//         resizeMode="contain"
-//       />
-//       <Text style={styles.splashText}>Karnataka Police SI Exam Prep</Text>
-//     </View>
+//     <LinearGradient
+//       colors={['#007bff', '#0056b3']}
+//       style={styles.splashContainer}
+//       start={{x: 0, y: 0}}
+//       end={{x: 1, y: 1}}>
+//       <View style={styles.contentContainer}>
+//         <Image
+//           source={require('../assets/karnataka-police-logo.jpg')}
+//           style={styles.logo}
+//           resizeMode="contain"
+//         />
+//         <Text style={styles.splashText}>Karnataka Police SI Exam Prep</Text>
+//       </View>
+//     </LinearGradient>
 //   );
 // };
 
@@ -28,136 +41,110 @@
 //     flex: 1,
 //     justifyContent: 'center',
 //     alignItems: 'center',
-//     backgroundColor: '#f0f0f0',
+//   },
+//   contentContainer: {
+//     alignItems: 'center',
+//     justifyContent: 'center',
 //   },
 //   logo: {
-//     width: 200,
-//     height: 200,
+//     width: wp('50%'), // 50% of screen width
+//     height: hp('30%'), // 30% of screen height
+//     marginBottom: hp('3%'),
 //   },
 //   splashText: {
-//     fontSize: 20,
+//     fontSize: wp('5%'), // responsive font size
 //     fontWeight: 'bold',
-//     marginTop: 20,
-//   },
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#f4f4f4',
-//   },
-//   headerContainer: {
-//     padding: 20,
-//     backgroundColor: '#007bff',
-//     alignItems: 'center',
-//   },
-//   headerTitle: {
 //     color: 'white',
-//     fontSize: 22,
-//     fontWeight: 'bold',
-//   },
-//   menuContainer: {
-//     flexDirection: 'row',
-//     flexWrap: 'wrap',
-//     justifyContent: 'center',
-//     padding: 10,
-//   },
-//   menuItem: {
-//     width: '40%',
-//     margin: 10,
-//     padding: 20,
-//     backgroundColor: 'white',
-//     borderRadius: 10,
-//     alignItems: 'center',
-//     shadowColor: '#000',
-//     shadowOffset: {width: 0, height: 2},
-//     shadowOpacity: 0.1,
-//     shadowRadius: 4,
-//     elevation: 3,
-//   },
-//   menuItemText: {
-//     marginTop: 10,
-//     fontSize: 16,
 //     textAlign: 'center',
-//   },
-//   syllabusContainer: {
-//     padding: 20,
-//   },
-//   syllabusTitle: {
-//     fontSize: 22,
-//     fontWeight: 'bold',
-//     marginBottom: 20,
-//     textAlign: 'center',
-//   },
-//   syllabusItem: {
-//     backgroundColor: '#f9f9f9',
-//     padding: 15,
-//     marginBottom: 10,
-//     borderRadius: 8,
-//   },
-//   syllabusItemText: {
-//     fontSize: 16,
-//   },
-//   papersContainer: {
-//     padding: 20,
-//   },
-//   papersTitle: {
-//     fontSize: 22,
-//     fontWeight: 'bold',
-//     marginBottom: 20,
-//     textAlign: 'center',
-//   },
-//   paperItem: {
-//     backgroundColor: '#f9f9f9',
-//     padding: 15,
-//     marginBottom: 10,
-//     borderRadius: 8,
-//   },
-//   paperItemText: {
-//     fontSize: 16,
 //   },
 // });
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import Animated, {
+  useSharedValue,
+  useAnimatedStyle,
+  withSpring,
+  withRepeat,
+  withTiming,
+} from 'react-native-reanimated';
 
-// Splash Screen
 const SplashScreen = ({navigation}) => {
-  React.useEffect(() => {
+  // Animated values for logo and text
+  const logoScale = useSharedValue(0.5);
+  const logoOpacity = useSharedValue(0);
+  const textOpacity = useSharedValue(0);
+
+  // Animation configurations
+  useEffect(() => {
+    // Logo animation
+    logoScale.value = withSpring(1, {
+      damping: 5,
+      stiffness: 100,
+    });
+    logoOpacity.value = withTiming(1, {duration: 1000});
+
+    // Text animation
+    textOpacity.value = withTiming(1, {duration: 1500});
+
+    // Navigation timer
     const timer = setTimeout(() => {
       navigation.replace('Home');
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [navigation]);
 
+  // Animated styles
+  const logoAnimatedStyle = useAnimatedStyle(() => {
+    return {
+      transform: [{scale: logoScale.value}],
+      opacity: logoOpacity.value,
+    };
+  });
+
+  const textAnimatedStyle = useAnimatedStyle(() => {
+    return {
+      opacity: textOpacity.value,
+    };
+  });
+
   return (
     <LinearGradient
-      colors={['#007bff', '#0056b3']}
+      colors={['#3494E6', '#EC6EAD']}
       style={styles.splashContainer}
       start={{x: 0, y: 0}}
       end={{x: 1, y: 1}}>
       <View style={styles.contentContainer}>
-        <Image
-          source={require('../assets/karnataka-police-logo.jpg')}
-          style={styles.logo}
+        {/* Animated Logo */}
+        <Animated.Image
+          source={require('../assets/karnataka-police-logo.jpg')} // Replace with your actual logo path
+          style={[styles.logo, logoAnimatedStyle]}
           resizeMode="contain"
         />
-        <Text style={styles.splashText}>Karnataka Police SI Exam Prep</Text>
+
+        {/* Animated Text */}
+        <Animated.Text style={[styles.splashText, textAnimatedStyle]}>
+          Karnataka Police SI
+          {'\n'}
+          Exam Preparation
+        </Animated.Text>
       </View>
     </LinearGradient>
   );
 };
-
-export default SplashScreen;
 
 const styles = StyleSheet.create({
   splashContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'transparent',
   },
   contentContainer: {
     alignItems: 'center',
@@ -173,5 +160,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     textAlign: 'center',
+    letterSpacing: 1,
   },
 });
+
+export default SplashScreen;
