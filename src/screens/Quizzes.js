@@ -1,220 +1,128 @@
-// import React from 'react';
-// import {
-//   View,
-//   Text,
-//   StyleSheet,
-//   TouchableOpacity,
-//   SafeAreaView,
-// } from 'react-native';
-// import Icon from 'react-native-vector-icons/Ionicons';
-
-// const Quizzes = ({navigation}) => {
-//   const menuItems = [
-//     {
-//       title: 'Paper1',
-//       icon: 'play-outline',
-//       screen: 'paper1',
-//     },
-//     {
-//       title: 'Paper2',
-//       icon: 'play-outline',
-//       screen: 'paper2',
-//     },
-//   ];
-
-//   return (
-//     <SafeAreaView style={styles.container}>
-//       <View style={styles.headerContainer}>
-//         <Text style={styles.headerTitle}>Quiz Categories</Text>
-//         <Text style={styles.headerSubtitle}>Choose Your Challenge</Text>
-//       </View>
-
-//       <View style={styles.menuContainer}>
-//         {menuItems.map((item, index) => (
-//           <TouchableOpacity
-//             key={index}
-//             style={styles.menuItem}
-//             onPress={() => navigation.navigate(item.screen)}>
-//             <Icon name={item.icon} size={40} color="#007bff" />
-//             <Text style={styles.menuItemText}>{item.title}</Text>
-//           </TouchableOpacity>
-//         ))}
-//       </View>
-//     </SafeAreaView>
-//   );
-// };
-
-// export default Quizzes;
-
-// const styles = StyleSheet.create({
-//   splashContainer: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#f0f0f0',
-//   },
-//   logo: {
-//     width: 200,
-//     height: 200,
-//   },
-//   splashText: {
-//     fontSize: 20,
-//     fontWeight: 'bold',
-//     marginTop: 20,
-//   },
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#f4f4f4',
-//   },
-//   headerContainer: {
-//     padding: 20,
-//     backgroundColor: '#007bff',
-//     alignItems: 'center',
-//   },
-//   headerTitle: {
-//     color: 'white',
-//     fontSize: 22,
-//     fontWeight: 'bold',
-//   },
-//   menuContainer: {
-//     flexDirection: 'row',
-//     flexWrap: 'wrap',
-//     justifyContent: 'center',
-//     padding: 10,
-//   },
-//   menuItem: {
-//     width: '40%',
-//     margin: 10,
-//     padding: 20,
-//     backgroundColor: 'white',
-//     borderRadius: 10,
-//     alignItems: 'center',
-//     shadowColor: '#000',
-//     shadowOffset: {width: 0, height: 2},
-//     shadowOpacity: 0.1,
-//     shadowRadius: 4,
-//     elevation: 3,
-//   },
-//   menuItemText: {
-//     marginTop: 10,
-//     fontSize: 16,
-//     textAlign: 'center',
-//   },
-//   syllabusContainer: {
-//     padding: 20,
-//   },
-//   syllabusTitle: {
-//     fontSize: 22,
-//     fontWeight: 'bold',
-//     marginBottom: 20,
-//     textAlign: 'center',
-//   },
-//   syllabusItem: {
-//     backgroundColor: '#f9f9f9',
-//     padding: 15,
-//     marginBottom: 10,
-//     borderRadius: 8,
-//   },
-//   syllabusItemText: {
-//     fontSize: 16,
-//   },
-//   papersContainer: {
-//     padding: 20,
-//   },
-//   papersTitle: {
-//     fontSize: 22,
-//     fontWeight: 'bold',
-//     marginBottom: 20,
-//     textAlign: 'center',
-//   },
-//   paperItem: {
-//     backgroundColor: '#f9f9f9',
-//     padding: 15,
-//     marginBottom: 10,
-//     borderRadius: 8,
-//   },
-//   paperItemText: {
-//     fontSize: 16,
-//   },
-// });
-
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import {
   View,
   Text,
   StyleSheet,
   TouchableOpacity,
   SafeAreaView,
-  Dimensions,
   StatusBar,
+  Animated,
+  ImageBackground,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import LinearGradient from 'react-native-linear-gradient';
-
-const {width, height} = Dimensions.get('window');
 
 const Quizzes = ({navigation}) => {
   const menuItems = [
     {
-      title: 'Paper 1',
-      icon: 'document-text-outline',
+      title: 'Paper1 ',
+      icon: 'play-circle-outline',
       screen: 'paper1',
-      gradient: ['#6a11cb', '#2575fc'],
+      color: '#3498db',
+      description: 'Practice with full-length tests paper1',
     },
     {
-      title: 'Paper 2',
-      icon: 'book-outline',
+      title: 'Paper 2 ',
+      icon: 'play-circle-outline',
       screen: 'paper2',
-      gradient: ['#ff6a00', '#ee0979'],
-    },
-    {
-      title: 'Mock Tests',
-      icon: 'school-outline',
-      screen: 'mockTests',
-      gradient: ['#00b09b', '#96c93d'],
+      color: '#3498db',
+      description: 'Practice with full-length tests paper2',
     },
     {
       title: 'Practice Quiz',
-      icon: 'game-controller-outline',
-      screen: 'practiceQuiz',
-      gradient: ['#8e2de2', '#4a00e0'],
+      icon: 'play-circle-fill',
+      screen: 'PracticeQuiz',
+      color: '#3498db',
+      description: 'Practice with full-length tests whole',
     },
   ];
+
+  // Animation values
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+  const scaleAnims = useRef(
+    menuItems.map(() => new Animated.Value(0.8)),
+  ).current;
+
+  useEffect(() => {
+    // Fade and scale animations
+    Animated.parallel([
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: 800,
+        useNativeDriver: true,
+      }),
+      Animated.stagger(
+        200,
+        scaleAnims.map(anim =>
+          Animated.spring(anim, {
+            toValue: 1,
+            friction: 4,
+            tension: 40,
+            useNativeDriver: true,
+          }),
+        ),
+      ),
+    ]).start();
+  }, []);
+
+  const handlePressItem = screen => {
+    navigation.navigate(screen);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar
-        barStyle="light-content"
         translucent
         backgroundColor="transparent"
+        barStyle="light-content"
       />
-      <View style={styles.headerContainer}>
-        <Text style={styles.headerTitle}>Quiz Hub</Text>
-        <Text style={styles.headerSubtitle}>Test Your Knowledge</Text>
-      </View>
+      {/* <ImageBackground
+        source={require('../assets/karnataka-police-logo.jpg')} // Replace with your background image
+        style={styles.backgroundImage}
+        blurRadius={3}> */}
+      <View style={styles.backgroundImage}>
+        <Animated.View style={[styles.headerContainer, {opacity: fadeAnim}]}>
+          <Text style={styles.headerTitle}>Karnataka Police SI</Text>
+          <Text style={styles.headerSubtitle}>Practice</Text>
+        </Animated.View>
 
-      <View style={styles.menuContainer}>
-        {menuItems.map((item, index) => (
-          <TouchableOpacity
-            key={index}
-            style={styles.menuItemWrapper}
-            onPress={() => navigation.navigate(item.screen)}>
-            <LinearGradient
-              colors={item.gradient}
-              style={styles.menuItem}
-              start={{x: 0, y: 0}}
-              end={{x: 1, y: 1}}>
-              <Icon
-                name={item.icon}
-                size={40}
-                color="white"
-                style={styles.menuItemIcon}
-              />
-              <Text style={styles.menuItemText}>{item.title}</Text>
-            </LinearGradient>
-          </TouchableOpacity>
-        ))}
+        <View style={styles.gridContainer}>
+          {menuItems.map((item, index) => (
+            <Animated.View
+              key={index}
+              style={[
+                styles.gridItem,
+                {
+                  transform: [{scale: scaleAnims[index]}],
+                  backgroundColor: item.color + '20', // Subtle background
+                },
+              ]}>
+              <TouchableOpacity
+                style={styles.gridItemTouchable}
+                onPress={() => handlePressItem(item.screen)}
+                activeOpacity={0.7}>
+                <View style={styles.gridItemContent}>
+                  <Icon
+                    name={item.icon}
+                    size={hp('4%')}
+                    color={item.color}
+                    style={styles.gridItemIcon}
+                  />
+                  <Text style={styles.gridItemTitle}>{item.title}</Text>
+                  <Text style={styles.gridItemDescription}>
+                    {item.description}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </Animated.View>
+          ))}
+        </View>
       </View>
+      {/* </ImageBackground> */}
     </SafeAreaView>
   );
 };
@@ -224,62 +132,67 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f4f6f9',
   },
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'cover',
+    justifyContent: 'center',
+  },
   headerContainer: {
-    paddingTop: StatusBar.currentHeight + 20,
-    paddingBottom: 30,
-    backgroundColor: '#007bff',
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
+    paddingTop: hp('5%'),
+    paddingBottom: hp('3%'),
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 4},
-    shadowOpacity: 0.3,
-    shadowRadius: 4.65,
-    elevation: 8,
+    backgroundColor: 'rgba(0,0,0,0.3)',
   },
   headerTitle: {
     color: 'white',
-    fontSize: 26,
+    fontSize: hp('3.5%'),
     fontWeight: 'bold',
-    marginBottom: 8,
+    marginBottom: hp('1%'),
   },
   headerSubtitle: {
     color: 'rgba(255,255,255,0.8)',
-    fontSize: 16,
+    fontSize: hp('2%'),
   },
-  menuContainer: {
+  gridContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    alignItems: 'center',
-    paddingTop: 20,
-    paddingHorizontal: 10,
+    paddingTop: hp('2%'),
+    paddingHorizontal: wp('2%'),
   },
-  menuItemWrapper: {
-    width: width * 0.4,
-    margin: 10,
-    borderRadius: 20,
-    overflow: 'hidden',
+  gridItem: {
+    width: wp('42%'),
+    height: hp('25%'),
+    margin: wp('2%'),
+    borderRadius: 15,
     elevation: 5,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    overflow: 'hidden',
   },
-  menuItem: {
-    paddingVertical: 25,
-    paddingHorizontal: 15,
-    alignItems: 'center',
+  gridItemTouchable: {
+    flex: 1,
+  },
+  gridItemContent: {
+    flex: 1,
     justifyContent: 'center',
-    borderRadius: 20,
+    alignItems: 'center',
+    padding: wp('3%'),
   },
-  menuItemIcon: {
-    marginBottom: 10,
+  gridItemIcon: {
+    marginBottom: hp('2%'),
   },
-  menuItemText: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: '600',
+  gridItemTitle: {
+    fontSize: hp('2.2%'),
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: hp('1%'),
+  },
+  gridItemDescription: {
+    fontSize: hp('1.5%'),
+    color: '#666',
     textAlign: 'center',
   },
 });

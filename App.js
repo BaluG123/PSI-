@@ -10,6 +10,8 @@ import PreviousPapersScreen from './src/screens/PreviousPapersScreen';
 import Quizzes from './src/screens/Quizzes';
 import paper1 from './src/screens/paper1';
 import paper2 from './src/screens/paper2';
+import PracticeQuizScreen from './src/screens/PracticeQuizScreen';
+import QuestionScreen from './src/screens/QuestionScreen';
 
 const Stack = createStackNavigator();
 // const Tab = createBottomTabNavigator();
@@ -51,6 +53,16 @@ const App = () => {
         <Stack.Screen
           name="paper2"
           component={paper2}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="PracticeQuiz"
+          component={PracticeQuizScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="QuestionScreen"
+          component={QuestionScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
