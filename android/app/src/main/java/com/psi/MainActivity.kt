@@ -1,7 +1,7 @@
-package com.psi
+package com.civilpsi
 
 import com.facebook.react.ReactActivity
-import com.facebook.react.ReactActivityDelegate
+import com.facebook.react.ReactActivityDelegaste
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
 
